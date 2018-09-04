@@ -1199,56 +1199,26 @@
 [debug] == resolving dependencies ch.epfl.scala#hello-world$sources;1.0->org.scala-lang#scala-reflect;2.12.6 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.6!scala-reflect.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#cats-macros_2.12;1.1.0!cats-macros_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.6!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
-[debug] 		tried /Users/eundolee/.ivy2/local/org.typelevel/cats-core_2.12/1.1.0/srcs/cats-core_2.12-sources.jar
-[debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.6!scala-reflect.jar(src)
-[debug] 		tried /Users/eundolee/.ivy2/local/org.typelevel/cats-kernel_2.12/1.1.0/srcs/cats-kernel_2.12-sources.jar
-[debug] 		tried /Users/eundolee/.ivy2/local/org.typelevel/machinist_2.12/0.6.2/srcs/machinist_2.12-sources.jar
-[debug] 		tried /Users/eundolee/.ivy2/local/org.typelevel/cats-macros_2.12/1.1.0/srcs/cats-macros_2.12-sources.jar
-[debug] 		tried /Users/eundolee/.ivy2/local/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.0/srcs/scala-parser-combinators_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.2/machinist_2.12-0.6.2-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/1.1.0/cats-macros_2.12-1.1.0-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/1.1.0/cats-kernel_2.12-1.1.0-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/1.1.0/cats-core_2.12-1.1.0-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0-sources.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.6!scala-library.jar(src)
-[info] downloading https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/1.1.0/cats-macros_2.12-1.1.0-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/1.1.0/cats-core_2.12-1.1.0-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.2/machinist_2.12-0.6.2-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/1.1.0/cats-core_2.12-1.1.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.2/machinist_2.12-0.6.2-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/1.1.0/cats-kernel_2.12-1.1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/1.1.0/cats-kernel_2.12-1.1.0-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/1.1.0/cats-macros_2.12-1.1.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/1.1.0/cats-macros_2.12-1.1.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/1.1.0/cats-kernel_2.12-1.1.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/1.1.0/cats-core_2.12-1.1.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.2/machinist_2.12-0.6.2-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/1.1.0/cats-macros_2.12-1.1.0-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/1.1.0/cats-kernel_2.12-1.1.0-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0!scala-parser-combinators_2.12.jar(src) (6679ms)
-[info] 	[SUCCESSFUL ] org.typelevel#cats-kernel_2.12;1.1.0!cats-kernel_2.12.jar(src) (6680ms)
-[info] 	[SUCCESSFUL ] org.typelevel#cats-macros_2.12;1.1.0!cats-macros_2.12.jar(src) (6680ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/1.1.0/cats-core_2.12-1.1.0-sources.jar
-[info] 	[SUCCESSFUL ] org.typelevel#cats-core_2.12;1.1.0!cats-core_2.12.jar(src) (6988ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.2/machinist_2.12-0.6.2-sources.jar
-[info] 	[SUCCESSFUL ] org.typelevel#machinist_2.12;0.6.2!machinist_2.12.jar(src) (7308ms)
-[debug] :: resolution report :: resolve 85ms :: artifacts dl 7322ms
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 compile produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-compile.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 runtime produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-runtime.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 test produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-test.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 provided produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-provided.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 optional produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-optional.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 compile-internal produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-compile-internal.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 runtime-internal produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-runtime-internal.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 test-internal produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-test-internal.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 plugin produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-plugin.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 pom produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-pom.xml
-[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 scala-tool produced in /Users/eundolee/snu-2018-2/Principles/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-scala-tool.xml
-[debug] 	resolve done (85ms resolve - 7322ms download)
+[debug] 	[NOT REQUIRED] org.typelevel#machinist_2.12;0.6.2!machinist_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#cats-kernel_2.12;1.1.0!cats-kernel_2.12.jar(src)
+[debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0!scala-parser-combinators_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.typelevel#cats-core_2.12;1.1.0!cats-core_2.12.jar(src)
+[debug] :: resolution report :: resolve 127ms :: artifacts dl 41ms
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 compile produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-compile.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 runtime produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-runtime.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 test produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-test.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 provided produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-provided.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 optional produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-optional.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 compile-internal produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-compile-internal.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 runtime-internal produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-runtime-internal.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 test-internal produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-test-internal.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 plugin produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-plugin.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 pom produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-pom.xml
+[debug] 	report for ch.epfl.scala#hello-world$sources;1.0 scala-tool produced in /Users/eundolee/snu-2018-2/PP2018/TerminalSBT/helloworld/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world$sources-scala-tool.xml
+[debug] 	resolve done (127ms resolve - 41ms download)
