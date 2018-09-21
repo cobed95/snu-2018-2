@@ -13,4 +13,10 @@ object MapReduce {
 
   def product(f: Int=>Int, a: Int, b: Int): Int =
     mapReduce((x, y)=>x * y, 1, f, a, b)
+
+  // Below is curried.
+
+  def mapReduceCurry(reduce: (Int, Int)=>Int, initVal: Int)(f: Int=>Int)(a: Int, b: Int): Int = {
+    if (a <= b) reduce(f(a), mapReduceCurry(reduce, initVal)(f)(a + 1, b)) else initVal
+  }
 }

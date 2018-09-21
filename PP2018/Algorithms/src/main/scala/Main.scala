@@ -4,4 +4,8 @@ object Main extends App {
 
   val list2 = List(1, 2, 3, 4, 5)
   println(ListReverser.reverseList(list2))
+
+  println(Numbers.power(2, 5))
+
+  Numbers.pascalTriangle(10)
 }
