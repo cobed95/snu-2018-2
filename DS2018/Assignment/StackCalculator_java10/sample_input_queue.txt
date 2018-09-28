@@ -1,0 +1,13 @@
+queue,clear
+queue,empty
+queue,add,1
+queue,add,2
+queue,add,3
+queue,empty
+queue,peek
+queue,poll
+queue,peek
+queue,poll
+queue,peek
+queue,poll
+queue,empty

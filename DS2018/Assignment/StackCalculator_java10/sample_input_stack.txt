@@ -1,0 +1,12 @@
+stack,clear
+stack,empty
+stack,push,1
+stack,push,2
+stack,push,3
+stack,empty
+stack,peek
+stack,pop
+stack,peek
+stack,pop
+stack,pop
+stack,empty
