@@ -1,7 +1,6 @@
 package com.dmlab.util;
 
 import java.util.EmptyStackException;
-
 import com.dmlab.interfaces.Stack;
 
 /**
@@ -13,7 +12,7 @@ public class MyStack<E> implements Stack<E> {
 	private int tail;
 	
 	public MyStack() {
-	    this.array = new E[128];
+	    this.array = (E[]) new Object[128];
         this.tail = 0;
 	}
 
@@ -24,33 +23,20 @@ public class MyStack<E> implements Stack<E> {
 
 	@Override
 	public void push(E item) throws RuntimeException {
-	    try {
-	        this.array[this.tail] = item;
-        } catch (RuntimeException e) {
-	        e.printStackTrace();
-        }
-
+		this.array[this.tail] = item;
+		this.tail++;
 	}
 
 	@Override
 	public E pop() throws EmptyStackException {
-	    try {
-	        this.tail--;
-	        return this.array[this.tail];
-        } catch (EmptyStackException e) {
-	        e.printStackTrace();
-	        return null;
-        }
+		this.tail--;
+		return this.array[this.tail];
 	}
 
 	@Override
 	public E peek() throws EmptyStackException {
-	    try {
-	        return this.array[this.tail--];
-        } catch (EmptyStackException e) {
-	        e.printStackTrace();
-	        return null;
-        }
+	    if (!this.empty()) return this.array[this.tail - 1];
+	    else return null;
 	}
 
 	@Override
@@ -58,5 +44,4 @@ public class MyStack<E> implements Stack<E> {
 	    if (this.tail == 0) return true;
 		return false;
 	}
-
 }

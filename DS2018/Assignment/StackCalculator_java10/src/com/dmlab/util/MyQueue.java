@@ -12,29 +12,35 @@ public class MyQueue<E> implements Queue<E>{
 	private int tail;
 
 	public MyQueue() {
-	    this.array = new E[128];
+	    this.array = (E[]) new Object[128];
 	    this.head = 0;
 	    this.tail = 0;
 	}
 
 	@Override
 	public void clear() {
-		while (!this.empty()) this.poll();
+	    this.head = 0;
+	    this.tail = 0;
 	}
 
 	@Override
 	public void add(E item) throws RuntimeException {
-		
+	    this.array[this.tail] = item;
+	    if (this.tail == 127) this.tail = 0;
+	    else this.tail++;
 	}
 
 	@Override
 	public E poll() throws EmptyQueueException {
-		return null;
+	    E result = this.array[this.head];
+	    if (this.head == 127) this.head = 0;
+	    else this.head++;
+	    return result;
 	}
 
 	@Override
 	public E peek() throws EmptyQueueException {
-		return null;
+        return this.array[this.head];
 	}
 
 	@Override
@@ -42,5 +48,4 @@ public class MyQueue<E> implements Queue<E>{
 	    if (this.head == this.tail) return true;
 		return false;
 	}
-
 }

@@ -1,12 +1,14 @@
 object LectureNotes {
 
   object TypeCheckingSafetyRule {
+    /*
     {
       def f(x: Int) = x + a
       val x = f(10)
       val a = 10
       f(10)
     }
+    */
     // This is not allowed because not all names are not defined before the next "val" definition
 
     {
@@ -17,12 +19,14 @@ object LectureNotes {
     }
     // This is allowed because all names in f are defined before the next "val" definition.
 
+    /*
     {
       def f(x: Int) = g(x)
       val a = 10
       def g(x: Int) = 10
       f(10)
     }
+    */
     // This is not allowed because g(x) is defined after a "val" definition.
     // The compiler assumes that computation ("val") may occur before definition. So it does not allow this.
 
@@ -60,5 +64,35 @@ object LectureNotes {
     def sumCurried2(f: Int=>Int)(a: Int, b: Int): Int =
       if (a <= b) f(a) + sumCurried2(f)(a + 1, b) else 0
     // sumCurried2 is the simplest and the standard way of writing curried functions.
+  }
+
+  object Tuples {
+    val a = (1, 2, 3): (Int, Int, Int)
+    println(a._1) // prints 1.
+  }
+
+  object StructuralTypes {
+    val foo = new {
+      val a = 3
+      def b = a + 1
+      def f(x: Int) = b + x
+      def f(x: String) = "hello" + x
+    }
+    // Above is equal to...
+    object bar {
+      val a = 3
+      def b = a + 1
+      def f(x: Int) = b + x
+      def f(x: String) = "hello" + x
+    }
+    // So apparently, val new = object
+
+    def foo(x: Int) = x + 1
+    object record {
+      val g: Int=>Int = foo _
+      def f(x: Int) = x + 1
+    }
+    // val g can store function codes that is defined where-ever.
+    // Functions inside record types can be defined because record types are values, and consequently closures.
   }
 }
