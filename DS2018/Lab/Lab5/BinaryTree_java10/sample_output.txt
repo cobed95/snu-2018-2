@@ -1,0 +1,12 @@
+Value for 1 is  BTS
+preorder : [1:BTS][2:IOI][3:GFriend][4:TWICE][5:Lovelyz][6:AfterSchool][7:SuperJunior]
+Height of this tree is 7
+preorder : [1:BTS][2:IOI][3:GFriend][5:Lovelyz][6:AfterSchool][7:SuperJunior]
+Height of this tree is 6
+preorder : None
+Height of this tree is 0
+preorder : [4:TWICE][2:IOI][1:BTS][3:GFriend][6:AfterSchool][5:Lovelyz][7:SuperJunior]
+inorder : [1:BTS][2:IOI][3:GFriend][4:TWICE][5:Lovelyz][6:AfterSchool][7:SuperJunior]
+postorder : [1:BTS][3:GFriend][2:IOI][5:Lovelyz][7:SuperJunior][6:AfterSchool][4:TWICE]
+Height of this tree is 3
+Value for 5 is  Lovelyz

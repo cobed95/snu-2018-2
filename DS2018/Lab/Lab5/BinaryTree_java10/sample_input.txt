@@ -1,0 +1,33 @@
+insert 1 BTS
+find 1
+insert 2 IOI
+insert 3 GFriend
+insert 4 TWICE
+insert 5 Lovelyz
+insert 6 AfterSchool
+insert 7 SuperJunior
+preorder
+height
+delete 4
+preorder
+height
+delete 1
+delete 2
+delete 3
+delete 5
+delete 6
+delete 7
+preorder
+height
+insert 4 TWICE
+insert 2 IOI
+insert 3 GFriend
+insert 1 BTS
+insert 6 AfterSchool
+insert 5 Lovelyz
+insert 7 SuperJunior
+preorder
+inorder
+postorder
+height
+find 5
