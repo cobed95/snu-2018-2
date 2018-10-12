@@ -1,0 +1,56 @@
+ADD:	history A4-123
+ADD:	romance B5-331
+ADD:	bible C2-112
+ADD:	the_dream_manager B3-319
+ADD:	girl_of_mine D2-554
+REMOVE:	C2-112
+ADD:	big_little G5-123
+ADD:	a_civil_action F7-1277
+ADD:	data_structure D7-301
+SIZE:	7
+ORDER: a_civil_action
+ORDER: big_little
+ORDER: data_structure
+ORDER: girl_of_mine
+ORDER: history
+ORDER: romance
+ORDER: the_dream_manager
+ADD:	becoming_nicole D1-872
+ADD:	river_town C6-1949
+GET:	big_little G5-123
+REMOVE:	B3-319
+FIRST:	a_civil_action F7-1277
+LAST:	romance B5-331
+ADD:	diary H9-100
+ORDER: a_civil_action
+ORDER: becoming_nicole
+ORDER: big_little
+ORDER: data_structure
+ORDER: diary
+ORDER: girl_of_mine
+ORDER: history
+ORDER: river_town
+ORDER: romance
+RANGE:	5
+PRINT:	
+               h                               
+              / \               
+             /   \              
+            /     \             
+           /       \            
+          /         \           
+         /           \          
+        /             \         
+       /               \        
+       gom               r               
+      /               /         
+     /               /          
+    /               /           
+   /               /            
+   bl               rt               
+  / \                           
+ /   \                          
+ aca   ds                           
+  \   \                         
+  bn   d                         
+                                                                

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BookSearch:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BookSearch_jar</output-path>
+    <root id="archive" name="BookSearch.jar">
+      <element id="module-output" name="BookSearch" />
+    </root>
+  </artifact>
+</component>
