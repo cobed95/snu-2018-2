@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d47be69b-3502-4fbc-9f4c-f56e23df36c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/artifacts/BookSearch_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/out/artifacts/BookSearch_jar/sample_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/HW3/Question3/src/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/HW3/Question3/src/SortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/src/main/scala/Practice.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Lab/Lab5/BinaryTree_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Lab/Lab5/BinaryTree_java10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/src/main/scala/LectureNotes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/src/main/scala/LectureNotes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/Main$foo$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,13 +23,13 @@
     <session id="20548950">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="7" />
+          <entry key="project.open.time.1" value="8" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -103,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/List.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+            <state relative-caret-position="460">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -156,6 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,7 +175,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
@@ -305,17 +288,18 @@
       <workItem from="1538960833131" duration="744000" />
       <workItem from="1538962153845" duration="2000" />
       <workItem from="1539135691886" duration="173000" />
+      <workItem from="1539563577207" duration="728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21990000" />
+    <option name="totallyTimeSpent" value="22718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2994849" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3038999" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -390,8 +374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/List.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        <state relative-caret-position="460">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
