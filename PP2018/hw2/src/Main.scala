@@ -61,7 +61,7 @@ object Main {
 
     def sortIter[A](left: MyList[A], right: MyList[A])(cmp: A => A => Int): MyList[A] = {
 
-      def switch[A](l: MyList[A])(cmp: A => A => Int): (MyList[A], A) = {
+      def switch[A](l: MyList[A])(cmp: A => A => Int): (MyList[A], A) =
         l match {
           case MyCons(first, MyNil()) => (MyNil(), first)
           case MyCons(first, MyCons(second, tail)) if cmp(first)(second) > 0 => {
@@ -78,7 +78,7 @@ object Main {
             (MyCons(first, cutTail), max)
           }
         }
-      }
+
 
       (left, right) match {
         case (MyNil(), right) => right
