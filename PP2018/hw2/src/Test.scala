@@ -26,9 +26,10 @@ object Test extends App {
     val c = listIntToIList(List(1,2,3,4,5,6,7,8))
 
     print_result(zip(a,b) == c)
-
+    /*
     val d = listIntToIList(List(2,1,4,3,6,5,7,8))
     print_result(zip(b,a) == d)
+    */
   }
 
   // Problem 2
@@ -37,13 +38,14 @@ object Test extends App {
     val two = EInt(2)
     
     print_result(calculate(EAdd(two, three)) == 5)
-
+    /*
     val one = EInt(1)
     val four = EInt(4)
     val five = EInt(5)
     val six = EInt(6)
 
     print_result(calculate(ESub(EMul(ESqr(EAdd(two, three)), five), six)) == 119)
+    */
   }
 
 
@@ -54,7 +56,7 @@ object Test extends App {
     val b : MyList[Int] = listToMyList(List(1,2,3))
 
     print_result(sort(a)(cmp) == b)
-
+    /*
     println(sort(a)(cmp))
 
     val c : MyList[Int] = listToMyList(List(7,6,5,4,3,2,1))
@@ -62,6 +64,7 @@ object Test extends App {
     val d : MyList[Int] = listToMyList(List(9,7,0,3,1,5,2,6,4,8))
     println(sort(d)(cmp))
     println(sort(MyNil())(cmp))
+    */
   }
 
 

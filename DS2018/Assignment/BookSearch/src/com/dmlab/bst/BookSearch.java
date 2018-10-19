@@ -41,6 +41,7 @@ public class BookSearch {
 	 * This function removes the book with ��name�� from BookSearch.
 	 * @param name : the book we want to remove.
 	 * @return the name of removed book. If no such book, return null.
+	 * change: must return the position of the removed book.
 	 */
 	public String remove(String name) {
 		// TODO: Fill in this function

@@ -1,7 +1,9 @@
 package com.dmlab;
 
+import java.util.*;
+
 public class Union {
-	
+
 	int[] mID = new int[10];
 	
 	/**
@@ -12,6 +14,7 @@ public class Union {
 		/**
 		 * Initialize mID field to be belonged in the different set.
 		 */
+		for (int i = 0; i < mID.length; i++) mID[i] = -1;
 	}
 	
 	/**
@@ -23,6 +26,14 @@ public class Union {
 	 * @return
 	 */
 	void unionWU(int node1, int node2) {
+	    int size1 = groupSize(node1);
+	    int size2 = groupSize(node2);
+	    int root1 = find(node1);
+	    int root2 = find(node2);
+
+        if (root1 == root2 && root1 != -1) return;
+        if (size1 < size2) mID[root1] = root2;
+        else mID[root2] = root1;
 	}
 
 	/**
@@ -34,6 +45,14 @@ public class Union {
 	 * @return
 	 */
 	void unionDU(int node1, int node2) {
+        int depth1 = depth(node1);
+        int depth2 = depth(node2);
+        int root1 = find(node1);
+        int root2 = find(node2);
+
+        if (root1 == root2 && root1 != -1) return;
+        if (depth1 < depth2) mID[root1] = root2;
+        else mID[root2] = root1;
 	}
 
 	/**
@@ -46,7 +65,9 @@ public class Union {
 	 * 			number of the root node where it belong.
 	 */
 	int find(int node) {
-		return -1;
+	    if (mID[node] == -1) return node;
+	    mID[node] = find(mID[node]);
+		return mID[node];
 	}
 	
 	/**
@@ -58,8 +79,13 @@ public class Union {
 	 * 			depth
 	 */
 	int depth(int node) {
-		return -1;
+		return depth(node, 0);
 	}
+
+	private int depth(int node, int count) {
+	    if (mID[node] == -1) return count;
+	    return depth(mID[node], count + 1);
+    }
 	
 	/**
 	 * the number of nodes inside the set where given node belong.
@@ -69,7 +95,12 @@ public class Union {
 	 * 			the number of nodes
 	 */
 	int groupSize(int node) {
-		return -1;
+	    int root = find(node);
+	    for (int i = 0; i < mID.length; i++) if (mID[i] != root) find(i);
+
+	    int count = 1;
+	    for (int parent: mID) if (parent == root) count++;
+	    return count;
 	}
 	
 	/**
@@ -81,7 +112,9 @@ public class Union {
 	 * 			boolean value
 	 */
 	boolean inSameGroup(int node1, int node2) {
-		return false;
+		int root1 = find(node1);
+		int root2 = find(node2);
+	    return root1 == root2;
 	}
 	
 	/**
@@ -91,7 +124,11 @@ public class Union {
 	 * 			the number of groups
 	 */
 	int numberOfGroups() {
-		return -1;
+	    int count = 0;
+	    for (int element: mID) {
+	        if (element == -1) count++;
+        }
+		return count;
 	}
 	
 	/**
@@ -108,6 +145,47 @@ public class Union {
 	 * (0,4,5)(1,2,3)(6,7,8,9)
 	 */
 	void print() {
+        int root = find(0);
+        for (int i = 1; i < mID.length; i++) {
+            if (root == -1 || mID[i] != root) root = find(i);
+        }
 
+        boolean[] visited = new boolean[10];
+        for (int j = 0; j < visited.length; j++) visited[j] = false;
+
+        String result = "";
+
+        int numberOfGroups = numberOfGroups();
+        for (int i = 0; i < numberOfGroups; i++) {
+            result += "(";
+
+            int node = 0;
+            while (node < 10 && visited[node]) node++;
+
+            int groupRoot;
+            switch (mID[node]) {
+                case -1 :
+                    groupRoot = node;
+                    break;
+                default :
+                    groupRoot = mID[node];
+            }
+            result += Integer.toString(groupRoot);
+            visited[groupRoot] = true;
+
+            for (int j = 0; j < 10; j++) {
+                if (visited[j]) continue;
+                if (mID[j] == groupRoot) {
+                    result += ",";
+                    result += Integer.toString(j);
+                    visited[j] = true;
+                }
+            }
+
+            result += ")";
+        }
+
+        System.out.println(result);
 	}
+
 }
