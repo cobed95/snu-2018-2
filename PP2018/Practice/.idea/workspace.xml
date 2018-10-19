@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d2f0840-fcdc-463f-8d79-b7505f37b889" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/bin/com/dmlab/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/bin/com/dmlab/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/bin/com/dmlab/Union.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/bin/com/dmlab/Union.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/sample_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/sample_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/src/com/dmlab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/src/com/dmlab/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/src/com/dmlab/Union.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Lab/Lab7/Union_java10/src/com/dmlab/Union.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/MidtermPrep.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/MidtermPrep.scala" afterDir="false" />
-    </list>
+    <list default="true" id="2d2f0840-fcdc-463f-8d79-b7505f37b889" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -30,7 +21,7 @@
     <session id="1881518633">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.5" value="1" />
@@ -95,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/LectureNotes.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
-              <caret line="192" column="6" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
+            <state relative-caret-position="237">
+              <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -367,12 +358,12 @@
       <workItem from="1539741829068" duration="4897000" />
       <workItem from="1539926639407" duration="2405000" />
       <workItem from="1539934881520" duration="307000" />
-      <workItem from="1539935315846" duration="260000" />
+      <workItem from="1539935315846" duration="725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36831000" />
+    <option name="totallyTimeSpent" value="37296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
@@ -472,8 +463,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/LectureNotes.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="192" column="6" selection-start-line="192" selection-start-column="6" selection-end-line="192" selection-end-column="6" />
+        <state relative-caret-position="237">
+          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
         </state>
       </provider>
     </entry>
