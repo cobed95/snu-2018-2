@@ -170,12 +170,12 @@ public class Union {
                 default :
                     groupRoot = mID[node];
             }
-            result += Integer.toString(groupRoot);
-            visited[groupRoot] = true;
 
-            for (int j = 0; j < 10; j++) {
+            result += Integer.toString(node);
+            visited[node] = true;
+            for (int j = node + 1; j < 10; j++) {
                 if (visited[j]) continue;
-                if (mID[j] == groupRoot) {
+                if (mID[j] == groupRoot || j == groupRoot) {
                     result += ",";
                     result += Integer.toString(j);
                     visited[j] = true;

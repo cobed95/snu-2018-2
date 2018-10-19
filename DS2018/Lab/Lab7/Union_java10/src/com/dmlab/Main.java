@@ -32,6 +32,10 @@ public class Main {
 					int node1 = Integer.valueOf(line_split[1]);
 					int node2 = Integer.valueOf(line_split[2]);
 					union.unionWU(node1, node2);
+				} else if (cmd_type.equals("union_d")) {
+					int node1 = Integer.valueOf(line_split[1]);
+					int node2 = Integer.valueOf(line_split[2]);
+					union.unionDU(node1, node2);
 				} else if (cmd_type.equals("print")) {
 					union.print();
 				} else if (cmd_type.equals("find")) {
