@@ -57,4 +57,22 @@ object Test extends App {
   //P19
   println(Solutions.rotate(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
   println(Solutions.rotate(-2, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
+
+  //P20
+  println(Solutions.removeAt(1, List('a, 'b, 'c, 'd)))
+
+  //P21
+  println(Solutions.insertAt('new, 1, List('a, 'b, 'c, 'd)))
+
+  //P22
+  println(Solutions.range(4, 9))
+
+  //P23
+  println(Solutions.randomSelect(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h)))
+
+  //P24
+  println(Solutions.lotto(6, 49))
+
+  //P25
+  println(Solutions.randomPermute(List('a, 'b, 'c, 'd, 'e, 'f)))
 }

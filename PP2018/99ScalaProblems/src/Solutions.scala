@@ -250,13 +250,73 @@ object Solutions {
   }
 
   //P20 Remove the Kth element from a list.
-  /*
-  def removeAt[T](k: Int, list: List[T]): (List[T], T) = {
-    def removeAtIter[T](k: Int, list: List[T], current: Int): (List[T], T) =
+  def removeAt[T](k: Int, list: List[T]): (List[T], Option[T]) = {
+    def removeAtIter[T](k: Int, list: List[T], current: Int): (List[T], Option[T]) =
       list match {
-
+        case Nil => (Nil, None)
+        case head :: tail if current == k =>
+          (tail, Some(head))
+        case head :: tail =>
+          val pair = removeAtIter(k, tail, current + 1)
+          (head :: pair._1, pair._2)
       }
+
+    removeAtIter(k, list, 0)
   }
-  */
+
+  //P21 Insert an element at a given position into a list.
+  def insertAt[T](element: T, k: Int, list: List[T]): List[T] = {
+    def insertAtIter[T](element: T, k: Int, list: List[T], current: Int): List[T] =
+      list match {
+        case Nil => Nil
+        case list if current == k =>
+          element :: list
+        case head :: tail =>
+          head :: insertAtIter(element, k, tail, current + 1)
+      }
+
+    insertAtIter(element, k, list, 0)
+  }
+
+  //P22 Create a list containing all integers within a given range.
+  def range(from: Int, to: Int): List[Int] = {
+    def rangeIter(from: Int, to: Int, current: Int): List[Int] =
+      if (current == to) List(current)
+      else current :: rangeIter(from, to, current + 1)
+
+    rangeIter(from, to, from)
+  }
+
+  //P23 Extract a given number of randomly selected elements from a list.
+  def randomSelect[T](n: Int, list: List[T]): List[T] = {
+    def randomSelectIter[T](n: Int, list: List[T], current: Int): List[T] = {
+      if (current == n) Nil
+      else list match {
+        case Nil => Nil
+        case list =>
+          val random = scala.util.Random
+          val pair = removeAt(random.nextInt(length(list)), list)
+          pair._2.get :: randomSelectIter(n, pair._1, current + 1)
+      }
+    }
+
+    randomSelectIter(n, list, 0)
+  }
+
+  //P24 Lotto: Draw N different random numbers from the set 1..M.
+  def lotto(n: Int, max: Int): List[Int] = {
+    def lottoIter(n: Int, max: Int, current: Int): List[Int] =
+      if (current == n) Nil
+      else {
+        val random = scala.util.Random
+        (random.nextInt(max) + 1) :: lottoIter(n, max, current + 1)
+      }
+
+    lottoIter(n, max, 0)
+  }
+
+  //P25 Generate a random permutation of the elements of a list.
+  def randomPermute[T](list: List[T]): List[T] =
+    randomSelect(length(list), list)
 
 }
