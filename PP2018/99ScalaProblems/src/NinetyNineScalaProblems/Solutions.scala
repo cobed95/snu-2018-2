@@ -1,4 +1,7 @@
+package NinetyNineScalaProblems
+
 object Solutions {
+  //Lists
   //P01 Find the last element of a list.
   def last[T](list: List[T]): Option[T] =
     list match {
@@ -318,5 +321,94 @@ object Solutions {
   //P25 Generate a random permutation of the elements of a list.
   def randomPermute[T](list: List[T]): List[T] =
     randomSelect(length(list), list)
+
+  //Binary Trees
+  sealed abstract class Tree[+T] {
+    //P56 Symmetric binary trees.
+    def isSymmetric: Boolean = {
+      def isMirrorImage(tree1: Tree[T], tree2: Tree[T]): Boolean =
+        (tree1, tree2) match {
+          case (End, End) => true
+          case (Node(_, left, End), Node(_, End, right)) =>
+            isMirrorImage(left, right)
+          case (Node(_, End, left), Node(_, right, End)) =>
+            isMirrorImage(left, right)
+          case (Node(_, left1, right1), Node(_, left2, right2)) =>
+            isMirrorImage(left1, right2) && isMirrorImage(left2, right1)
+          case _ => false
+        }
+
+      this match {
+        case End => true
+        case Node(_, left, right) => isMirrorImage(left, right)
+      }
+    }
+
+    def addValue[U >: T](x: U)(implicit ordering: Ordering[U]): Tree[U] =
+      this match {
+        case End => Node.apply(x)
+        case Node(key, left, right) if ordering.lt(x, key) =>
+          left.addValue(x)
+        case Node(key, left, right) =>
+          right.addValue(x)
+      }
+
+
+  }
+  case class Node[+T](value: T, left: Tree[T], right: Tree[T]) extends Tree[T] {
+    override def toString = "T(" + value.toString + " " + left.toString + " " + right.toString + ")"
+  }
+  case object End extends Tree[Nothing] {
+    override def toString = "."
+  }
+  //TODO: Fix Tree.fromList and addValue. Problem #57.
+  object Tree {
+    def fromList[T](list: List[T])(implicit ordering: Ordering[T]): Tree[T] = {
+      def fromListIter[T](list: List[T], root: Tree[T])(implicit ordering: Ordering[T]): Tree[T] =
+        list match {
+          case Nil => End
+          case head :: tail => fromListIter(tail, root.addValue(head))
+        }
+
+      fromListIter(list.tail, Node.apply(list.head))
+    }
+  }
+
+  object Node {
+    def apply[T](value: T): Node[T] = Node(value, End, End)
+  }
+
+  //P55 Construct completely balanced binary trees.
+  //Not solved yet.
+  /*
+  object Tree {
+    def cBalanced[T](number: Int, value: T): List[Node[T]] = {
+      val less: Int = (number - 1) / 2
+      val more: Int = number - 1 - less
+
+      def cBalancedIter[T](number: Int, result: List[Node[T]]): List[Node[T]] =
+        result match {
+          case Nil => Nil
+          case
+        }
+
+      def singleBalanced(number: Int, leftIsLess: Boolean, nextIsSame: Boolean): Tree[T] =
+        number match {
+          case _ if number == 0 => End
+          case _ if leftIsLess && nextIsSame =>
+            Node(value, singleBalanced(less, leftIsLess, nextIsSame), singleBalanced(more, leftIsLess, nextIsSame))
+          case _ if !leftIsLess && nextIsSame =>
+            Node(value, singleBalanced(more, leftIsLess, nextIsSame), singleBalanced(less, leftIsLess, nextIsSame))
+          case _ if leftIsLess && !nextIsSame =>
+            Node(value, singleBalanced(less, !leftIsLess, nextIsSame), singleBalanced(more, !leftIsLess, nextIsSame))
+          case _ if !leftIsLess && !nextIsSame =>
+            Node(value, singleBalanced(more, !leftIsLess, nextIsSame), singleBalanced(less, !leftIsLess, nextIsSame))
+        }
+    }
+
+  }
+  */
+
+  //
 
 }
