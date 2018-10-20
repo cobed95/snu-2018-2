@@ -18,55 +18,45 @@ object Test extends App {
       case (h :: t) => MyCons(h, listToMyList(t))
       case Nil => MyNil()
     }
-
+    
   // Problem 1
   {
     val a = listIntToIList(List(1,3,5))
     val b = listIntToIList(List(2,4,6,7,8))
     val c = listIntToIList(List(1,2,3,4,5,6,7,8))
+    //val d = listIntToIList(List(2,1,4,3,6,5,7,8))
 
     print_result(zip(a,b) == c)
-    /*
-    val d = listIntToIList(List(2,1,4,3,6,5,7,8))
-    print_result(zip(b,a) == d)
-    */
+    //print_result(zip(b,a) == d)
   }
 
   // Problem 2
   {
     val three = EInt(3)
     val two = EInt(2)
+    //val one = EInt(1)
+    //val four = EInt(4)
+    //val five = EInt(5)
     
     print_result(calculate(EAdd(two, three)) == 5)
-    /*
-    val one = EInt(1)
-    val four = EInt(4)
-    val five = EInt(5)
-    val six = EInt(6)
-
-    print_result(calculate(ESub(EMul(ESqr(EAdd(two, three)), five), six)) == 119)
-    */
+    //print_result(calculate(ESub(EMul(EAdd(two, three), five), ESqr(EMul(three, five)))) == -200)
   }
-
 
   // Problem 3
   {
     val cmp = (scala.math.Ordering.Int.compare _).curried
     val a : MyList[Int] = listToMyList(List(3,2,1))
     val b : MyList[Int] = listToMyList(List(1,2,3))
+    //val c : MyList[Int] = listToMyList(List(8,5,6,4,7,1,3,9,2,0))
+    //val d : MyList[Int] = listToMyList(List(0,1,2,3,4,5,6,7,8,9))
+    //val e : MyList[Int] = listToMyList(List(8,5,6,4,6,1,3,4,2,0))
+    //val f : MyList[Int] = listToMyList(List(0,1,2,3,4,4,5,6,6,8))
 
     print_result(sort(a)(cmp) == b)
-    /*
-    println(sort(a)(cmp))
-
-    val c : MyList[Int] = listToMyList(List(7,6,5,4,3,2,1))
-    println(sort(c)(cmp))
-    val d : MyList[Int] = listToMyList(List(9,7,0,3,1,5,2,6,4,8))
-    println(sort(d)(cmp))
-    println(sort(MyNil())(cmp))
-    */
+    //print_result(sort(c)(cmp) == d)
+    //print_result(sort(e)(cmp) == f)
   }
-
+  
 
   // Problem 4
   {
