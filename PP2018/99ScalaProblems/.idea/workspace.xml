@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7316d87f-4bdd-4b4f-a3af-f992858d5514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NinetyNineScalaProblems/Solutions.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NinetyNineScalaProblems/Test.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/StackCalculator_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/StackCalculator_java10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Lab/Lab6/BinaryTreeLCA_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Lab/Lab6/BinaryTreeLCA_java10/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Solutions.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$End$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$End$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/99ScalaProblems/NinetyNineScalaProblems/Test$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NinetyNineScalaProblems/Solutions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/NinetyNineScalaProblems/Solutions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NinetyNineScalaProblems/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/NinetyNineScalaProblems/Test.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +26,13 @@
     <session id="225695470">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,12 +49,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="41085" />
+          <entry key="scala" value="43240" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="41085" />
+          <entry key="Scala" value="43240" />
         </counts>
       </usages-collector>
     </session>
@@ -57,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NinetyNineScalaProblems/Solutions.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="372" column="49" selection-start-line="372" selection-start-column="49" selection-end-line="372" selection-end-column="49" />
+            <state relative-caret-position="550">
+              <caret line="414" column="1" selection-start-line="414" selection-start-column="1" selection-end-line="414" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -66,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NinetyNineScalaProblems/Test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+            <state relative-caret-position="1320">
+              <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -111,7 +118,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -135,13 +142,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540051744896" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540091456424" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -214,12 +221,15 @@
       <workItem from="1539942410365" duration="14963000" />
       <workItem from="1540008119553" duration="6008000" />
       <workItem from="1540032519905" duration="8690000" />
-      <workItem from="1540048535888" duration="3077000" />
+      <workItem from="1540048535888" duration="3363000" />
+      <workItem from="1540089980662" duration="1542000" />
+      <workItem from="1540096782727" duration="890000" />
+      <workItem from="1540262305620" duration="200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33909000" />
+    <option name="totallyTimeSpent" value="36827000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -234,7 +244,7 @@
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26416484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27520236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -243,14 +253,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329235" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329235" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989071" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329235" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329235" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29918033" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.329235" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -276,17 +286,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solutions.scala" />
     <entry file="file://$PROJECT_DIR$/src/Test.scala" />
-    <entry file="file://$PROJECT_DIR$/src/NinetyNineScalaProblems/Test.scala">
+    <entry file="file://$PROJECT_DIR$/src/NinetyNineScalaProblems/Solutions.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+        <state relative-caret-position="550">
+          <caret line="414" column="1" selection-start-line="414" selection-start-column="1" selection-end-line="414" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NinetyNineScalaProblems/Solutions.scala">
+    <entry file="file://$PROJECT_DIR$/src/NinetyNineScalaProblems/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="372" column="49" selection-start-line="372" selection-start-column="49" selection-end-line="372" selection-end-column="49" />
+        <state relative-caret-position="1320">
+          <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
         </state>
       </provider>
     </entry>

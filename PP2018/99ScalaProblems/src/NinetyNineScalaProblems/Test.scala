@@ -86,4 +86,7 @@ object Test extends App {
 
   //P57
   println(Tree.fromList(List(3,2,5,7,1)))
+  println(Tree.fromList(List(5,3,18,1,4,12,21)).isSymmetric)
+  println(Tree.fromList(List(3,2,5,7,4)).isSymmetric)
+
 }

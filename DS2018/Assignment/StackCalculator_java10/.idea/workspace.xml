@@ -8,7 +8,17 @@
   <component name="ChangeListManager">
     <list default="true" id="02b40979-5d77-4b6a-8c68-43580a1c8b9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab/Lab6/BinaryTreeLCA_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab/Lab6/BinaryTreeLCA_java10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$End$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$End$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Test$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Solutions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Solutions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Test.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,20 +31,20 @@
     <session id="-1424578745">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
           <entry key="classpath" value="1" />
-          <entry key="java" value="8" />
+          <entry key="java" value="9" />
           <entry key="project" value="1" />
           <entry key="txt" value="6" />
         </counts>
@@ -42,7 +52,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Eclipse" value="2" />
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="9" />
           <entry key="Manifest" value="1" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
@@ -63,18 +73,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dmlab/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
           <provider selected="true" editor-type-id="text-editor" />
@@ -132,8 +130,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dmlab/util/MyQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="630">
               <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dmlab/util/EmptyQueueException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -180,7 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,6 +236,13 @@
               <item name="StackCalculator_java10" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dmlab" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StackCalculator_java10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StackCalculator_java10" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dmlab" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -241,8 +255,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,17 +330,19 @@
       <workItem from="1538358888565" duration="5891000" />
       <workItem from="1538367764695" duration="250000" />
       <workItem from="1538469018588" duration="47000" />
+      <workItem from="1540223782634" duration="21000" />
+      <workItem from="1540224854121" duration="13000" />
+      <workItem from="1540286345753" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13893000" />
+    <option name="totallyTimeSpent" value="13947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.267844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27888152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -390,13 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dmlab/util/EmptyQueueException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dmlab/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -409,6 +418,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/PA_01_2014_12071_jar/sample_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample_output_calc.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -447,16 +463,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/PA_01_2014_12071_jar/sample_input.txt">
+    <entry file="file://$PROJECT_DIR$/src/com/dmlab/util/EmptyQueueException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dmlab/util/MyQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="630">
           <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
         </state>
       </provider>

@@ -344,13 +344,14 @@ object Solutions {
       }
     }
 
+    //P57 Binary search trees (dictionaries).
     def addValue[U >: T](x: U)(implicit ordering: Ordering[U]): Tree[U] =
       this match {
         case End => Node.apply(x)
         case Node(key, left, right) if ordering.lt(x, key) =>
-          left.addValue(x)
+          Node(key, left.addValue(x), right)
         case Node(key, left, right) =>
-          right.addValue(x)
+          Node(key, left, right.addValue(x))
       }
 
 
@@ -361,16 +362,18 @@ object Solutions {
   case object End extends Tree[Nothing] {
     override def toString = "."
   }
-  //TODO: Fix Tree.fromList and addValue. Problem #57.
+
   object Tree {
+    //P57 Binary search trees (Dictionaries).
     def fromList[T](list: List[T])(implicit ordering: Ordering[T]): Tree[T] = {
       def fromListIter[T](list: List[T], root: Tree[T])(implicit ordering: Ordering[T]): Tree[T] =
-        list match {
-          case Nil => End
-          case head :: tail => fromListIter(tail, root.addValue(head))
+        (list, root) match {
+          case (Nil, _) => root
+          case (head :: tail, End) => fromListIter(tail, Node.apply(head))
+          case (head :: tail, _) => fromListIter(tail, root.addValue(head))
         }
 
-      fromListIter(list.tail, Node.apply(list.head))
+      fromListIter(list, End)
     }
   }
 

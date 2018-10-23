@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a29873af-ff3e-4eb8-9c5a-9168a5769f36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Assignment/BookSearch/.idea/artifacts/BookSearch_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Assignment/BookSearch/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Assignment/BookSearch/out/artifacts/BookSearch_jar/sample_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Assignment/BookSearch/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Assignment/HW3/Question3/src/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Assignment/HW3/Question3/src/SortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../PP2018/Practice/src/main/scala/Practice.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab5/BinaryTree_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab5/BinaryTree_java10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Algorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/Algorithms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/Practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Practice/src/main/scala/LectureNotes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/Practice/src/main/scala/LectureNotes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Practice/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/Practice/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/LectureNotes$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/LectureNotes$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/LectureNotes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/LectureNotes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/Main$foo$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/Practice/target/scala-2.12/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$End$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$End$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Test$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Solutions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Solutions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Test.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,9 +24,10 @@
     <session id="657247830">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,16 +59,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dmlab/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
+            <state relative-caret-position="2505">
               <caret line="173" column="40" selection-start-line="173" selection-start-column="40" selection-end-line="173" selection-end-column="40" />
-              <folding>
-                <element signature="e#6065#6066#0" expanded="true" />
-                <element signature="e#6137#6138#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample_input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="420">
               <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
             </state>
           </provider>
@@ -98,7 +86,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dmlab/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="175">
               <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
             </state>
           </provider>
@@ -143,6 +131,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,9 +154,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,28 +216,23 @@
       <option name="presentableId" value="Default" />
       <updated>1539327636383</updated>
       <workItem from="1539327641357" duration="1961000" />
+      <workItem from="1540213462196" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1961000" />
+    <option name="totallyTimeSpent" value="1970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24944812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2531273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329235" />
@@ -257,15 +240,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,26 +263,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BinaryTreeLCA_java10.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/com/dmlab/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2505">
+          <caret line="173" column="40" selection-start-line="173" selection-start-column="40" selection-end-line="173" selection-end-column="40" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample_input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="420">
           <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dmlab/BinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="173" column="40" selection-start-line="173" selection-start-column="40" selection-end-line="173" selection-end-column="40" />
-          <folding>
-            <element signature="e#6065#6066#0" expanded="true" />
-            <element signature="e#6137#6138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/BinaryTreeLCA_java10.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sample_output.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -305,7 +289,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dmlab/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="175">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
         </state>
       </provider>
