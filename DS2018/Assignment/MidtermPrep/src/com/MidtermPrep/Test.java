@@ -48,6 +48,10 @@ public class Test {
                                                         new VarLeafNode("a"))),
                                         new VarLeafNode("c"));
         testVarBinaryNode(varBinNode);
+
+        Integer[] heapArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        Heap<Integer> heap = new MaxHeap<Integer>(heapArray, 10, 10);
+        testHeap(heap);
     }
 
     public static void testList(List<Integer> list) {
@@ -165,6 +169,20 @@ public class Test {
         System.out.println("inorder: " + VarIntlNode.inorder(varBinNode));
     }
 
+    public static void testHeap(Heap<Integer> heap) {
+        print(heap);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("removed: " + heap.remove().toString());
+            print(heap);
+        }
+        Random random = new Random();
+        for (int i = 0; i < 10; i++) {
+            heap.insert(random.nextInt(10));
+            print(heap);
+        }
+    }
+
     public static void print(Object dataStructure) {
         if (dataStructure instanceof ArrayList) {
             ArrayList arrayList = (ArrayList) dataStructure;
@@ -230,6 +248,14 @@ public class Test {
             System.out.println("____________________________________________");
             System.out.println("Printing BinaryNode ...");
             //System.out.println("BinaryNode: " + binaryNode.toString());
+            System.out.println("--------------------------------------------");
+            System.out.println();
+        } else if (dataStructure instanceof Heap) {
+            Heap heap = (Heap) dataStructure;
+            System.out.println("____________________________________________");
+            System.out.println("Printing Heap ...");
+            System.out.println("heapsize: " + heap.heapsize());
+            System.out.println("Heap: " + heap.toString());
             System.out.println("--------------------------------------------");
             System.out.println();
         }

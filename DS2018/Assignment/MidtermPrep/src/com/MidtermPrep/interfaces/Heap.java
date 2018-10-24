@@ -8,5 +8,5 @@ public interface Heap<E> {
     public int leftChild(int i);
     public int rightChild(int i);
     public int parent(int i);
-    public int heapsize(int i);
+    public int heapsize();
 }

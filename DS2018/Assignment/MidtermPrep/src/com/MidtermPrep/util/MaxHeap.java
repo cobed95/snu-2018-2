@@ -23,12 +23,16 @@ public class MaxHeap<E extends Comparable<? super E>> implements Heap<E> {
         assert i >= 0 && i < n : "Illegal heap position.";
         while (!isLeaf(i)) {
             int largest;
-            if (array[i].compareTo(array[leftChild(i)]) < 0) largest = leftChild(i);
+            if (leftChild(i) < n && array[i].compareTo(array[leftChild(i)]) < 0)
+                largest = leftChild(i);
             else largest = i;
-            if (array[largest].compareTo(array[rightChild(i)]) < 0) largest = rightChild(i);
+            if (rightChild(i) < n && array[largest].compareTo(array[rightChild(i)]) < 0)
+                largest = rightChild(i);
 
-            if (largest != i) swap(i, largest);
-            i = largest;
+            if (largest != i) {
+                swap(i, largest);
+                i = largest;
+            } else return;
         }
     }
 
@@ -57,5 +61,35 @@ public class MaxHeap<E extends Comparable<? super E>> implements Heap<E> {
         swap(0, --n);
         if (n != 0) siftDown(0);
         return array[n];
+    }
+
+    public boolean isLeaf(int i) {
+        return i < n && i >= n / 2;
+    }
+
+    public int leftChild(int i) {
+        return 2 * i + 1;
+    }
+
+    public int rightChild(int i) {
+        return 2 * i + 2;
+    }
+
+    public int parent(int i) {
+        return (i - 1) / 2;
+    }
+
+    public int heapsize() {
+        return n;
+    }
+
+    public String toString() {
+        String result = "";
+        if (n > 0) result += "[" + array[0].toString();
+        for (int i = 1; i < n; i++) {
+            result += ", " + array[i].toString();
+        }
+        if (n > 0) result += "]";
+        return result;
     }
 }
