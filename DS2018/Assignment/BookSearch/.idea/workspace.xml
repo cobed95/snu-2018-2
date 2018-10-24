@@ -7,9 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150b0c27-1363-49a9-af10-e3c62ca651a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/dmlab/bst/BookSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dmlab/bst/BookSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/Practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/Practice/src/main/scala/MidtermPrep.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/Practice/src/main/scala/MidtermPrep.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/interfaces/BinaryNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/interfaces/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/interfaces/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/interfaces/VarBinNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/util/BSTNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/util/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/util/CircularQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/util/KVpair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/util/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/util/SimpleBinaryNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/util/UnsortedDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/util/VarIntlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/util/VarLeafNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MidtermPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MidtermPrep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MidtermPrep/src/com/MidtermPrep/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +35,11 @@
     <session id="-260734652">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample_output.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-163">
+            <state relative-caret-position="15">
               <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
@@ -105,16 +118,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dmlab/bst/BinaryNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
+            <state relative-caret-position="759">
               <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dmlab/bst/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="-1134">
               <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
             </state>
           </provider>
@@ -129,7 +142,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/dmlab/bst/BookSearch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -175,7 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +236,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -297,16 +310,18 @@
       <workItem from="1539705391190" duration="54000" />
       <workItem from="1539736457849" duration="516000" />
       <workItem from="1539849303328" duration="312000" />
+      <workItem from="1540358866063" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11019000" />
+    <option name="totallyTimeSpent" value="11064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26416484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.267844" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -357,6 +372,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sample_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookSearch.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -370,38 +392,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dmlab/bst/BinaryNode.java">
+    <entry file="file://$PROJECT_DIR$/sample_output.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dmlab/bst/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+        <state relative-caret-position="15">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dmlab/bst/BookSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample_input.txt">
+    <entry file="file://$PROJECT_DIR$/src/com/dmlab/bst/BinaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="759">
+          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample_output.txt">
+    <entry file="file://$PROJECT_DIR$/src/com/dmlab/bst/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="-1134">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
         </state>
       </provider>
     </entry>

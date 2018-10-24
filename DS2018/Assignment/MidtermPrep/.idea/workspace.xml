@@ -2,27 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e58a808-378b-40e1-8755-9a49bebacfdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/DoubleLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/DoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StackCalculator_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StackCalculator_java10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab/Lab6/BinaryTreeLCA_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab/Lab6/BinaryTreeLCA_java10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$End$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$End$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Solutions$Tree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/out/production/99ScalaProblems/NinetyNineScalaProblems/Test$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Solutions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Solutions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/99ScalaProblems/src/NinetyNineScalaProblems/Test.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/BinaryNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/VarBinNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/BSTNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/CircularQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/KVpair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/MaxHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/SimpleBinaryNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/UnsortedDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/VarIntlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/MidtermPrep/util/VarLeafNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BookSearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MidtermPrep/com/MidtermPrep/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MidtermPrep/com/MidtermPrep/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/MidtermPrep/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/MidtermPrep/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,29 +33,30 @@
     <session id="-714393039">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="21473" />
+          <entry key="java" value="56130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="21473" />
+          <entry key="JAVA" value="56130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
+          <entry key="java" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="36" />
         </counts>
       </usages-collector>
     </session>
@@ -65,170 +64,86 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="525">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding>
-                <element signature="e#130#131#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/BinaryNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/BSTNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#986#987#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/BinarySearchTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+              <folding>
+                <element signature="e#1594#1595#0" expanded="true" />
+                <element signature="e#1630#1631#0" expanded="true" />
+                <element signature="e#2672#2673#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Heap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/Test.java">
+        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/MaxHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="645">
+              <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#821#830#0" expanded="true" />
-                <element signature="e#1720#1729#0" expanded="true" />
-                <element signature="e#4056#4065#0" expanded="true" />
+                <element signature="e#1375#1376#0" expanded="true" />
+                <element signature="e#1398#1399#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/List.java">
+        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
-              <folding>
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#1306#1307#0" expanded="true" />
-                <element signature="e#1330#1331#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1397#1398#0" expanded="true" />
-                <element signature="e#1648#1649#0" expanded="true" />
-                <element signature="e#1672#1673#0" expanded="true" />
-                <element signature="e#1711#1712#0" expanded="true" />
-                <element signature="e#1733#1734#0" expanded="true" />
-                <element signature="e#2006#2007#0" expanded="true" />
-                <element signature="e#2037#2038#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/SinglyLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-              <folding>
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1102#1103#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1164#1165#0" expanded="true" />
-                <element signature="e#1457#1458#0" expanded="true" />
-                <element signature="e#1485#1486#0" expanded="true" />
-                <element signature="e#2126#2127#0" expanded="true" />
-                <element signature="e#2164#2165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/Link.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#129#130#0" expanded="true" />
-                <element signature="e#161#162#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/DoublyLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
-              <folding>
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1379#1380#0" expanded="true" />
-                <element signature="e#1615#1616#0" expanded="true" />
-                <element signature="e#1643#1644#0" expanded="true" />
-                <element signature="e#2218#2219#0" expanded="true" />
-                <element signature="e#2259#2260#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Stack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/ArrayStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-              <folding>
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/DoubleLink.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-              <folding>
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#584#585#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#788#789#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -259,7 +174,23 @@
         <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/DoublyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Stack.java" />
         <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/ArrayStack.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/LinkedStack.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/Queue.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Queue.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/CircularQueue.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Dictionary.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/KVpair.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/UnsortedDictionary.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/BinaryNode.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/SimpleBinaryNode.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/VarBinNode.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/VarLeafNode.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/VarIntlNode.java" />
         <option value="$PROJECT_DIR$/src/com/MidtermPrep/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/BSTNode.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Heap.java" />
+        <option value="$PROJECT_DIR$/src/com/MidtermPrep/util/MaxHeap.java" />
       </list>
     </option>
   </component>
@@ -280,12 +211,39 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="MidtermPrep" type="b2602c69:ProjectViewProjectNode" />
               <item name="MidtermPrep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MidtermPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MidtermPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MidtermPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MidtermPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MidtermPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MidtermPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="MidtermPrep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MidtermPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MidtermPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="MidtermPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MidtermPrep" type="b2602c69:ProjectViewProjectNode" />
@@ -312,11 +270,14 @@
               <item name="MidtermPrep" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MidtermPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -324,7 +285,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540311033141" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540380791375" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -366,44 +327,56 @@
       <option name="presentableId" value="Default" />
       <updated>1540301371243</updated>
       <workItem from="1540301375593" duration="10228000" />
+      <workItem from="1540311760973" duration="157000" />
+      <workItem from="1540342135123" duration="11838000" />
+      <workItem from="1540358935356" duration="5640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10228000" />
+    <option name="totallyTimeSpent" value="27863000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24944812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26048565" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329235" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329235" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329235" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,47 +407,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/ArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/DoubleLink.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+        <state relative-caret-position="120">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/LinkedStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/ArrayStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/DoublyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/SinglyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
           <folding>
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
-            <element signature="e#1672#1673#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#2006#2007#0" expanded="true" />
-            <element signature="e#2037#2038#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/DoubleLink.java">
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -485,38 +460,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/SinglyLinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/KVpair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+        <state relative-caret-position="300">
+          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="994">
+          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
           <folding>
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#2126#2127#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/Link.java">
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/UnsortedDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="218">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
           <folding>
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1503#1504#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -531,21 +507,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/DoublyLinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/VarIntlNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+        <state relative-caret-position="260">
+          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
           <folding>
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
-            <element signature="e#1643#1644#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-            <element signature="e#2259#2260#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -557,28 +533,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/ArrayStack.java">
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/VarBinNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        <state relative-caret-position="45">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/SimpleBinaryNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
           <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/Link.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/CircularQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/VarLeafNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        <state relative-caret-position="525">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#821#830#0" expanded="true" />
-            <element signature="e#1720#1729#0" expanded="true" />
-            <element signature="e#4056#4065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/BinaryNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/BSTNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+          <folding>
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#2672#2673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/interfaces/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/MidtermPrep/util/MaxHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+          <folding>
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
           </folding>
         </state>
       </provider>
