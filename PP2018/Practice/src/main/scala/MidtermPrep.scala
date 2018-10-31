@@ -125,7 +125,7 @@ object MidtermPrep {
 
     def lookup[T](t: BSTree[T], key: Int): IOption[T] =
       t match {
-        case Leaf() => None()
+        case Leaf() => INone()
         case Node((k, v), left, right) =>
           k match {
             case _ if key == k => ISome(v)

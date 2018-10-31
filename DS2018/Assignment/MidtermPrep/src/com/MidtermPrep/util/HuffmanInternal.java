@@ -20,4 +20,12 @@ public class HuffmanInternal<F, T> implements HuffmanNode<F, T> {
     public F getWeight() {
         return weight;
     }
+
+    public HuffmanNode<F, T> getLeft() {
+        return left;
+    }
+
+    public HuffmanNode<F, T> getRight() {
+        return right;
+    }
 }

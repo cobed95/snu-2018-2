@@ -52,6 +52,18 @@ public class Test {
         Integer[] heapArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         Heap<Integer> heap = new MaxHeap<Integer>(heapArray, 10, 10);
         testHeap(heap);
+
+        KVpair<Integer, Character>[] frequencyList = new KVpair[8];
+        frequencyList[0] = new KVpair<Integer, Character>(32, 'c');
+        frequencyList[1] = new KVpair<Integer, Character>(42, 'd');
+        frequencyList[2] = new KVpair<Integer, Character>(120, 'e');
+        frequencyList[3] = new KVpair<Integer, Character>(7, 'k');
+        frequencyList[4] = new KVpair<Integer, Character>(42, 'l');
+        frequencyList[5] = new KVpair<Integer, Character>(24, 'm');
+        frequencyList[6] = new KVpair<Integer, Character>(37, 'u');
+        frequencyList[7] = new KVpair<Integer, Character>(2, 'z');
+        HuffmanTree<Character> huffmanTree = new HuffmanTree<>(frequencyList);
+        testHuffman(huffmanTree);
     }
 
     public static void testList(List<Integer> list) {
@@ -181,6 +193,10 @@ public class Test {
             heap.insert(random.nextInt(10));
             print(heap);
         }
+    }
+
+    public static void testHuffman(HuffmanTree<Character> huffmanTree) {
+        System.out.println(huffmanTree.encode());
     }
 
     public static void print(Object dataStructure) {

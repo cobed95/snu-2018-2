@@ -35,15 +35,17 @@ public class HuffmanTree<T> {
 
     private void sort(KVpair<Integer, T>[] array, int p, int r) {
         if (p < r) {
+            System.out.println(p + ", " + r);
             int q = (p + r) / 2;
-            sort(array, p, q - 1);
-            sort(array, q, r);
+            sort(array, p, q);
+            sort(array, q + 1, r);
             merge(array, p, q, r);
         }
     }
 
+    //TODO: Fix merge.
     private void merge(KVpair<Integer, T>[] array, int p, int q, int r) {
-        KVpair<Integer, T>[] left = (KVpair<Integer, T>[]) new Object[q - p + 1];
+        KVpair<Integer, T>[] left = new KVpair<Integer, T>[q - p + 1];
         KVpair<Integer, T>[] right = (KVpair<Integer, T>[]) new Object[r - q];
         for (int i = p; i <= q; i++) left[i - p] = array[i];
         for (int j = q + 1; j <= r; j++) right[j - q - 1] = array[j];
@@ -82,4 +84,20 @@ public class HuffmanTree<T> {
         linkedList.insert(temp);
     }
 
+    public DoublyLinkedList<KVpair<T, String>> encode() {
+        DoublyLinkedList<KVpair<T, String>> result = new DoublyLinkedList<>();
+        return encode(root, result, "");
+    }
+
+    private DoublyLinkedList<KVpair<T, String>> encode(HuffmanNode<Integer, T> root,
+                                                       DoublyLinkedList<KVpair<T, String>> result,
+                                                       String code) {
+        if (root instanceof HuffmanLeaf)
+            result.append(new KVpair<T, String>(((HuffmanLeaf<Integer, T>) root).getCharacter(), code));
+        else {
+            encode(((HuffmanInternal) root).getLeft(), result, code + 0);
+            encode(((HuffmanInternal) root).getRight(), result, code + 1);
+        }
+        return result;
+    }
 }

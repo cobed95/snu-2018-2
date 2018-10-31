@@ -5,8 +5,9 @@
       <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/interfaces/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/interfaces/Heap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/MaxHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/MaxHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanInternal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanInternal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanLeaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanLeaf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,13 +20,14 @@
     <session id="225695470">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -111,9 +113,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,6 +137,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,11 +221,12 @@
       <workItem from="1540096782727" duration="890000" />
       <workItem from="1540262305620" duration="200000" />
       <workItem from="1540385637913" duration="93000" />
+      <workItem from="1540572779555" duration="7000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36920000" />
+    <option name="totallyTimeSpent" value="36927000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -238,7 +241,7 @@
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27888152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2825607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />

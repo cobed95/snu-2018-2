@@ -18,4 +18,8 @@ public class HuffmanLeaf<F, T> implements HuffmanNode<F, T> {
     public F getWeight() {
         return frequency;
     }
+
+    public T getCharacter() {
+        return character;
+    }
 }
