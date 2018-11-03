@@ -1,7 +1,7 @@
 package com.cryptmidterm.util;
 
 import com.cryptmidterm.util.arrayManipulation;
-
+/*
 public class DES {
     private boolean[] permuteInit(boolean[] input, boolean isInit) {
         boolean[] result = new boolean[64];
@@ -32,5 +32,5 @@ public class DES {
         boolean[] right = arrayManipulation.slice(input, 32, 64);
 
     }
-
 }
+*/

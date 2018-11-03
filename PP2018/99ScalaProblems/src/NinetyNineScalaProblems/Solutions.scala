@@ -322,6 +322,31 @@ object Solutions {
   def randomPermute[T](list: List[T]): List[T] =
     randomSelect(length(list), list)
 
+  //P26 Generate the combinations of K distinct objects chosen from the N elements of a list
+  def combinations[T](k: Int, list: List[T]): List[List[T]] = {
+    def addOnce(head: T, tail: List[List[T]]): List[List[T]] =
+      (head, tail) match {
+        case (_, Nil) => Nil
+        case (_, tHead :: tTail) =>
+          (head :: tHead) :: addOnce(head, tTail)
+      }
+
+    k match {
+      case _ if k == 0 => Nil
+      case _ if k == 1 =>
+        list match {
+          case Nil => Nil
+          case head :: tail => List(head) :: combinations(k, tail)
+        }
+      case _ if k > 1 =>
+        list match {
+          case Nil => combinations(k - 1, list)
+          case head :: tail =>
+            addOnce(head, combinations(k - 1, tail)) ::: combinations(k, tail)
+        }
+    }
+  }
+
   //Binary Trees
   sealed abstract class Tree[+T] {
     //P56 Symmetric binary trees.

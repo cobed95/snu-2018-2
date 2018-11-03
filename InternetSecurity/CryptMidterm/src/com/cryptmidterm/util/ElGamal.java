@@ -15,9 +15,8 @@ public class ElGamal {
         this.y = Modular.powerModP(g, x, p);
     }
 
-    public Tuple<Integer, Integer> encrypt(int M, int publicY, int publicP) {
+    public Tuple<Integer, Integer> encrypt(int M, int publicY, int publicP, int k) {
         Random random = new Random();
-        int k = random.nextInt(p - 2) + 2;
         int c1 = Modular.powerModP(g, k, publicP);
         int c2 = (M * Modular.power(publicY, k)) % publicP;
         Tuple<Integer, Integer> tuple = new Tuple<>(c1, c2);

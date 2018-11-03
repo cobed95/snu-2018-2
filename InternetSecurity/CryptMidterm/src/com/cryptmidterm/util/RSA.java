@@ -37,26 +37,38 @@ public class RSA {
 
     private int calcMultInv(int e, int N) {
         int candidate = 1;
-        while ((e * candidate) % N != 1) {
+        while (Modular.mod((e * candidate), N) != 1) {
             candidate++;
         }
         return candidate;
     }
 
-    public int encrypt(int m) {
-        System.out.println(m);
-        System.out.println(keyR);
-        System.out.println(Math.pow(m, keyR));
-        System.out.println((p * q));
-        return (int) (Math.pow(m, keyR)) % (p * q);
+    public int encryptWithPriv(int m) {
+        return Modular.powerModP(m, keyR, (p * q));
     }
 
-    private int decrypt(int c) {
-        int c1 = c % p;
-        int c2 = c % q;
-        int m1 = Math.pow(c1, keyR);
-        int m2 = Math.pow(c2, keyR);
+    public int encryptWithPub(int m, int N, int pubKey) {
+        return Modular.powerModP(m, pubKey, N);
+    }
+
+    public int decryptWithPriv(int c) {
+        int c1 = Modular.mod(c, p);
+        int c2 = Modular.mod(c, q);
+        int m1 = Modular.power(c1, keyR);
+        int m2 = Modular.power(c2, keyR);
         return solveCRT(m1, m2);
+    }
+
+    public int decryptWithPub(int c, int N, int pubKey) {
+        return Modular.powerModP(c, pubKey, N);
+    }
+
+    public int getPublicKey() {
+        return keyU;
+    }
+
+    public int getN() {
+        return p * q;
     }
 
     private int solveCRT(int a1, int a2) {
@@ -64,7 +76,7 @@ public class RSA {
         int M2 = p;
         int y1 = calcMultInv(M1, p);
         int y2 = calcMultInv(M2, q);
-        return ((a1 * y1 * M1) + (a2 * y2 * M2)) % (p * q);
+        return Modular.mod(((a1 * y1 * M1) + (a2 * y2 * M2)), (p * q));
     }
 
     public void printFields() {

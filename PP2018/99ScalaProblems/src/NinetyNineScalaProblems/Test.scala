@@ -80,6 +80,9 @@ object Test extends App {
   //P25
   println(randomPermute(List('a, 'b, 'c, 'd, 'e, 'f)))
 
+  //P26
+  println(combinations(3, List('a, 'b, 'c, 'd, 'e, 'f)))
+
   //P56
   println(Node('a', Node('b'), Node('c')).isSymmetric)
   println(Node('a', Node('b'), Node('c', Node('d'), End)).isSymmetric)

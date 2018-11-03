@@ -22,4 +22,15 @@ public class DiffieHellman {
     public void receive(int received) {
         this.key = Modular.powerModP(received, x, p);
     }
+
+    public int getKey() {
+        return key;
+    }
+
+    public void printFields() {
+        System.out.println("g: " + g);
+        System.out.println("p: " + p);
+        System.out.println("x: " + x);
+        System.out.println("key: " + key);
+    }
 }
