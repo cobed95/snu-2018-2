@@ -324,21 +324,22 @@ object Solutions {
 
   //P26 Generate the combinations of K distinct objects chosen from the N elements of a list
   def combinations[T](k: Int, list: List[T]): List[List[T]] = {
+    require(k > 0)
     def addOnce(head: T, tail: List[List[T]]): List[List[T]] =
-      (head, tail) match {
-        case (_, Nil) => Nil
-        case (_, tHead :: tTail) =>
+      tail match {
+        case Nil => Nil
+        case tHead :: tTail =>
           (head :: tHead) :: addOnce(head, tTail)
       }
 
     k match {
-      case _ if k == 0 => Nil
-      case _ if k == 1 =>
+      case 0 => Nil
+      case 1 =>
         list match {
           case Nil => Nil
           case head :: tail => List(head) :: combinations(k, tail)
         }
-      case _ if k > 1 =>
+      case _ =>
         list match {
           case Nil => combinations(k - 1, list)
           case head :: tail =>
@@ -346,6 +347,8 @@ object Solutions {
         }
     }
   }
+
+  //P27 Group the elements of a set into disjoint subsets.
 
   //Binary Trees
   sealed abstract class Tree[+T] {
