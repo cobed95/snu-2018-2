@@ -42,7 +42,7 @@ begin
         end
         else 
         begin
-            sign = 1;
+            sign <= 1;
             out <= b[3:0] - a[3:0];
         end
     end

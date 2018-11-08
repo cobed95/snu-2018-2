@@ -20,21 +20,27 @@
 //////////////////////////////////////////////////////////////////////////////////
 module DisplayController(
     input [4:0] result,
-    output [6:0] display,
-    output sign
+    output reg [6:0] display,
+    output reg sign
     );
+wire [6:0] displayResult;
 
-BinaryTo7Segment decoder(result[3:0], display);
+BinaryTo7Segment decoder(
+	.binary(result[3:0]),
+	.display(displayResult)
+);
 
 always @ (*) 
 begin
     if (result == 5'b10000) 
     begin
         sign <= 0;
+		  display <= displayResult;
     end
     else
     begin
         sign <= result[4];
+		  display <= displayResult;
     end
 end
 

@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   14:43:49 11/07/2018
-// Design Name:   Operation1
-// Module Name:   /csehome/cobed95/snu-2018-2/LD2018/Assignments/ALU/Operation1Test.v
+// Create Date:   21:10:30 11/08/2018
+// Design Name:   Operation6
+// Module Name:   /csehome/cobed95/snu-2018-2/LD2018/Assignments/ALU/Operation6Test.v
 // Project Name:  ALU
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: Operation1
+// Verilog Test Fixture created by ISE for module: Operation6
 //
 // Dependencies:
 // 
@@ -22,7 +22,7 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module Operation1Test;
+module Operation6Test;
 
 	// Inputs
 	reg [5:0] operand;
@@ -36,7 +36,7 @@ module Operation1Test;
 	wire [6:0] display5;
 
 	// Instantiate the Unit Under Test (UUT)
-	Operation1 uut (
+	Operation6 uut (
 		.operand(operand), 
 		.display0(display0), 
 		.display1(display1), 
@@ -51,14 +51,10 @@ module Operation1Test;
 		operand = 0;
 
 		// Wait 100 ns for global reset to finish
-		#20;
-      
+		#100;
+        
 		// Add stimulus here
-		repeat (32) begin 
-			operand = operand + 1;
-			#20;
-		end
-		
+		operand = 6'b010100;
 	end
       
 endmodule

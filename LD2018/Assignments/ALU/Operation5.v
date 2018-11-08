@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    21:01:56 11/07/2018 
+// Create Date:    20:35:05 11/08/2018 
 // Design Name: 
-// Module Name:    Operation3 
+// Module Name:    Operation5 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Operation3(
+module Operation5(
     input [9:0] operands,
     output [6:0] display0,
     output [6:0] display1,
@@ -27,25 +27,17 @@ module Operation3(
     output [6:0] display4,
     output [6:0] display5
     );
-wire [4:0] left;
-wire [4:0] right;
-wire [7:0] result;
-wire sign;
+wire toRight;
+wire [5:0] binary;
+wire [2:0] shamt;
+wire [5:0] shifted;
 
-assign left = operands[9:5];
-assign right = operands[4:0];
+assign toRight = operands[9];
+assign binary = operands[8:3];
+assign shamt = operands[2:0];
 
-Multiplier4Bit multiplier(left, right, sign, result);
+Shifter shifter(toRight, binary, shamt, shifted);
 
-BinaryTo7Segment decoder0(result[3:0], display0);
-
-BinaryTo7Segment decoder1(result[7:4], display1);
-
-BinaryTo7Segment decoder2(5'b00000, display2);
-
-SignDisplay signDisplay(sign, display3);
-
-assign display4 = 7'b0000000;
-assign display5 = 7'b0000000;
+Operation1 operation1(shifted, display0, display1, display2, display3, display4, display5);
 
 endmodule

@@ -21,8 +21,8 @@
 module Multiplier4Bit(
     input [4:0] a,
     input [4:0] b,
-    output sign,
-    output [7:0] out
+    output reg sign,
+    output reg [7:0] out
     );
 
 always @ (*) 

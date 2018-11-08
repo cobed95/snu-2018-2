@@ -47,4 +47,7 @@ BinaryTo7Segment decoder2(5'b00000, display2);
 
 SignDisplay signDisplay(sign, display3);
 
+assign display4 = 7'b0000000;
+assign display5 = 7'b0000000;
+
 endmodule

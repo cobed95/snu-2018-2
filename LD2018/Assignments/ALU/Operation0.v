@@ -40,8 +40,8 @@ DisplayController rightDisplay(right, display0, rightSign);
 BinaryTo7Segment decoder1(4'd0, display1);
 SignDisplay signDisplayRight(rightSign, display2);
 
-DisplayController leftDisplay(left, display0, leftsign);
-BinaryTo7Segment decoder1(4'd0, display1);
-SignDisplay signDisplayLeft(leftSign, display2);
+DisplayController leftDisplay(left, display3, leftSign);
+BinaryTo7Segment decoder2(4'd0, display4);
+SignDisplay signDisplayLeft(leftSign, display5);
 
 endmodule

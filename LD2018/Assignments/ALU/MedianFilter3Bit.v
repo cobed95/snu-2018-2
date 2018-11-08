@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    20:14:12 11/07/2018 
+// Create Date:    20:56:01 11/08/2018 
 // Design Name: 
-// Module Name:    ValueMux 
+// Module Name:    MedianFilter3Bit 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,23 +18,24 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ValueMux(
-    input [4:0] Input0,
-    input [4:0] Input1,
-    input sel,
-    output reg [4:0] out
+module MedianFilter3Bit(
+    input [2:0] in,
+    output reg out
     );
 
 always @ (*) 
 begin
-	if (sel == 0) 
-	begin
-		out <= Input0;
-	end
-	else
-	begin
-		out <= Input1;
-	end
+	case (in) 
+		3'b000: out <= 1'b0;
+		3'b001: out <= 1'b0;
+		3'b010: out <= 1'b0;
+		3'b011: out <= 1'b1;
+		3'b100: out <= 1'b0;
+		3'b101: out <= 1'b1;
+		3'b110: out <= 1'b1;
+		3'b111: out <= 1'b1;
+		default: out <= 1'b0;
+	endcase
 end
 
 endmodule
