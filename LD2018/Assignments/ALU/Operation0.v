@@ -33,7 +33,7 @@ wire [4:0] right;
 assign left = operands[9:5];
 assign right = operands[4:0];
 
-BinaryTo7Segment right0(right, display0);
+BinaryTo7Segment right0(right[3:0], display0);
 Negative16 right1(right, display1);
 SignDisplay right2(right[4], display2);
 

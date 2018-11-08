@@ -20,11 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 module DisplayController(
     input result,
-    input sign,
+    input numberOfDigits,
     output display0,
     output display1,
     output display2,
 	 output display3
     );
+
+
 
 endmodule

@@ -2,10 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="811b6d9f-bc0d-431f-bc7d-04d22e4c58db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../99ScalaProblems/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../99ScalaProblems/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/midterm5/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/midterm5/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/midterm5/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/midterm5/Test.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/src/main/scala/LectureNotes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/src/main/scala/LectureNotes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Age$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Age.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Attr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$BTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$DOB$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$DOB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Height$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Height.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$ICons$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$ICons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$IList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$INil$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$INil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$INone$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$INone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$IOption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$ISome$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$ISome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Leaf$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Leaf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Name$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Name.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Node$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$BTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$Leaf$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$Leaf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$Node$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$Currying$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$ICons$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$ICons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$IList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$INil$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$INil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$INone$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$INone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$IOption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$ISome$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$ISome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$ParametricPolymorphism$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$bar$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$record$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$Tuples$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$TypeCheckingSafetyRule$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem2$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem2$IterDictImpl$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem2$IterDictImpl$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem2$IterDictImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem2$IterDictImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$BiIterableList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$BiIterableList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$BiIterableTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$BiIterableTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$Empty$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$Empty$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$Empty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$Node$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$Node$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem3$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem4$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main$Problem4$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3test/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/out/production/hw3/pp201802/hw3test/Test$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/src/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/src/Test.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,10 +93,11 @@
     <session id="-1425941429">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -59,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/midterm5/Test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            <state relative-caret-position="165">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding>
                 <element signature="e#18#40#0" expanded="true" />
               </folding>
@@ -71,8 +139,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/midterm5/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="765">
+              <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -128,6 +196,8 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,8 +241,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,23 +335,24 @@
       <workItem from="1540573073008" duration="722000" />
       <workItem from="1540573816227" duration="2788000" />
       <workItem from="1541236878822" duration="4383000" />
+      <workItem from="1541552691495" duration="17000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7893000" />
+    <option name="totallyTimeSpent" value="7910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25680646" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26048565" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.329235" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329235" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329235" />
@@ -297,6 +366,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.329235" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -318,6 +388,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/Test.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/midterm5/Test.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#18#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/midterm5/Data.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -325,20 +405,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/midterm5/Test.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="e#18#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/midterm5/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="765">
+          <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
         </state>
       </provider>
     </entry>

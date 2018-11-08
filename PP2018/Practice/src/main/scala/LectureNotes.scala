@@ -200,4 +200,94 @@ object LectureNotes {
       (applyn[A](f, 10, x._1), x._2)
     foo[String,Int]((x:String)=>x+"!",("abc",10))
   }
+
+  object AbstractClasses {
+    abstract class BadPrimesSig {
+      def create : BadPrimesSig
+      def prime : Int
+      def getNext : BadPrimesSig
+    }
+    // Because create is a member of PrimesSig, you cannot create PrimesSig
+    // without a PrimesSig. This is not a good design.
+
+    abstract class PrimesSig[P] {
+      def create : P
+      def prime(p: P) : Int
+      def getNext(p: P) : P
+    }
+    // This is a better design because we can introduce P with create(),
+    // and eliminate P with prime() or getNext()
+    // This is a type class. It gives specifications of type.
+    // If you use type classes you never use object.method()
+    // P is only some data.
+    // We can create many interfaces like this to specify what P is.
+    // This is essentially different from OOP.
+    // "I have a concrete type P, please register it as a member of PrimesSig."
+
+    def nthPrime[P](tc: PrimesSig[P], n: Int): Int = {
+      def go(p: P, k: Int): Int =
+        if (k <= 1) tc.prime(p)
+        else go(tc.getNext(p), k - 1)
+      if (n == 0) 2 else go(tc.create, n)
+    }
+    // Much easier to read, and easier to get compiler support.
+    // This is a much more natural form.
+
+    class Primes private (val prime: Int, protected val primes: List[Int]) {
+      def this() = this(3, List(3))
+      def getNext: Primes = {
+        val p = computeNextPrime(prime + 2)
+        new Primes(p, primes ++ (p :: Nil))
+      }
+      private def computeNextPrime(n : Int): Int =
+        if (primes.forall((p: Int) => n % p != 0)) n
+        else computeNextPrime(n + 2)
+    }
+
+    class PrimesImpl extends PrimesSig[Primes] {
+      val create = new Primes
+      def prime(p: Primes) = p.prime
+      def getNext(p: Primes) = p.getNext
+    }
+
+    val pi = new PrimesImpl
+    // This is a OOP style hack.
+    // Three functions for data. (record)
+    // pi is a record.
+
+    nthPrime[Primes](pi, 10000)
+    //Primes can be omitted, because it can be inferred.
+  }
+
+  object Traits {
+    /*
+    abstract class A {
+      def a : Int
+    }
+
+    trait B {
+      def a : String
+    }
+
+    abstract class C extends A with B
+    */
+    // This is not allowed because A.a and B.a have conflicting return types.
+
+    class A(val a : Int) {
+      def this() = this(0)
+    }
+    trait B {
+      def f(x: Int): Int = x
+    }
+    trait C extends A with B {
+      def g(x: Int): Int = x + a
+    }
+    trait D extends B {
+      def h(x: Int): Int = f(x + 50)
+    }
+    class E extends A(10) with C with D {
+      override def f(x: Int) = x * a
+    }
+    val e = new E
+  }
 }
