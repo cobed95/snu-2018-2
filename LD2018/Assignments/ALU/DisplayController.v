@@ -19,14 +19,23 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module DisplayController(
-    input result,
-    input numberOfDigits,
-    output display0,
-    output display1,
-    output display2,
-	 output display3
+    input [4:0] result,
+    output [6:0] display,
+    output sign
     );
 
+BinaryTo7Segment decoder(result[3:0], display);
 
+always @ (*) 
+begin
+    if (result == 5'b10000) 
+    begin
+        sign <= 0;
+    end
+    else
+    begin
+        sign <= result[4];
+    end
+end
 
 endmodule

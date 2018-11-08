@@ -29,25 +29,19 @@ module Operation2(
     );
 wire [4:0] left;
 wire [4:0] right;
-wire over16;
 wire sign;
-wire [5:0] result;
+wire [4:0] result;
 wire [4:0] firstDigit;
 wire [4:0] secondDigit;
 
 assign left = operands[9:5];
 assign right = operands[4:0];
-assign over16 = (~left[4] & ~right[4]) | (left[4] & right[4]);
 
-Adder4Bit adder(left, right, result);
+Adder4Bit adder(left, right, sign, result);
 
-BitMux bitMux(result[4], result[5], over16, sign);
+BinaryTo7Segment decoder0(result[3:0], display0);
 
-ValueMux valueMux0(result[4:0], {0, result[3:0]}, over16, firstDigit);
-BinaryTo7Segment decoder0(firstDigit, display0);
-
-ValueMux4to1 valueMux4to1(5'b00000, 5'b00000, {4'b0000, result[4]}, {4'b0000, result[5]}, sign, over16, secondDigit);
-BinaryTo7Segment decoder1(secondDigit, display1);
+BinaryTo7Segment decoder1({3'b000, result[4]}, display1);
 
 BinaryTo7Segment decoder2(5'b00000, display2);
 

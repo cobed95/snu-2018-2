@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Operation1(
-    input [4:0] operand,
+    input [5:0] operand,
     output [6:0] display0,
 	 output [6:0] display1,
 	 output [6:0] display2,
@@ -28,29 +28,24 @@ module Operation1(
 	 output [6:0] display5
     );
 
-wire [4:0] binary5bit0;
-wire [4:0] binary5bit1;
-wire [4:0] binary5bit2;
-wire [4:0] binary5bit3;
-wire [4:0] binary5bit4;
-wire [4:0] binary5bit5;
+wire [3:0] binary5bit0;
+wire [3:0] binary5bit1;
+wire [3:0] binary5bit2;
+wire [3:0] binary5bit3;
+wire [3:0] binary5bit4;
+wire [3:0] binary5bit5;
 
-assign binary5bit0[0] = operand[0];
-assign binary5bit0[4:1] = 4'b0000;
+assign binary5bit0 = {3'b000, operand[0]};
 
-assign binary5bit1[0] = operand[1];
-assign binary5bit1[4:1] = 4'b0000;
+assign binary5bit1 = {3'b000, operand[1]};
 
-assign binary5bit2[0] = operand[2];
-assign binary5bit2[4:1] = 4'b0000;
+assign binary5bit2 = {3'b000, operand[2]};
 
-assign binary5bit3[0] = operand[3];
-assign binary5bit3[4:1] = 4'b0000;
+assign binary5bit3 = {3'b000, operand[3]};
 
-assign binary5bit4[0] = operand[4];
-assign binary5bit4[4:1] = 4'b0000;
+assign binary5bit4 = {3'b000, operand[4]};
 
-assign binary5bit5 = 4'b00000;
+assign binary5bit5 = {3'b000, operand[5]};
 
 BinaryTo7Segment decoder0(binary5bit0, display0);
 BinaryTo7Segment decoder1(binary5bit1, display1);

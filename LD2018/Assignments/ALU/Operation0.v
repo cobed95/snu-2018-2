@@ -30,15 +30,18 @@ module Operation0(
 
 wire [4:0] left;
 wire [4:0] right;
+wire leftSign;
+wire rightSign;
+
 assign left = operands[9:5];
 assign right = operands[4:0];
 
-BinaryTo7Segment right0(right[3:0], display0);
-Negative16 right1(right, display1);
-SignDisplay right2(right[4], display2);
+DisplayController rightDisplay(right, display0, rightSign);
+BinaryTo7Segment decoder1(4'd0, display1);
+SignDisplay signDisplayRight(rightSign, display2);
 
-BinaryTo7Segment left0(left, display3);
-Negative16 left1(left, display4);
-SignDisplay left2(left[4], display5);
+DisplayController leftDisplay(left, display0, leftsign);
+BinaryTo7Segment decoder1(4'd0, display1);
+SignDisplay signDisplayLeft(leftSign, display2);
 
 endmodule

@@ -21,16 +21,21 @@
 module Multiplier4Bit(
     input [4:0] a,
     input [4:0] b,
-    output [9:0] out
+    output sign,
+    output [7:0] out
     );
-wire [9:0] signExtendedA;
-wire [9:0] signExtendedB;
-wire [19:0] signExtendedAnswer;
 
-SignExtender signExtenderA(a, signExtendedA);
-SignExtender signExtenderB(b, signExtendedB);
-
-assign signExtendedAnswer = signExtendedA * signExtendedB;
-assign out = signExtendedAnswer[9:0];
+always @ (*) 
+begin
+    if (a[4] == b[4])
+    begin
+        sign <= 0;
+    end
+    else 
+    begin
+        sign <= 0;
+    end
+    out <= a[3:0] * b[3:0];
+end
 
 endmodule

@@ -21,9 +21,49 @@
 module Adder4Bit(
     input [4:0] a,
     input [4:0] b,
-    output [5:0]out
+    output reg sign,
+    output reg [4:0] out
     );
 
-assign out = a + b;
+always @ (*) 
+begin
+
+    if (a[4] == 0 && b[4] == 0) 
+    begin
+        sign <= 0;
+        out <= a[3:0] + b[3:0];
+    end
+    else if (a[4] == 0 && b[4] == 1)
+    begin
+        if (a[3:0] >= b[3:0])
+        begin
+            sign <= 0;
+            out <= a[3:0] - b[3:0];
+        end
+        else 
+        begin
+            sign = 1;
+            out <= b[3:0] - a[3:0];
+        end
+    end
+    else if (a[4] == 1 && b[4] == 0)
+    begin
+        if (b[3:0] >= a[3:0])
+        begin
+            sign <= 0;
+            out <= b[3:0] - a[3:0];
+        end
+        else 
+        begin
+            sign <= 1;
+            out <= a[3:0] - b[3:0];
+        end
+    end
+    else
+    begin
+        sign <= 1;
+        out <= a[3:0] + b[3:0];
+    end
+end
 
 endmodule
