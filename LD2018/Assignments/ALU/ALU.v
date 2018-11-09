@@ -102,12 +102,12 @@ Operation5 operation5 (
 wire [41:0] result6;
 Operation6 operation6 (
 	.operand(operands[5:0]),
-	.display0(result1[6:0]),
-	.display1(result1[13:7]),
-	.display2(result1[20:14]),
-	.display3(result1[27:21]),
-	.display4(result1[34:28]),
-	.display5(result1[41:35])
+	.display0(result6[6:0]),
+	.display1(result6[13:7]),
+	.display2(result6[20:14]),
+	.display3(result6[27:21]),
+	.display4(result6[34:28]),
+	.display5(result6[41:35])
 );
 
 always @ (*) 
