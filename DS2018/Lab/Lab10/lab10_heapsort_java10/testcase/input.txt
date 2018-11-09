@@ -1,0 +1,13 @@
+add	3
+add	5
+add	15
+add	9
+add	10
+add	1
+sort_a
+add	20
+add	1
+remove	15
+add	7
+remove	10
+sort_d
