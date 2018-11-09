@@ -2,76 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3fab473-a9f7-4363-bf14-17138a44ecfc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../MidtermAttempt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MidtermAttempt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/src/main/scala/LectureNotes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/src/main/scala/LectureNotes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Age$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Age.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$BTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$DOB$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$DOB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Height$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Height.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$ICons$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$ICons.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$IList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$INil$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$INil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$INone$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$INone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$IOption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$ISome$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$ISome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Leaf$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Leaf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Name$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Name.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Node$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$AlgebraicDatatypes$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$BTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$Leaf$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$Leaf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$Node$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$BinaryTree$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$Currying$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$ICons$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$ICons.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$IList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$INil$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$INil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$INone$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$INone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$IOption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$ISome$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$IList$ISome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$ParametricPolymorphism$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$bar$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$StructuralTypes$record$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$Tuples$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes$TypeCheckingSafetyRule$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/target/scala-2.12/classes/LectureNotes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem2$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem2$IterDictImpl$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem2$IterDictImpl$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem2$IterDictImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem2$IterDictImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$BiIterableList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$BiIterableList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$BiIterableTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$BiIterableTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$Empty$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$Empty$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$Empty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$Node$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$Node$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem3$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem4$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main$Problem4$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3test/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw3/pp201802/hw3test/Test$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Lab/Lab10/lab10_heapsort_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Lab/Lab10/lab10_heapsort_java10/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.scala" afterDir="false" />
     </list>
@@ -90,9 +21,9 @@
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -107,12 +38,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="27050" />
+          <entry key="scala" value="27690" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="27050" />
+          <entry key="Scala" value="27690" />
         </counts>
       </usages-collector>
     </session>
@@ -128,29 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1382">
-              <caret line="196" column="8" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/Option.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/collection/TraversableLike.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6000">
-              <caret line="411" column="48" selection-start-line="411" selection-start-column="48" selection-end-line="411" selection-end-column="48" />
+            <state relative-caret-position="195">
+              <caret line="193" column="30" selection-start-line="193" selection-start-column="30" selection-end-line="193" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -164,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="131" selection-start-line="131" selection-end-line="131" />
+            <state relative-caret-position="249">
+              <caret line="130" column="32" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -182,8 +95,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Data.scala" />
-        <option value="$PROJECT_DIR$/src/Main.scala" />
         <option value="$PROJECT_DIR$/src/Test.scala" />
+        <option value="$PROJECT_DIR$/src/Main.scala" />
       </list>
     </option>
   </component>
@@ -204,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,14 +137,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541572425361" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541749566835" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -316,6 +229,7 @@
       <workItem from="1541552301304" duration="380000" />
       <workItem from="1541557202733" duration="3210000" />
       <workItem from="1541572006289" duration="468000" />
+      <workItem from="1541748375206" duration="1185000" />
     </task>
     <servers />
   </component>
@@ -325,7 +239,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25891000" />
+    <option name="totallyTimeSpent" value="27076000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -340,7 +254,7 @@
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27520236" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27888152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -349,7 +263,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329235" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329235" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -377,13 +291,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Data.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/Option.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
@@ -405,17 +312,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.scala">
+    <entry file="file://$PROJECT_DIR$/src/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1382">
-          <caret line="196" column="8" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
+        <state relative-caret-position="249">
+          <caret line="130" column="32" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.scala">
+    <entry file="file://$PROJECT_DIR$/src/Data.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="480">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="193" column="30" selection-start-line="193" selection-start-column="30" selection-end-line="193" selection-end-column="30" />
         </state>
       </provider>
     </entry>

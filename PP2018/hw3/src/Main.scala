@@ -198,12 +198,12 @@ object Main {
     }
 
     case class Empty[A]() extends BiIterableTree[A] {
-      def biIter: BiIter[A] = MyNil()
+      val biIter: BiIter[A] = MyNil()
     }
 
     case class Node[A](value: A, left: BiIterableTree[A], right: BiIterableTree[A])
         extends BiIterableTree[A] {
-      def biIter: BiIter[A] = NonEmptyList(Nil, Some(value), preorderList(this))
+      val biIter: BiIter[A] = NonEmptyList(Nil, Some(value), preorderList(this).tail)
     }
 
   }

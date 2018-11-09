@@ -44,11 +44,12 @@ object Test extends App {
 
   // Problem 3
   {
-    println("------Problem 3------");
+    println("------Problem 3------")
+
+    println("-----BiIterableList-----")
 
     val x = List("A", "B", "C")
     val bx = new Problem3.BiIterableList(x)
-
     print_result(
       bx.biIter.getValue match {
         case Some(x) => x == "A"
@@ -102,6 +103,8 @@ object Test extends App {
     val bel2 = biIterEmptyList.biIter.getNext
     print_result(bel2.getValue == None)
 
+    println("-----BiIterableTree-----")
+
     val biTree = new Problem3.Node(1,
       Problem3.Node(2,
         Problem3.Node(3,
@@ -125,6 +128,7 @@ object Test extends App {
         case _ => false
       }
     )
+    println(biTreeIter0.getValue)
 
     val biTreeIter1 = biTreeIter0.getNext
     print_result(
@@ -133,6 +137,8 @@ object Test extends App {
         case _ => false
       }
     )
+    println(biTreeIter1.getValue)
+    println(biTreeIter1.getNext.getValue)
 
     val biTreeIter2 = biTreeIter1.getPrev
     print_result(
