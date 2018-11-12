@@ -33,7 +33,7 @@ begin
     end
     else 
     begin
-        sign <= 0;
+        sign <= 1;
     end
     out <= a[3:0] * b[3:0];
 end
