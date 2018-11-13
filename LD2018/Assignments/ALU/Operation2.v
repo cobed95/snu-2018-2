@@ -31,8 +31,6 @@ wire [4:0] left;
 wire [4:0] right;
 wire sign;
 wire [4:0] result;
-wire [4:0] firstDigit;
-wire [4:0] secondDigit;
 
 assign left = operands[9:5];
 assign right = operands[4:0];
@@ -43,7 +41,7 @@ BinaryTo7Segment decoder0(result[3:0], display0);
 
 BinaryTo7Segment decoder1({3'b000, result[4]}, display1);
 
-BinaryTo7Segment decoder2(5'b00000, display2);
+BinaryTo7Segment decoder2(4'b0000, display2);
 
 SignDisplay signDisplay(sign, display3);
 
