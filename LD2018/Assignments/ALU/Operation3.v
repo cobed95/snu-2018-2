@@ -41,7 +41,7 @@ BinaryTo7Segment decoder0(result[3:0], display0);
 
 BinaryTo7Segment decoder1(result[7:4], display1);
 
-BinaryTo7Segment decoder2(5'b00000, display2);
+BinaryTo7Segment decoder2(4'b0000, display2);
 
 SignDisplay signDisplay(sign, display3);
 
