@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    15:11:36 11/14/2018 
+// Create Date:    17:29:41 11/07/2018 
 // Design Name: 
-// Module Name:    Counter6Stages 
+// Module Name:    D_FlipFlop 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,12 +18,20 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Counter6Stages(
-    input [2:0] init,
-    input clk,
-    output [2:0] out
+module D_FlipFlop(
+    input D,
+    input CLK,
+    output Q
     );
-reg [2:0] state;
 
+wire Q0;
+wire Q1;
+wire Q2;
+wire Q3;
+wire Qn;
+
+RS_Latch rs_latch0(~D, CLK, Q0, Q1);
+RS_Latch_3 rs_latch_3(Q1, CLK, D, Q2, Q3);
+RS_Latch rs_latch1(Q1, Q2, Q, Qn);
 
 endmodule

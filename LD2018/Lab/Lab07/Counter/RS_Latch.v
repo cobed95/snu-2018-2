@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    15:11:36 11/14/2018 
+// Create Date:    17:27:00 11/07/2018 
 // Design Name: 
-// Module Name:    Counter6Stages 
+// Module Name:    RS_Latch 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,12 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Counter6Stages(
-    input [2:0] init,
-    input clk,
-    output [2:0] out
+module RS_Latch(
+    input R,
+    input S,
+    output Q,
+    output Qn
     );
-reg [2:0] state;
 
+assign Q = ~ (R | Qn);
+assign Qn = ~ (S | Q);
 
 endmodule
