@@ -22,36 +22,34 @@ module OneCounter(
     input [5:0] binary,
     output reg [2:0] numOfOnes
     );
-reg[2:0] count;
 
 always @ (binary) 
 begin
-	count = 3'd0;
+	numOfOnes = 3'd0;
 	if (binary[0] == 1)
 	begin
-		count = count + 1;
+		numOfOnes = numOfOnes + 1;
 	end
 	if (binary[1] == 1)
 	begin
-		count = count + 1;
+		numOfOnes = numOfOnes + 1;
 	end
 	if (binary[2] == 1)
 	begin
-		count = count + 1;
+		numOfOnes = numOfOnes + 1;
 	end
 	if (binary[3] == 1)
 	begin
-		count = count + 1;
+		numOfOnes = numOfOnes + 1;
 	end
 	if (binary[4] == 1)
 	begin
-		count = count + 1;
+		numOfOnes = numOfOnes + 1;
 	end
 	if (binary[5] == 1)
 	begin
-		count = count + 1;
+		numOfOnes = numOfOnes + 1;
 	end
-	numOfOnes = count;
 end
 
 endmodule

@@ -11,7 +11,6 @@
          <ClosedNode>/ALU |csehome|cobed95|snu-2018-2|LD2018|Assignments|ALU|ALU.v/operation0 - Operation0/rightDisplay - DisplayController</ClosedNode>
          <ClosedNode>/ALU |csehome|cobed95|snu-2018-2|LD2018|Assignments|ALU|ALU.v/operation1 - Operation1</ClosedNode>
          <ClosedNode>/ALU |csehome|cobed95|snu-2018-2|LD2018|Assignments|ALU|ALU.v/operation2 - Operation2</ClosedNode>
-         <ClosedNode>/ALU |csehome|cobed95|snu-2018-2|LD2018|Assignments|ALU|ALU.v/operation4 - Operation4</ClosedNode>
          <ClosedNode>/ALU |csehome|cobed95|snu-2018-2|LD2018|Assignments|ALU|ALU.v/operation5 - Operation5/operation1 - Operation1</ClosedNode>
          <ClosedNode>/Operation0 |csehome|cobed95|snu-2018-2|LD2018|Assignments|ALU|Operation0.v/leftDisplay - DisplayController</ClosedNode>
          <ClosedNode>/Operation0 |csehome|cobed95|snu-2018-2|LD2018|Assignments|ALU|Operation0.v/rightDisplay - DisplayController</ClosedNode>
@@ -21,7 +20,7 @@
       <SelectedItems>
          <SelectedItem>ALU (/csehome/cobed95/snu-2018-2/LD2018/Assignments/ALU/ALU.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >23</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c30000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>

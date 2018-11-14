@@ -23,11 +23,11 @@ module MedianFilter5Bit(
     input [4:0] operand,
     output [4:0] filtered
     );
-wire [3:0] dirty0;
-wire [3:0] dirty1;
-wire [3:0] dirty2;
-wire [3:0] dirty3;
-wire [3:0] dirty4;
+wire [2:0] dirty0;
+wire [2:0] dirty1;
+wire [2:0] dirty2;
+wire [2:0] dirty3;
+wire [2:0] dirty4;
 
 assign dirty0 = {operand[1:0], hiddenBit};
 assign dirty1 = operand[2:0];
