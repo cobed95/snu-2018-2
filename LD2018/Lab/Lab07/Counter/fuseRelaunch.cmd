@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab07/Counter/CatalogueCounter8Bit_test_isim_beh.exe" -prj "/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab07/Counter/CatalogueCounter8Bit_test_beh.prj" "work.CatalogueCounter8Bit_test" "work.glbl" 

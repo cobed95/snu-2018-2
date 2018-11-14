@@ -19,25 +19,51 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Counter6Stages(
-    input [2:0] init,
     input clk,
     output [2:0] out
     );
-reg [2:0] state;
+reg [2:0] state = 3'b001;
+assign out = state;
+
 wire d0;
 wire d1;
 wire d2;
 
-assign state = init;
+assign d0 = state[0];
+assign d1 = state[1];
+assign d2 = state[2];
 
-assign d0 = state[3];
-assign d1 = (~state[0] & ~state[2]) | (state[0] & state[2]);
-assign d2 = (~state[0] & state[1]) | (~state[0] & state[2]);
+//wire aux;
+//assign aux = state[0];
 
-D_FlipFlop ff0(d0, clk, state[0]);
-D_FlipFlop ff1(d1, clk, state[1]);
-D_FlipFlip ff2(d2, clk, state[2]);
+wire d3;
+wire d4;
+wire d5;
 
-assign out = state;
+D_FlipFlop ff0 (
+	.D(d0),
+	.CLK(clk),
+	.Q(d3)
+);
+
+D_FlipFlop ff1 (
+	.D(d1),
+	.CLK(clk),
+	.Q(d4)
+);
+
+D_FlipFlop ff2 (
+	.D(d2),
+	.CLK(clk),
+	.Q(d5)
+);
+
+always @ (*)
+begin
+	d2 <= state[0];
+	d1 <= (~state[2] & ~state[0]) | (state[2] & state[0]);
+	d0 <= (~state[2] & state[1]) | (~state[2] & state[0]);
+	state = {d5, d4, d3};
+end
 
 endmodule

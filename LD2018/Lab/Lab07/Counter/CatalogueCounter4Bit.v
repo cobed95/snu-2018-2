@@ -25,44 +25,46 @@ module CatalogueCounter4Bit(
     input load,
     input [3:0] load_value, 
     input clear,
-    output ripple_carry_out,
-    output reg [3:0] out_cnt
+    output reg ripple_carry_out,
+    output [3:0] out_cnt
     );
 reg [3:0] cnt = 4'b0000;
 assign out_cnt = cnt;
 
 always @ (posedge clk)
 begin
-    if (p == 1 & t == 1)
-    begin
-        if (clear == 1)
-        begin
-            cnt <= 4'b0000;
-        end
-        else if (load == 1)
-        begin
-            cnt <= load_value;
-        end
-        else 
-        begin
-            if (cnt == 4'b1110)
-            begin
-                ripple_carry_out <= 1;
-            end
-            else 
-            begin
-                ripple_carry_out <= 0;
-            end
-            if (cnt == 4'b1111)
-            begin
-                cnt <= 4'b0000;
-            end
-            else
-            begin
-                cnt <= cnt + 1;
-            end
-        end
-    end 
-end
-
+	if (clear == 1)
+	begin
+		ripple_carry_out <= 0;
+		cnt <= 4'b0000;
+	end
+	else if (load == 1)
+	begin
+		if (load_value == 4'b1111)
+		begin
+			ripple_carry_out <= 1;
+		end
+		cnt <= load_value;
+   end
+	else if (p == 1 & t == 1)
+	begin
+		if (cnt == 4'b1110)
+			begin
+				ripple_carry_out <= 1;
+         end
+      else 
+      begin
+         ripple_carry_out <= 0;
+      end
+		if (cnt == 4'b1111)
+		begin
+		cnt <= 4'b0000;
+		end
+		else
+		begin
+		cnt <= cnt + 1;
+		end
+	end
+end 
+	
 endmodule
