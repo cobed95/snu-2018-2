@@ -18,26 +18,28 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Counter6Stages(
-    input [2:0] init,
+module CatalogueCounter4Bit(
     input clk,
-    output [2:0] out
+    input p,
+    input t,
+    input load,
+    input [7:0] load_value, 
+    input clear,
+    output ripple_carry_out,
+    output reg [7:0] out_cnt
     );
-reg [2:0] state;
-wire d0;
-wire d1;
-wire d2;
+reg [7:0] cnt = 8'b00000000;
+assign out_cnt = cnt;
 
-assign state = init;
+wire rco_low;
+wire p_high;
+wire t_high;
 
-assign d0 = state[3];
-assign d1 = (~state[0] & ~state[2]) | (state[0] & state[2]);
-assign d2 = (~state[0] & state[1]) | (~state[0] & state[2]);
+CatalogueCounter4Bit counter0(clk, p, t, load, load_value[3:0], clear, rco_low, cnt[3:0]);
 
-D_FlipFlop ff0(d0, clk, state[0]);
-D_FlipFlop ff1(d1, clk, state[1]);
-D_FlipFlip ff2(d2, clk, state[2]);
+assign p_high = rco_low;
+assign t_high = rco_high;
 
-assign out = state;
+CatalogueCounter4Bit counter1(clk, p_high, t_high, load, load_value[7:4], clear, ripple_carry_out, cnt[7:4]);
 
 endmodule
