@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/csehome/yejun1204/lab6/UniversalShift4bitTest_isim_beh.exe" -prj "/csehome/yejun1204/lab6/UniversalShift4bitTest_beh.prj" "work.UniversalShift4bitTest" "work.glbl" 
