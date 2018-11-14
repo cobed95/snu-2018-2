@@ -290,4 +290,71 @@ object LectureNotes {
     }
     val e = new E
   }
+
+  object StackingWithTraits {
+    // Base (What is pizza?)
+    trait IntStack {
+      def get(): (Int, IntStack)
+      def put(x: Int): IntStack
+    }
+
+    // Core (Let's make doughs and stuff)
+    class BasicIntStack protected (xs: List[Int]) extends IntStack {
+      override val toString = "Stack: " + xs.toString
+      def this() = this(Nil)
+      protected def mkStack(xs: List[Int]): IntStack =
+        new BasicIntStack(xs)
+      // If we don't do this, we can't override it in DIFIntStack.
+      // Then we don't get a whole pizza, but after adding one topping,
+      // you end up going back to the dough: BasicIntStack.
+      def get(): (Int, IntStack) = (xs.head, mkStack(xs.tail))
+      def put(x: Int): IntStack = mkStack(x :: xs)
+    }
+
+    // Custom (Toppings!)
+    trait Doubling extends IntStack {
+      abstract override def put(x: Int): IntStack = super.put(2 * x)
+    }
+
+    trait Incrementing extends IntStack {
+      abstract override def put(x: Int): IntStack = super.put(x + 1)
+    }
+
+    trait Filtering extends IntStack {
+      abstract override def put(x: Int): IntStack =
+        if (x >= 0) super.put(x) else this // If x < 0, ignore.
+    }
+
+    // Now let's cook.
+    class DIFIntStack protected (xs: List[Int])
+      extends BasicIntStack(xs)
+      with Doubling with Incrementing with Filtering
+    {
+      def this() = this(Nil)
+      override def mkStack(xs: List[Int]): IntStack =
+        new DIFIntStack(xs)
+    }
+
+    object Test {
+      val s0 = new DIFIntStack
+      val s1 = s0.put(3)
+      val s2 = s1.put(-2)
+      val s3 = s2.put(4)
+      val (v1, s4) = s3.get()
+      val (v2, s5) = s4.get()
+      // put(x) = add x
+      // put(x) = add(2 * x)
+      // put(x) = add(2 * (x + 1))
+      // put9x) = if x >= 0 then add(2 * (x + 1)) else this.
+      // Changing the order of extension will change results.
+      println("s0: " + s0)
+      println("s1: " + s1)
+      println("s2: " + s2)
+      println("s3: " + s3)
+      println("s4: " + s4)
+      println("s5: " + s5)
+      println("v1: " + v1)
+      println("v2: " + v2)
+    }
+  }
 }
