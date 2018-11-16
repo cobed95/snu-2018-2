@@ -1,0 +1,8 @@
+n 3
+append hello 1
+append data 2
+append structure 3
+sort
+print 1
+print 0
+print 2
