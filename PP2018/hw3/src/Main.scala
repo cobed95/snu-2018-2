@@ -220,8 +220,34 @@ object Main {
    Finding the 100th element should complete in 0.1 secs.
    */
   object Problem4 {
-    val primes : LazyList[Int] = time {
-      ???
+
+    def commonDiff2(start: =>Int): LazyList[Int] =
+      LCons[Int]((start, commonDiff2(start + 2)))
+
+    def filterComposite: LazyList[Int] = {
+      def filterCompositeIter(primes: LazyList[Int], seq: LazyList[Int]): LazyList[Int] = {
+        lazy val pair = isPrime(primes, seq.head.get)
+        val list = pair._1
+        val bool = pair._2
+        if (bool) filterCompositeIter(list, seq.tail)
+        else filterCompositeIter(primes, seq.tail)
+      }
+
+      def isPrime(primes: LazyList[Int], n: Int): (LazyList[Int], Boolean) =
+        if (primes.isInstanceOf[LNil[Int]]) (LCons((n, LNil())), true)
+        else if (n % primes.head.get == 0) (primes, false)
+        else {
+          lazy val pair = isPrime(primes.tail, n)
+          val list = pair._1
+          val bool = pair._2
+          (LCons((primes.head.get, list)), bool)
+        }
+
+      filterCompositeIter(LCons(2, LNil()), commonDiff2(3))
+    }
+
+    lazy val primes : LazyList[Int] = time {
+      filterComposite
     }
   }
 

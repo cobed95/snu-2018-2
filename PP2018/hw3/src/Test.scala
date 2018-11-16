@@ -160,15 +160,15 @@ object Test extends App {
     )
 
   }
-/*
+
   // Problem 4
   {
     println("------Problem 4------");
+    println(Problem4.commonDiff2(3).head)
 
     print_result(Problem4.primes.nth(5) == Some(13));
     print_result(Problem4.primes.nth(100) == Some(547));
   }
 
-*/
 
 }
