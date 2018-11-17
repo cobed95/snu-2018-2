@@ -105,6 +105,16 @@ object Test extends App {
 
     println("-----BiIterableTree-----")
 
+
+    val emT = Problem3.Empty[String]()
+    val t1 = Problem3.Node("t1", emT, emT)
+    val t2 = Problem3.Node("t", emT, t1)
+
+    print_result(
+      if(t2.biIter == null) false
+      else t2.biIter.getNext.getValue == Some("t1")
+    )
+
     val biTree = new Problem3.Node(1,
       Problem3.Node(2,
         Problem3.Node(3,
@@ -164,10 +174,24 @@ object Test extends App {
   // Problem 4
   {
     println("------Problem 4------");
-    println(Problem4.commonDiff2(3).head)
 
+    print_result(Problem4.primes.nth(10000) == Some(104729))
     print_result(Problem4.primes.nth(5) == Some(13));
     print_result(Problem4.primes.nth(100) == Some(547));
+    println(Problem4.primes.nth(0))
+//    val primes = Problem4.primes.nth(100)
+//    val allOnes = Problem4.primes.nth(10)
+    println(Problem4.primes.nth(1))
+    println(Problem4.primes.nth(2))
+    println(Problem4.primes.nth(3))
+    println(Problem4.primes.nth(4))
+    println(Problem4.primes.nth(5))
+    println(Problem4.primes.nth(6))
+    println(Problem4.primes.nth(7))
+    println(Problem4.primes.nth(8))
+    println(Problem4.primes.nth(9))
+    println(Problem4.primes.nth(10))
+    println(Problem4.primes.nth(11))
   }
 
 

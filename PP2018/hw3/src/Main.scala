@@ -221,34 +221,31 @@ object Main {
    */
   object Problem4 {
 
-    def commonDiff2(start: =>Int): LazyList[Int] =
-      LCons[Int]((start, commonDiff2(start + 2)))
+    class Primes(val prime: Int, val primes: List[Int]) {
+      def getNext: Primes = {
+        val p = computeNextPrime(prime + 2)
+        new Primes(p, p :: primes)
+      }
+      def computeNextPrime(n: Int): Int =
+        if (primes.forall((p: Int) => n % p != 0)) n
+        else computeNextPrime(n + 2)
+    }
 
-    def filterComposite: LazyList[Int] = {
-      def filterCompositeIter(primes: LazyList[Int], seq: LazyList[Int]): LazyList[Int] = {
-        lazy val pair = isPrime(primes, seq.head.get)
-        val list = pair._1
-        val bool = pair._2
-        if (bool) filterCompositeIter(list, seq.tail)
-        else filterCompositeIter(primes, seq.tail)
+    def getLazyPrimes(primes: Primes): LazyList[Primes] = {
+      LCons((primes, getLazyPrimes(primes.getNext)))
+    }
+
+    def map[A, B](list: LazyList[A])(f: A => B): LazyList[B] =
+      list.head match {
+        case Some(a) =>
+          LCons((f(a), map(list.tail)(f)))
+        case None =>
+          LNil[B]()
       }
 
-      def isPrime(primes: LazyList[Int], n: Int): (LazyList[Int], Boolean) =
-        if (primes.isInstanceOf[LNil[Int]]) (LCons((n, LNil())), true)
-        else if (n % primes.head.get == 0) (primes, false)
-        else {
-          lazy val pair = isPrime(primes.tail, n)
-          val list = pair._1
-          val bool = pair._2
-          (LCons((primes.head.get, list)), bool)
-        }
-
-      filterCompositeIter(LCons(2, LNil()), commonDiff2(3))
-    }
-
-    lazy val primes : LazyList[Int] = time {
-      filterComposite
+    val primes: LazyList[Int] = time {
+      val primesList: Primes = new Primes(3, List(3))
+      LCons((2, map(getLazyPrimes(primesList))(_.prime)))
     }
   }
-
 }
