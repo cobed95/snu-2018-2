@@ -17,10 +17,17 @@ public class HybridSorter<K extends Comparable<? super K>> {
 	}
 	
 	public void sort(Pair<K, ?>[] array, int left, int right) {
-		
-	
 		// Fill your code to sort the elements in `array`.
-		
+		if (right - (left - 1) <= RUN) {
+			insertionSort.sort(array, left, right);
+		} else {
+		    quickSort.sort(array, left, right);
+		    for (int i = 0; i < right; i += 32) {
+		        int upperBound = i + 31;
+		        if (upperBound > right) upperBound = right;
+		        insertionSort.sort(array, i, upperBound);
+            }
+        }
 	}
 	
 	public int min(int a, int b) {

@@ -8,7 +8,16 @@ public class InsertionSorter<K extends Comparable<? super K>> {
 	
 	public void sort(Pair<K, ?>[] array, int left, int right) {
 		// Fill your code to sort the elements in `array`.
-		
+		for (int i = left + 1; i <= right; i++) {
+		    Pair<K, ?> data = array[i];
+		    K key = data.getKey();
+			int j = i - 1;
+			while (j >= 0 && key.compareTo(array[j].getKey()) < 0) {
+			    array[j + 1] = array[j];
+			    j--;
+            }
+            array[j + 1] = data;
+		}
 		
 	}
 	
