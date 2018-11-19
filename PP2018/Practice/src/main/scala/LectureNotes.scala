@@ -357,4 +357,124 @@ object LectureNotes {
       println("v2: " + v2)
     }
   }
+
+  object TypeClassesWithOrdering {
+    /*
+    trait Ord[A] {
+      def cmp(that: Ord[A]): Int
+      def getValue : A
+      def ===(that: Ord[A]): Boolean = (this.cmp(that)) == 0
+      def < (that: Ord[A]): Boolean = (this cmp that) < 0
+      def > (that: Ord[A]): Boolean = (this cmp that) > 0
+      def <= (that: Ord[A]): Boolean = (this cmp that) <= 0
+      def >= (that: Ord[A]): Boolean = (this cmp that) >= 0
+    }
+
+    def max3[A](a: Ord[A], b: Ord[A], c: Ord[A]) : Ord[A] =
+      if(a<=b) {
+        if(b<=c) c
+        else b
+      } else {
+        if(a<=c) c
+        else a
+      }
+
+    class OInt(val getValue : Int) extends Ord[Int] {
+      def cmp(that: Ord[Int]) = getValue.compare(that.getValue)
+    }
+
+    // Bag stores sorted elements.
+    // if an element with the same value is added, the duplicacy is not preserved.
+    // Bag(1, 2, 3).add(3) == Bag(1, 2, 3)
+    // If we omit the A <: Ord[U], the code does not raise compile errors.
+    // But A may have more information than Ord[U].
+    class Bag[U, A <: Ord[U]] protected (val toList: List[A]) {
+      def this() = this(Nil)
+      def add(x: A) : Bag[U,A] = {
+        def go(elmts: List[A]): List[A] = elmts match {
+          case Nil => x :: Nil
+          case e :: _ if (x < e) => x :: elmts
+          case e :: _ if (x === e) => elmts
+          case e :: rest => e :: go(rest)
+        }
+        new Bag(go(toList))
+      }
+    }
+
+    val emp = new Bag[Int, OInt]()
+    val b = emp.add(new OInt(3)).add(new OInt(2)).add(new OInt(10))
+    b.toList.map((x)=>x.getValue)
+    */
+
+    abstract class Ord[A] {
+      def cmp(me: A, you: A): Int
+      def ===(me: A, you: A): Boolean = cmp(me,you) == 0
+      def < (me: A, you: A): Boolean = cmp(me,you) < 0
+      def > (me: A, you: A): Boolean = cmp(me,you) > 0
+      def <= (me: A, you: A): Boolean = cmp(me,you) <= 0
+      def >= (me: A, you: A): Boolean = cmp(me,you) >= 0
+    }
+
+    // implicit means the compiler will check if there is information about
+    // the implicit argument, and use it if there is one.
+    def max3[A](a: A, b: A, c: A)(implicit ord: Ord[A]) : A =
+      if (ord.<=(a, b)) {
+        if (ord.<=(b,c)) c
+        else b
+      } else {
+        if (ord.<=(a,c)) c
+        else a
+      }
+
+    implicit val intOrd : Ord[Int] = new Ord[Int] {
+      def cmp(me: Int, you: Int) = me - you
+    }
+
+    // The structures above and below for intOrd and strOrd do the same thing.
+    // Just a syntactic difference.
+    // The above structure is much simpler.
+
+    class _tmp_ extends Ord[String] {
+      def cmp(me: String, you: String) = me.compare(you)
+    }
+    implicit val strOrd: Ord[String] = new _tmp_
+
+    // Now Bag doesn't need [U, A <: Ord[U]], because we never touched the type of A.
+    // There is no hierarchy (inheritance). It is much more elegant.
+    class Bag[A] protected (val toList: List[A])(implicit ord: Ord[A]) {
+      def this()(implicit ord: Ord[A]) = this(Nil)(ord)
+      def add(x: A) : Bag[A] = {
+        def go(elmts: List[A]) : List[A] =
+          elmts match {
+            case Nil => x :: Nil
+            case e :: _ if (ord.<(x,e)) => x :: elmts
+            case e :: _ if (ord.===(x,e)) => elmts
+            case e :: rest => e :: go(rest)
+          }
+        new Bag(go(toList))
+      }
+    }
+
+    def test: Unit = println(new Bag[Int]().add(3).add(2).add(10).toList)
+    // With type classes, there is no need for traits.
+    // Because there is no notion of inheritance at all.
+
+    // This recursive definition of ord is a very powerful feature.
+    implicit def tup20rd[A, B](implicit ordA: Ord[A], ordB: Ord[B]) = {
+      new Ord[(A, B)] {
+        def cmp(me: (A, B), you: (A, B)): Int = {
+          val c1 = ordA.cmp(me._1, you._1)
+          if (c1 != 0) c1
+          else ordB.cmp(me._2, you._2)
+        }
+      }
+    }
+
+    val b = new Bag[(Int, (Int, Int))]
+    def test2: Unit = println(b.add(3, (3, 4)).add((3, (2, 7))).add((4, (0 ,0))).toList)
+
+    val intOrdRev: Ord[Int] = new Ord[Int] {
+      def cmp(me: Int, you: Int) = you - me
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import AbstractDataTypes._
-import LectureNotes.StackingWithTraits._
+import LectureNotes.TypeClassesWithOrdering._
 
 object Main extends App {
-  Test
+  test2
 }
