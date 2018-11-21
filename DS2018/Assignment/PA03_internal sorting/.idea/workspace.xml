@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PA03_internal sorting:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="163a2695-f56e-4815-9215-a2df8bc8a067" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PA03_internal_sorting_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main$Problem4$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main$Problem4$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3test/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3test/Test$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/src/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/src/Test.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/text/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/text/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/text/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/text/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/Practice/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,13 +26,15 @@
     <session id="-1275651756">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -45,25 +51,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8132" />
-          <entry key="txt" value="450" />
+          <entry key="java" value="8227" />
+          <entry key="txt" value="558" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8132" />
-          <entry key="PLAIN_TEXT" value="450" />
+          <entry key="JAVA" value="8227" />
+          <entry key="PLAIN_TEXT" value="558" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/text/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="150">
+              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="75">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -107,7 +113,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sort/InsertionSorter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -136,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/com/sort/InsertionSorter.java" />
         <option value="$PROJECT_DIR$/src/com/sort/QuickSorter.java" />
         <option value="$PROJECT_DIR$/src/com/sort/HybridSorter.java" />
-        <option value="$PROJECT_DIR$/testcase/input.txt" />
         <option value="$PROJECT_DIR$/src/com/text/Main.java" />
+        <option value="$PROJECT_DIR$/testcase/input.txt" />
       </list>
     </option>
   </component>
@@ -158,7 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -166,6 +171,24 @@
             <path>
               <item name="PA03_internal sorting" type="b2602c69:ProjectViewProjectNode" />
               <item name="PA03_internal sorting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PA03_internal sorting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PA03_internal sorting" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PA03_internal sorting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PA03_internal sorting" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PA03_internal sorting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PA03_internal sorting" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="PA03_internal_sorting_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PA03_internal sorting" type="b2602c69:ProjectViewProjectNode" />
@@ -201,15 +224,19 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542422242526" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542768072373" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -267,17 +294,18 @@
       <workItem from="1542422296015" duration="65000" />
       <workItem from="1542432956251" duration="177000" />
       <workItem from="1542439152984" duration="285000" />
+      <workItem from="1542767845742" duration="263000" />
+      <workItem from="1542769722456" duration="152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7092000" />
+    <option name="totallyTimeSpent" value="7507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.267844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27520236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -314,16 +342,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/text/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sort/QuickSorter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -332,13 +350,6 @@
             <element signature="e#627#628#0" expanded="true" />
             <element signature="e#665#666#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -352,13 +363,6 @@
     <entry file="file://$PROJECT_DIR$/testcase/output.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sort/Pair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sort/InsertionSorter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -366,12 +370,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sort/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/text/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>PA03_internal sorting:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.12.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>PA03_internal sorting</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
