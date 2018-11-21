@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/SR_MOORE_test_isim_beh.exe" -prj "/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/SR_MOORE_test_beh.prj" "work.SR_MOORE_test" "work.glbl" 
