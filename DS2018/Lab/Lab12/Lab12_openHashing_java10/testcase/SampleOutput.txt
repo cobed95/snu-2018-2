@@ -1,0 +1,6 @@
+FIND: (11, apple2)
+FIND: (2, banana1)
+REMOVE: (11, apple2)
+REMOVE: (2, banana1)
+FIND: (111, apple3)
+FIND: (22, banana2)
