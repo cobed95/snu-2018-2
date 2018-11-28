@@ -1,3 +1,5 @@
+import scala.language.higherKinds
+
 object LectureNotes {
 
   object TypeCheckingSafetyRule {
@@ -476,5 +478,71 @@ object LectureNotes {
     val intOrdRev: Ord[Int] = new Ord[Int] {
       def cmp(me: Int, you: Int) = you - me
     }
+  }
+
+  object HigherKinds {
+    abstract class Iter[I[_]] {
+      def getValue[A](a: I[A]): Option[A]
+      def getNext[A](a: I[A]): I[A]
+    }
+
+    def sumElements[I[_]](xs: I[Int])(implicit itr: Iter[I]): Int =
+      itr.getValue(xs) match {
+        case None => 0
+        case Some(n) => n + sumElements(itr.getNext(xs))
+      }
+
+    def printElements[I[_], A](xs: I[A])(implicit itr: Iter[I]): Unit =
+      itr.getValue(xs) match {
+        case None =>
+        case Some(n) => {
+          println(n)
+          printElements(itr.getNext(xs))
+        }
+      }
+
+    implicit val listIter: Iter[List] =
+      new Iter[List] {
+        def getValue[A](a: List[A]) = a.headOption
+        def getNext[A](a: List[A]) = a.tail
+      }
+
+    abstract class Iterable[R[_], I[_]] {
+      def iter[A](a: R[A]): I[A]
+      def iterProxy: Iter[I]
+    }
+
+    def sumElements2[R[_], I[_]](xs: R[Int])(implicit proxy: Iterable[R, I]) =
+      sumElements(proxy.iter(xs))(proxy.iterProxy)
+
+    def printElements2[R[_], I[_], A](xs: R[A])(implicit proxy: Iterable[R, I]) =
+      printElements(proxy.iter(xs))(proxy.iterProxy)
+
+    sealed abstract class MyTree[A]
+    case class Empty[A]() extends MyTree[A]
+    case class Node[A](value: A, left: MyTree[A], right: MyTree[A]) extends MyTree[A]
+
+    implicit val treeIterable: Iterable[MyTree, List] =
+      new Iterable[MyTree, List] {
+        def iter[A](a: MyTree[A]): List[A] =
+          a match {
+            case Empty() => Nil
+            case Node(v, left, right) => v :: (iter(left) ++ iter(right))
+          }
+        val iterProxy = implicitly[Iter[List]]
+      }
+
+    implicit def iterIterable[I[_]](implicit proxy: Iter[I]): Iterable[I, I] =
+      new Iterable[I, I] {
+        def iter[A](a: I[A]) = a
+        def iterProxy = proxy
+      }
+
+    trait Functor[F[_]] {
+      def map[A, B](f: A=>B)(x: F[A]): F[B]
+    }
+
+    def compose[F[_], A, B, C](g: B=>C)(f: A=>B)(a: F[A])(implicit proxy: Functor[F]): F[C] =
+      proxy.map(g)(proxy.map(f)(a))
   }
 }
