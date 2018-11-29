@@ -115,8 +115,8 @@ object Test extends App {
 
       { // 11
         val code = "(let ((def x () (cons a b)) (val a 5) (val b 3)) (let ((val y x) (val a 4)) (app y)))"
-        val res = conv.toPair(run_myeval(code)) match {
-          case Some(_) => true
+        val res = conv.toPair(run_myeval(code)) match { 
+          case Some(_) => true // this only checks whether the result is a pair.
           case _ => false
         }
         print_result(res)

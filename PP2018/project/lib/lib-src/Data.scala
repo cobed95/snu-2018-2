@@ -33,7 +33,7 @@ object DataBundle {
   case class ELt(e1:Expr, e2:Expr) extends Expr
   case class EGt(e1:Expr, e2:Expr) extends Expr
 
-  // Before implement problem 3, 
+  // Before implement problem 3(at Problem 1 2), 
   // any kinds of outputs about these two cases(EThrow, ETrycatch) will be accepted by tests.
   case class EThrow (e:Expr) extends Expr
   case class ETrycatch (e1:Expr, x:String, e2:Expr) extends Expr
