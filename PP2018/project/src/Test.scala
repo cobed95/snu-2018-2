@@ -136,7 +136,7 @@ object Test extends App {
     
       { // 1
 
-        val code = "(let ((lazy-val inflst (let ((def x () (rmk (val hd 1) (lazy-val tl (app x))))) (app x)))) (rfd inflist hd))"
+        val code = "(let ((lazy-val inflist (let ((def x () (rmk (val hd 1) (lazy-val tl (app x))))) (app x)))) (rfd inflist hd))"
         val res = conv.toInt(run_myeval(code)) match {
           case Some(1) => true
           case _ => false
@@ -145,7 +145,7 @@ object Test extends App {
       }
 
       { // 2
-        val code = "(let ((lazy-val inflst (let ((def x () (rmk (val hd 1) (lazy-val tl (app x))))) (app x)))) (rfd inflist tl))"
+        val code = "(let ((lazy-val inflist (let ((def x () (rmk (val hd 1) (lazy-val tl (app x))))) (app x)))) (rfd inflist tl))"
         val res = conv.isRec(run_myeval(code)) match {
           case true => true
           case _ => false
