@@ -1,0 +1,19 @@
+ADD:	david_copperfield literature_320a
+ADD:	pride_and_prejudice society_331_center
+ADD:	eugenie_grandet society_331_center
+ADD:	the_count_of_monte_cristo military_discount_area
+ADD:	eugenie_grandet society_331_center
+GET:	pride_and_prejudice society_331_center
+FIRST:	david_copperfield literature_320a
+BookSearch cannot find the book
+ADD:	crime_and_punishment religion_new_coming
+ADD:	don_quixote history_11
+ADD:	crime_and_punishment religion_new_coming
+FIRST:	crime_and_punishment religion_new_coming
+SIZE:	8
+REMOVE:	religion_new_coming
+BookSearch cannot find the book
+ADD:	david_copperfield literature_320a
+REMOVE:	military_discount_area
+GET:	david_copperfield literature_320a
+LAST:	pride_and_prejudice society_331_center

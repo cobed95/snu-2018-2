@@ -2,28 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0616880-b0ff-4c15-9be2-8b220599a118" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/BubbleSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/HeapSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/InsertionSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/MergeSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/QuickSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/SelectionSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/ShellSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/Sorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/util/ArrayManipulater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/util/MaxHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/finalprep/util/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PA03_internal sorting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PA03_internal sorting/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main$Problem4$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main$Problem4$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3test/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/out/production/hw3/pp201802/hw3test/Test$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/src/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw3/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw3/src/Test.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/generaltree/DynamicGTNode1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/generaltree/LMCRSNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/generaltree/LeftMostChildRightSibling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/generaltree/ListsOfChildren.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/generaltree/ListsOfChildrenNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/generaltree/Union.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/graph/BasicGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/graph/GraphTraverser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/interfaces/GTNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/interfaces/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/interfaces/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/interfaces/Searcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/interfaces/SelfOrganizingList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/hashtables/BucketHashing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/hashtables/LinearProbing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/hashtables/OpenHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/selforganizeheuristic/CountHeuristic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/selforganizeheuristic/MoveToFront.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/selforganizeheuristic/Transpose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/zeroknowledgesearch/InterpolationSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/zeroknowledgesearch/JumpSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/zeroknowledgesearch/LinearSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/searching/zeroknowledgesearch/QBSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/BinSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/RadixSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/util/MinHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/finalprep/util/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab/Lab13_Dijkstra_java10/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../LD2018/FinalPrep/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../LD2018/FinalPrep/src/com/finalprep/gates/NorGate2Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../LD2018/FinalPrep/src/com/finalprep/interfaces/Gate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../LD2018/FinalPrep/src/com/finalprep/interfaces/RSLatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../LD2018/FinalPrep/src/com/finalprep/latches/RSLatch2Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BookSearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookSearch/bin/com/dmlab/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BookSearch/bin/com/dmlab/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookSearch/src/com/dmlab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookSearch/src/com/dmlab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/BubbleSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/BubbleSorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/HeapSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/HeapSorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/InsertionSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/InsertionSorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/MergeSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/MergeSorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/QuickSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/QuickSorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/SelectionSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/SelectionSorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/ShellSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/ShellSorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/sorting/Sorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/util/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalPrep/com/finalprep/util/Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/sorting/BubbleSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/BubbleSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/sorting/HeapSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/HeapSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/sorting/InsertionSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/InsertionSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/sorting/MergeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/MergeSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/sorting/QuickSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/QuickSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/sorting/SelectionSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/SelectionSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/sorting/ShellSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/sorting/ShellSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/sorting/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/interfaces/Sorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/finalprep/util/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/finalprep/util/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PA04_java10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PA04_java10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw4/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw4/src/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PP2018/hw4/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PP2018/hw4/src/Test.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,33 +77,35 @@
     <session id="112152799">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="22" />
+          <entry key="java" value="117" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="22" />
+          <entry key="JAVA" value="117" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="4" />
-          <entry key="java" value="15649" />
+          <entry key="dummy" value="18" />
+          <entry key="java" value="80045" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15649" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="80045" />
+          <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
     </session>
@@ -70,41 +113,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/finalprep/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/hashtables/OpenHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="495">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/finalprep/Test.java">
+        <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/hashtables/BucketHashing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="620">
+              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/hashtables/LinearProbing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/QuickSorter.java">
+        <entry file="file://$PROJECT_DIR$/src/com/finalprep/graph/GraphTraverser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#169#170#0" expanded="true" />
-                <element signature="e#190#191#0" expanded="true" />
-                <element signature="e#217#218#0" expanded="true" />
-                <element signature="e#243#244#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="113" column="30" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -112,87 +168,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/MaxHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/MinHeap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding>
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#1452#1453#0" expanded="true" />
-                <element signature="e#1479#1480#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1135#1136#0" expanded="true" />
+                <element signature="e#1172#1173#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
+                <element signature="e#1474#1475#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/HeapSorter.java">
+        <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/Pair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="345">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/BubbleSorter.java">
+        <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/ShellSorter.java">
+        <entry file="file://$PROJECT_DIR$/src/com/finalprep/interfaces/HashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/SelectionSorter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/ArrayManipulater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/InsertionSorter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#241#242#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -213,21 +240,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/finalprep/util/Pair.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/sorting/Sorter.java" />
-        <option value="$PROJECT_DIR$/src/com/finalprep/sorting/MergeSorter.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/sorting/SelectionSort.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/sorting/ShellSort.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/util/Heap.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/util/MaxHeap.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/sorting/HeapSorter.java" />
-        <option value="$PROJECT_DIR$/src/com/finalprep/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/finalprep/Main.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/util/ArrayManipulater.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/interfaces/Graph.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/util/Queue.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/graph/BasicGraph.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/graph/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/GTNodePP.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/Union.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/interfaces/GTNode.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/ListOfChildren.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/ListOfChildrenNode.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/ListsOfChildren.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/ListsOfChildrenNode.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/GeneralTree.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/LMCRSNode.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/LeftMostChildRightSibling.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/generaltree/DynamicGTNode1.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/sorting/InsertionSorter.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/sorting/BubbleSorter.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/sorting/SelectionSorter.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/sorting/ShellSorter.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/sorting/MergeSorter.java" />
         <option value="$PROJECT_DIR$/src/com/finalprep/sorting/QuickSorter.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/interfaces/List.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/util/Link.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/util/SinglyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/sorting/BinSorter.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/sorting/RadixSorter.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/interfaces/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/LinearSearcher.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/InterpolationSearcher.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/JumpSearcher.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/QBSearcher.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/interfaces/SelfOrganizingList.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/CountHeuristic.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/MoveToFront.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/Transpose.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/interfaces/HashTable.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/hashtables/OpenHashTable.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/hashtables/BucketHashing.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/searching/hashtables/LinearProbing.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/util/Pair.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/util/MinHeap.java" />
+        <option value="$PROJECT_DIR$/src/com/finalprep/graph/GraphTraverser.java" />
       </list>
     </option>
   </component>
@@ -248,8 +311,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,6 +337,42 @@
               <item name="FinalPrep" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="finalprep" type="462c0819:PsiDirectoryNode" />
+              <item name="generaltree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="finalprep" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="finalprep" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="finalprep" type="462c0819:PsiDirectoryNode" />
+              <item name="searching" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="finalprep" type="462c0819:PsiDirectoryNode" />
+              <item name="searching" type="462c0819:PsiDirectoryNode" />
+              <item name="hashtables" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalPrep" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalPrep" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="finalprep" type="462c0819:PsiDirectoryNode" />
               <item name="sorting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -286,13 +386,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542447977363" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544607437870" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -334,28 +433,27 @@
       <option name="presentableId" value="Default" />
       <updated>1542439859704</updated>
       <workItem from="1542439861123" duration="8416000" />
+      <workItem from="1544506603334" duration="11169000" />
+      <workItem from="1544543617648" duration="1811000" />
+      <workItem from="1544577557486" duration="8767000" />
+      <workItem from="1544587576321" duration="17126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8416000" />
+    <option name="totallyTimeSpent" value="47289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24944812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26416484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.329235" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329235" />
@@ -363,15 +461,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.24043716" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.329235" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,63 +487,231 @@
     <entry file="file://$PROJECT_DIR$/FinalPrep.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/MergeSorter.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/util/Preconditions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        <state relative-caret-position="-264">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/interfaces/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/generaltree/GTNodePP.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/graph/BasicGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="42" column="70" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/Pair.java">
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/generaltree/GeneralTree.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/generaltree/Union.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/generaltree/ListsOfChildrenNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/generaltree/LeftMostChildRightSibling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/generaltree/ListsOfChildren.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/generaltree/LMCRSNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding>
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/generaltree/DynamicGTNode2.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/interfaces/GTNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/Sorter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/generaltree/DynamicGTNode1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="1005">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/MaxHeap.java">
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/SelectionSorter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/MergeSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/HeapSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/Link.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/BubbleSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/SinglyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/interfaces/Sorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/interfaces/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/interfaces/Searcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/BinSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/InsertionSorter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="270">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -452,42 +723,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/InsertionSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/HeapSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/BubbleSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/SelectionSorter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/RadixSorter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/QuickSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -496,25 +747,211 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/ShellSorter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/finalprep/sorting/QuickSorter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="373">
+          <caret line="100" column="71" selection-start-line="100" selection-start-column="71" selection-end-line="100" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#4388#4397#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/interfaces/SelfOrganizingList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/zeroknowledgesearch/JumpSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/zeroknowledgesearch/InterpolationSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/zeroknowledgesearch/LinearSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/zeroknowledgesearch/QBSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#1936#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/selforganizeheuristic/CountHeuristic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/selforganizeheuristic/MoveToFront.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/selforganizeheuristic/Transpose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/interfaces/HashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/hashtables/BucketHashing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding>
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/hashtables/LinearProbing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/MaxHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/searching/hashtables/OpenHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/util/MinHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1474#1475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/finalprep/graph/GraphTraverser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="113" column="30" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
         </state>
       </provider>
     </entry>

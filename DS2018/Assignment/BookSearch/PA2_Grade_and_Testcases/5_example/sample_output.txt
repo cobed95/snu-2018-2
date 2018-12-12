@@ -1,0 +1,16 @@
+BookSearch does not have any book
+ADD:	the_count_of_monte_cristo military_discount_area
+LAST:	the_count_of_monte_cristo military_discount_area
+ADD:	band_of_brothers religion_new_coming
+ADD:	david_copperfield literature_320a
+REMOVE:	religion_new_coming
+REMOVE:	literature_320a
+SIZE:	1
+ADD:	around_the_world_in_eighty_days history_11
+ADD:	camille military_discount_area
+BookSearch cannot find the book
+ADD:	pride_and_prejudice society_331_center
+ADD:	a_tale_of_two_cities tale_floor3
+ADD:	pride_and_prejudice society_331_center
+ADD:	sherlock_holmes history_11
+SIZE:	7

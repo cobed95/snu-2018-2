@@ -2,6 +2,7 @@ package pp201802.hw4test
 import pp201802.hw4.Data._
 import pp201802.hw4.Main._
 import reflect.runtime.universe._
+import scala.language.higherKinds
 
 object Test extends App {
   def print_result(b:Boolean) : Unit =
@@ -10,7 +11,8 @@ object Test extends App {
   // Problem 1
   {
     println("------Problem 1------");
-
+    //Original Order: extends Problem1.BasicLetter(header, body, footer)
+    //with Problem1.Header_Dear with Problem1.Body_Newline with Problem1.Body_Doublespace with Problem1.Footer_Best
     class MyLetter protected (header: String, body: String, footer: String)
       extends Problem1.BasicLetter(header, body, footer)
       with Problem1.Header_Dear with Problem1.Body_Newline with Problem1.Body_Doublespace with Problem1.Footer_Best
@@ -23,6 +25,7 @@ object Test extends App {
     val s1 = s0.setHeader("Kim")
     val s2 = s1.setBody("Hello, This is final homework. Good   luck")
     val s3 = s2.setFooter("Lee")
+    println(s3.toString)
     print_result(s3.toString == "Dear Kim\n\nHello, This is final homework.\n Good luck\n\nBest,\nLee")
   }
 
@@ -43,6 +46,11 @@ object Test extends App {
 
     var mr = (List(3,4,5))
     print_result(Problem2.mapReduce[List,Int,Int,Int]((a)=>a*a, mr, (b,c)=>b+c,0) == 50)
+
+    var doubles = List(3.0, 4.0, 5.0)
+    print_result(Problem2.mapReduce[List,Double,Int,Int]((a)=>(a*a).asInstanceOf[Int], doubles, (b,c)=>b+c, 0) == 50)
+
+    print_result(Problem2.mapReduce[List,Int,Double,Double]((a)=>(a*a).asInstanceOf[Double], mr, (b,c)=>b+c, 0) == 50)
   }
 
   // Problem 3
@@ -55,6 +63,8 @@ object Test extends App {
 
     val l = List(3, 5, 6, 2, 3, 2, 2)
     print_result(Problem3.countElements(l)(Problem3.listDict[Int, Int], Problem3.listIter[Int, Int]) == List((2, 3), (3, 2), (5, 1), (6, 1)))
+    println(Problem3.countElements(l)(Problem3.listDict[Int, Int], Problem3.listIter[Int, Int]))
+    println("Finished test for lists")
     print_result(Problem3.countElements(l)(Problem3.BSTDict[Int, Int], Problem3.BSTIter[Int, Int]) == List((2, 3), (3, 2), (5, 1), (6, 1)))
   }
 }

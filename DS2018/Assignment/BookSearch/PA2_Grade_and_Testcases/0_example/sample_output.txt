@@ -1,0 +1,30 @@
+ADD:	a_confession society_331_center
+ORDER: a_confession
+ADD:	band_of_brothers religion_new_coming
+SIZE:	2
+ADD:	the_count_of_monte_cristo military_discount_area
+ADD:	pride_and_prejudice society_331_center
+LAST:	the_count_of_monte_cristo military_discount_area
+GET:	the_count_of_monte_cristo military_discount_area
+ADD:	anna_karenina literature_320a
+GET:	anna_karenina literature_320a
+REMOVE:	society_331_center
+ADD:	robinson_crusoe tale_floor3
+RANGE:	2
+FIRST:	a_confession society_331_center
+ADD:	a_tale_of_two_cities tale_floor3
+ADD:	eugenie_grandet society_331_center
+REMOVE:	society_331_center
+GET:	eugenie_grandet society_331_center
+ADD:	les_miserables religion_new_coming
+REMOVE:	tale_floor3
+GET:	eugenie_grandet society_331_center
+ADD:	a_confession society_331_center
+GET:	anna_karenina literature_320a
+GET:	band_of_brothers religion_new_coming
+ADD:	father_goriot tale_floor3
+REMOVE:	religion_new_coming
+SIZE:	7
+REMOVE:	tale_floor3
+GET:	a_confession society_331_center
+BookSearch cannot find the book

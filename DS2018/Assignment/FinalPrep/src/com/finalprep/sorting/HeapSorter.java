@@ -1,5 +1,6 @@
 package com.finalprep.sorting;
 
+import com.finalprep.interfaces.Sorter;
 import com.finalprep.util.MaxHeap;
 import com.finalprep.util.Pair;
 

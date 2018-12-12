@@ -1,0 +1,19 @@
+add a_confession society_331_center
+add madame_bovary literature_320a
+size
+add sherlock_holmes history_11
+add father_goriot tale_floor3
+add great_expectations military_discount_area
+remove father_goriot
+add father_goriot tale_floor3
+get sherlock_holmes
+add eugenie_grandet society_331_center
+add robinson_crusoe tale_floor3
+first
+add robinson_crusoe tale_floor3
+add sherlock_holmes history_11
+size
+add camille military_discount_area
+last
+size
+range a_confession madame_bovary

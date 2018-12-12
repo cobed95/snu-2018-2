@@ -1,0 +1,13 @@
+add david_copperfield literature_320a
+add around_the_world_in_eighty_days history_11
+add a_confession society_331_center
+add father_goriot tale_floor3
+size
+add robinson_crusoe tale_floor3
+add a_tale_of_two_cities tale_floor3
+size
+add pride_and_prejudice society_331_center
+size
+add crime_and_punishment religion_new_coming
+add eugenie_grandet society_331_center
+order

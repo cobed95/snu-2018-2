@@ -1,0 +1,23 @@
+BookSearch does not have any book
+ADD:	the_count_of_monte_cristo military_discount_area
+ADD:	les_miserables religion_new_coming
+LAST:	the_count_of_monte_cristo military_discount_area
+ADD:	camille military_discount_area
+ADD:	father_goriot tale_floor3
+GET:	the_count_of_monte_cristo military_discount_area
+REMOVE:	religion_new_coming
+ADD:	madame_bovary literature_320a
+FIRST:	camille military_discount_area
+ADD:	robinson_crusoe tale_floor3
+FIRST:	camille military_discount_area
+GET:	father_goriot tale_floor3
+RANGE:	2
+GET:	robinson_crusoe tale_floor3
+GET:	the_count_of_monte_cristo military_discount_area
+ADD:	around_the_world_in_eighty_days history_11
+ORDER: around_the_world_in_eighty_days
+ORDER: camille
+ORDER: father_goriot
+ORDER: madame_bovary
+ORDER: robinson_crusoe
+ORDER: the_count_of_monte_cristo

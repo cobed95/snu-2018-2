@@ -1,0 +1,19 @@
+add david_copperfield literature_320a
+add pride_and_prejudice society_331_center
+add eugenie_grandet society_331_center
+add the_count_of_monte_cristo military_discount_area
+add eugenie_grandet society_331_center
+get pride_and_prejudice
+first
+get father_goriot
+add crime_and_punishment religion_new_coming
+add don_quixote history_11
+add crime_and_punishment religion_new_coming
+first
+size
+remove crime_and_punishment
+get father_goriot
+add david_copperfield literature_320a
+remove the_count_of_monte_cristo
+get david_copperfield
+last

@@ -1,0 +1,23 @@
+ADD:	les_miserables religion_new_coming
+FIRST:	les_miserables religion_new_coming
+ADD:	pride_and_prejudice society_331_center
+ADD:	robinson_crusoe tale_floor3
+ADD:	camille military_discount_area
+GET:	robinson_crusoe tale_floor3
+REMOVE:	society_331_center
+ADD:	band_of_brothers religion_new_coming
+ADD:	a_confession society_331_center
+ADD:	don_quixote history_11
+ORDER: a_confession
+ORDER: band_of_brothers
+ORDER: camille
+ORDER: don_quixote
+ORDER: les_miserables
+ORDER: robinson_crusoe
+GET:	don_quixote history_11
+REMOVE:	military_discount_area
+ADD:	father_goriot tale_floor3
+LAST:	robinson_crusoe tale_floor3
+SIZE:	6
+ADD:	robinson_crusoe tale_floor3
+FIRST:	a_confession society_331_center

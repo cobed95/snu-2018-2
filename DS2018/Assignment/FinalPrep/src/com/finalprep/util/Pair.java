@@ -20,4 +20,16 @@ public class Pair<K extends Comparable<? super K>, V> {
     public String toString() {
         return "(" + key.toString() + ", " + value.toString() + ")";
     }
+
+    public K getFirst() {
+        return key;
+    }
+
+    public V getSecond() {
+        return value;
+    }
+
+    public void setKey(K key) {
+        this.key = key;
+    }
 }

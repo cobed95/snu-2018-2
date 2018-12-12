@@ -1,4 +1,4 @@
-package com.finalprep.sorting;
+package com.finalprep.interfaces;
 
 import com.finalprep.util.Pair;
 
