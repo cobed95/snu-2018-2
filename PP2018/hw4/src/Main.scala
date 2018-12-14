@@ -83,7 +83,7 @@ object Main {
             case tailHead :: _ if tailHead != ' ' && tailHead != '\t' && tailHead != '\n' =>
               ' ' :: removeRedundantSpace(tail)
             case _ :: tailTail =>
-              removeRedundantSpace(tailTail)
+              removeRedundantSpace(' ' :: tailTail)
             case Nil => ' ' :: tail
           }
         case Nil => Nil
@@ -127,7 +127,6 @@ object Main {
     def countElements[D, A](l: List[A])(implicit dict: Dict[D, A, Int], iter: Iter[D, A]): List[(A, Int)] = {
 
       def countElementsIter(l: List[A], pairs: D): D = {
-        println(pairs)
         l match {
           case head :: tail =>
             dict.lookup(pairs, head) match {
@@ -216,23 +215,36 @@ object Main {
 
     implicit def BSTIter[K, V]: Iter[BST[K, V], K] = new Iter[BST[K, V], K] {
 
-      def inorderList(i: BST[K, V]): List[(K, V)] =
+      def getValue(i: BST[K, V]): Option[K] =
+        i match {
+          case Node(keyI, _, left, _) =>
+            left match {
+              case Node(_, _, _, _) => getValue(left)
+              case Leaf() => Some(keyI)
+            }
+          case Leaf() => None
+        }
+
+      def getNext(i: BST[K, V]): BST[K, V] =
+        deleteMin(i)
+
+      def deleteMin(i: BST[K, V]): BST[K, V] =
         i match {
           case Node(key, value, left, right) =>
-            inorderList(left) ::: List((key, value)) ::: inorderList(right)
-          case Leaf() => Nil
+            left match {
+              case Node(_, _, leftLeft, leftRight) =>
+                leftLeft match {
+                  case Node(_, _, _, _) =>
+                    Node(key, value, deleteMin(left), right)
+                  case Leaf() =>
+                    Node(key, value, leftRight, right)
+                }
+              case Leaf() =>
+                right
+            }
+          case Leaf() =>
+            Leaf()
         }
-
-      def getValue(i: BST[K, V]): Option[K] =
-        inorderList(i) match {
-          case (key, _) :: _ => Some(key)
-          case Nil => None
-        }
-
-      def getNext(i: BST[K, V]): BST[K, V] = {
-        println("called getNext.")
-        getNext(i)
-      }
     }
   }
 }

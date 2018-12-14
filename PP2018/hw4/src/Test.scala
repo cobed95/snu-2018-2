@@ -1,6 +1,7 @@
 package pp201802.hw4test
 import pp201802.hw4.Data._
 import pp201802.hw4.Main._
+
 import reflect.runtime.universe._
 import scala.language.higherKinds
 
@@ -23,7 +24,7 @@ object Test extends App {
 
     val s0 = new MyLetter
     val s1 = s0.setHeader("Kim")
-    val s2 = s1.setBody("Hello, This is final homework. Good   luck")
+    val s2 = s1.setBody("Hello, This\n\tis\tfinal homework. Good   luck")
     val s3 = s2.setFooter("Lee")
     println(s3.toString)
     print_result(s3.toString == "Dear Kim\n\nHello, This is final homework.\n Good luck\n\nBest,\nLee")
@@ -62,10 +63,17 @@ object Test extends App {
     }
 
     val l = List(3, 5, 6, 2, 3, 2, 2)
+    val r = List(0, 7, 8, 9, 1, 2, 5, 6, 8, 2, 5, 7, 1, 6, 2, 67, 9, 6, 2, 7, 2, 1, 8)
     print_result(Problem3.countElements(l)(Problem3.listDict[Int, Int], Problem3.listIter[Int, Int]) == List((2, 3), (3, 2), (5, 1), (6, 1)))
-    println(Problem3.countElements(l)(Problem3.listDict[Int, Int], Problem3.listIter[Int, Int]))
-    println("Finished test for lists")
     print_result(Problem3.countElements(l)(Problem3.BSTDict[Int, Int], Problem3.BSTIter[Int, Int]) == List((2, 3), (3, 2), (5, 1), (6, 1)))
+    println(Problem3.countElements(r)(Problem3.BSTDict[Int, Int], Problem3.BSTIter[Int, Int]))
+
+
+    var list: List[Int] = List()
+    for (i <- 0 to 999999)
+      list = i :: list
+
+    println(Problem3.countElements(list)(Problem3.BSTDict[Int, Int], Problem3.BSTIter[Int, Int]))
   }
 }
 
