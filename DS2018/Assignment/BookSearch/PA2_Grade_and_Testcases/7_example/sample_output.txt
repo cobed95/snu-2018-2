@@ -1,0 +1,17 @@
+ADD:	david_copperfield literature_320a
+ADD:	the_count_of_monte_cristo military_discount_area
+ADD:	pride_and_prejudice society_331_center
+ADD:	crime_and_punishment religion_new_coming
+REMOVE:	society_331_center
+BookSearch cannot find the book
+ADD:	pride_and_prejudice society_331_center
+SIZE:	4
+GET:	the_count_of_monte_cristo military_discount_area
+ADD:	david_copperfield literature_320a
+ADD:	pride_and_prejudice society_331_center
+FIRST:	crime_and_punishment religion_new_coming
+SIZE:	6
+ADD:	band_of_brothers religion_new_coming
+ADD:	a_confession society_331_center
+ADD:	father_goriot tale_floor3
+SIZE:	9

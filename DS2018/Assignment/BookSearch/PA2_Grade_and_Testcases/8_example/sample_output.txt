@@ -1,0 +1,21 @@
+ADD:	david_copperfield literature_320a
+ADD:	around_the_world_in_eighty_days history_11
+ADD:	a_confession society_331_center
+ADD:	father_goriot tale_floor3
+SIZE:	4
+ADD:	robinson_crusoe tale_floor3
+ADD:	a_tale_of_two_cities tale_floor3
+SIZE:	6
+ADD:	pride_and_prejudice society_331_center
+SIZE:	7
+ADD:	crime_and_punishment religion_new_coming
+ADD:	eugenie_grandet society_331_center
+ORDER: a_confession
+ORDER: a_tale_of_two_cities
+ORDER: around_the_world_in_eighty_days
+ORDER: crime_and_punishment
+ORDER: david_copperfield
+ORDER: eugenie_grandet
+ORDER: father_goriot
+ORDER: pride_and_prejudice
+ORDER: robinson_crusoe

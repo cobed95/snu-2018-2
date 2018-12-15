@@ -1,0 +1,25 @@
+ADD:	father_goriot tale_floor3
+BookSearch cannot find the book
+ADD:	band_of_brothers religion_new_coming
+ADD:	camille military_discount_area
+GET:	band_of_brothers religion_new_coming
+ORDER: band_of_brothers
+ORDER: camille
+ORDER: father_goriot
+ADD:	the_count_of_monte_cristo military_discount_area
+LAST:	the_count_of_monte_cristo military_discount_area
+ADD:	don_quixote history_11
+REMOVE:	religion_new_coming
+BookSearch cannot find the book
+ADD:	around_the_world_in_eighty_days history_11
+ADD:	around_the_world_in_eighty_days history_11
+BookSearch cannot find the book
+ADD:	band_of_brothers religion_new_coming
+SIZE:	7
+ORDER: around_the_world_in_eighty_days
+ORDER: around_the_world_in_eighty_days
+ORDER: band_of_brothers
+ORDER: camille
+ORDER: don_quixote
+ORDER: father_goriot
+ORDER: the_count_of_monte_cristo

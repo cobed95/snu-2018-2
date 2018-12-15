@@ -22,8 +22,10 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		BookSearch bookSearch = new BookSearch();
 		TreePrinter<String, String> tp = new TreePrinter<String, String>();
+
+		String prefix = "PA2_Grade_and_Testcases/1_example/";
 		
-		FileInputStream fis = new FileInputStream("sample_input.txt");
+		FileInputStream fis = new FileInputStream(prefix + "sample_input.txt");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
 
 		for (String line = reader.readLine(); line != null; line = reader.readLine()) {

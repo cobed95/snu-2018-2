@@ -1,0 +1,20 @@
+order
+add the_count_of_monte_cristo military_discount_area
+add les_miserables religion_new_coming
+last
+add camille military_discount_area
+add father_goriot tale_floor3
+get the_count_of_monte_cristo
+remove les_miserables
+add madame_bovary literature_320a
+first
+add robinson_crusoe tale_floor3
+don_quixote history_11
+first
+get father_goriot
+range madame_bovary robinson_crusoe
+get robinson_crusoe
+get the_count_of_monte_cristo
+add around_the_world_in_eighty_days history_11
+order
+
