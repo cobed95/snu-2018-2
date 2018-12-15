@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/csehome/cobed95/snu-2018-2/LD2018/Assignments/FinalProject/DigitalClockImpl.ncd
+OUTFILE=/csehome/cobed95/snu-2018-2/LD2018/Assignments/FinalProject/DigitalClockImpl.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50an-5tqg144
+WORKINGDIR=/csehome/cobed95/snu-2018-2/LD2018/Assignments/FinalProject
+LICENSE=WebPack
+USER_INFO=211016637_0_0_814

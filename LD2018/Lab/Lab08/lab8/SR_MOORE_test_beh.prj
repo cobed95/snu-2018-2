@@ -1,4 +1,0 @@
-verilog work "SR_MOORE.v"
-verilog work "SR_MEALY.v"
-verilog work "SR_MOORE_test.v"
-verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

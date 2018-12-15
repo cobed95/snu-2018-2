@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/csehome/cobed95/snu-2018-2/LD2018/Assignments/PatternCounter/PatternRecognizerTest_isim_beh.exe" -prj "/csehome/cobed95/snu-2018-2/LD2018/Assignments/PatternCounter/PatternRecognizerTest_beh.prj" "work.PatternRecognizerTest" "work.glbl" 

@@ -1,0 +1,19 @@
+NET "osc" LOC = P57;
+
+NET "clk_aux" LOC = P47;
+NET "in" LOC = P48;
+NET "reset" LOC = P49;
+
+NET"past[2]" LOC=P87;
+NET"past[1]" LOC=P88;
+NET"past[0]" LOC=P90;
+NET"out" LOC=P91;
+
+NET"display[6]" LOC=P77;
+NET"display[5]" LOC=P78;
+NET"display[4]" LOC=P79;
+NET"display[3]" LOC=P82;
+NET"display[2]" LOC=P83;
+NET"display[1]" LOC=P84;
+NET"display[0]" LOC=P85;
+

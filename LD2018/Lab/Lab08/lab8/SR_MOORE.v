@@ -26,7 +26,7 @@ module SR_MOORE(
     );
 	 parameter S0 = 3'b000, S1 = 3'b001, S2 = 3'b010, S3 = 3'b011, S4 = 3'b100, EXIT=3'b101;
 
-    reg [2:0] state, next;
+    reg [2:0] state=S0, next;
     
     always @ (in or state)
     begin

@@ -27,7 +27,7 @@ module SR_MEALY(
 
     parameter S0 = 3'b000, S1 = 3'b001, S2 = 3'b010, S3 = 3'b011, EXIT = 3'b100;
 
-    reg [2:0] state, next;
+    reg [2:0] state=S0, next;
     
     always @ (in or state)
     begin
@@ -35,12 +35,13 @@ module SR_MEALY(
         case (state)
             S0: if (in == 1'b1) next = S1;
                 else next = S0;
-            S1: if (in == 1'b1) next = S3;
-                else 
-                begin  
+            S1: 
+					if (in == 1'b1) next = S3;
+               else 
+               begin  
                     next = S2; 
                     out = 1;
-                end
+               end
             S2: if (in == 1'b1) next = S1; 
                 else next = EXIT; 
             S3: if (in == 1'b1) next = S3; 
