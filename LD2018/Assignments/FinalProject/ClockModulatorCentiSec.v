@@ -18,21 +18,28 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ClockModulatorCentiSec(
-    input clk,
-    output reg out
+module ClockModulatorUnitCentiSec(
+	 input clk,
+	 output reg out
     );
 	 parameter LIMIT = 19'd500000;
 	 parameter ZERO = 19'd0;
 	 
-	 reg[18:0] clk_count = ZERO;
-	 always @ (posedge clk)
+	 parameter HIGH = 1'b1;
+	 parameter LOW = 1'b0;
+	 
+	 reg [18:0] clk_count = ZERO;
+	 
+	 always @ (posedge clk) 
 	 begin
-		if (clk_count == LIMIT)
-		begin
-			out = 1;
-			clk_count = ZERO;
-		end
-		else clk_count = clk_count + 1;
+		if (clk_count == LIMIT - 1) clk_count = ZERO;
+		else clk_count = clk_count +1;
 	 end
+	 
+	 always @ (clk_count)
+	 begin
+		if (clk_count == LIMIT - 1) out = HIGH;
+		else out = LOW;
+	 end
+
 endmodule

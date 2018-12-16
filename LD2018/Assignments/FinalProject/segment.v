@@ -25,6 +25,7 @@ module segment(
 	 
 	 // 10 is used to display A
 	 // 11 is used to display P
+	 // 12 is used to display -
 	 // 15 is used to turn off display.
 	 always @ (*)
 	 begin
@@ -41,6 +42,7 @@ module segment(
 			4'd9: out=7'b1111011;
 			4'd10: out=7'b1110111;
 			4'd11: out=7'b1100111;
+			4'd12: out=7'b0000001;
 			4'd15: out=7'b0000000;
 			default: out=7'b0000000;
 		endcase

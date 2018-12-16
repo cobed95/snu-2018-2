@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/Counter.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/Debouncer.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/Past_Input_Reg.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/SR_MEALY.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/SR_MEALY_test.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/SR_MOORE.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/SR_MOORE_BOARD.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/SR_MOORE_BOARD_display.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/SR_MOORE_test.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/csehome/cobed95/snu-2018-2/LD2018/Lab/Lab08/lab8/segment.v&quot; into library work</arg>
+</msg>
+
+</messages>
+

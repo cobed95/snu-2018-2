@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    14:08:14 12/15/2018 
+// Create Date:    01:30:35 12/17/2018 
 // Design Name: 
-// Module Name:    BinaryUpCounter100 
+// Module Name:    AlarmCounter 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module BinaryUpCounter100(
+module AlarmCounter(
     input clear,
 	 input mode,
     input manual_increment,
@@ -33,24 +33,26 @@ module BinaryUpCounter100(
 	 parameter COUNT = 1'b1;
 	 parameter INCREMENT = 1'b1;
 	 parameter DECREMENT = 1'b1;
-	 parameter LIMIT= 7'd99;
+	 parameter LIMIT= 7'd59;
 	 parameter ZERO = 7'd0;
+	 parameter UNSET = 7'b1111111;
 	 
-	 reg[6:0] state = ZERO;
+	 reg[6:0] state = UNSET;
 	 assign out = state;
-	 reg rco_reg=0;
+	 reg rco_reg;
 	 assign ripple_carry_out = rco_reg;
-	 
-	 always @ (posedge clk)
+
+	 always @ (posedge clk or posedge clear)
 	 begin
-		rco_reg = 0;
-		if (clear == CLEAR) state = ZERO;
+		if (clear == CLEAR) state = UNSET;
 		else if (mode == SET) 
 		begin
 			if (manual_increment == INCREMENT) 
-				state = state + 1;
+				if (state == UNSET || state == LIMIT) state = ZERO;
+				else state = state + 1;
 			if (manual_decrement == DECREMENT)
-				state = state + 1;
+				if (state == UNSET || state == ZERO) state = LIMIT;
+				else state = state - 1;
 		end
 		else if (count == COUNT) 
 		begin
@@ -62,4 +64,14 @@ module BinaryUpCounter100(
 			else state = state + 1;
 		end
 	 end
+	 /*
+	 always @ (posedge clk)
+	 begin
+		case (rco_reg)
+			1'b1: rco_reg = 0;
+			1'b0: if (count == COUNT && state == LIMIT) rco_reg = 1;
+						else rco_reg = 0;
+		endcase
+	 end
+	 */
 endmodule

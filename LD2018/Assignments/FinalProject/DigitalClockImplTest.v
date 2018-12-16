@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   20:18:17 12/15/2018
-// Design Name:   DisplayController
-// Module Name:   /csehome/cobed95/snu-2018-2/LD2018/Assignments/FinalProject/DisplayControllerTest.v
+// Create Date:   21:05:04 12/16/2018
+// Design Name:   DigitalClockImpl
+// Module Name:   /csehome/cobed95/snu-2018-2/LD2018/Assignments/FinalProject/DigitalClockImplTest.v
 // Project Name:  FinalProject
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: DisplayController
+// Verilog Test Fixture created by ISE for module: DigitalClockImpl
 //
 // Dependencies:
 // 
@@ -22,13 +22,15 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module DisplayControllerTest;
+module DigitalClockImplTest;
 
 	// Inputs
 	reg clk;
-	reg [2:0] flash;
-	reg display_mode;
-	reg [20:0] out_time;
+	reg mode;
+	reg set;
+	reg op1;
+	reg op2;
+	reg reset;
 
 	// Outputs
 	wire [6:0] display6;
@@ -39,11 +41,13 @@ module DisplayControllerTest;
 	wire [6:0] display1;
 
 	// Instantiate the Unit Under Test (UUT)
-	DisplayController uut (
+	DigitalClockImpl uut (
 		.clk(clk), 
-		.flash(flash), 
-		.display_mode(display_mode), 
-		.out_time(out_time), 
+		.mode(mode), 
+		.set(set), 
+		.op1(op1), 
+		.op2(op2), 
+		.reset(reset), 
 		.display6(display6), 
 		.display5(display5), 
 		.display4(display4), 
@@ -55,24 +59,22 @@ module DisplayControllerTest;
 	initial begin
 		// Initialize Inputs
 		clk = 0;
-		flash = 3'b000;
-		display_mode = 0;
-		out_time = 0;
+		mode = 0;
+		set = 0;
+		op1 = 0;
+		op2 = 0;
+		reset = 0;
 
 		// Wait 100 ns for global reset to finish
 		#1;
-		repeat(1000) begin
-			out_time = out_time + 1;
-			#20;
-		end
         
 		// Add stimulus here
-		
 
 	end
-   always begin
-		#0.1 clk = 1;
-		#0.1 clk = 0;
+	
+	always begin
+		#1 clk = 1;
+		#1 clk = 0;
 	end
 endmodule
 

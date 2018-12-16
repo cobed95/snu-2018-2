@@ -34,7 +34,7 @@ module BinaryUpCounterTest;
 
 	// Outputs
 	wire ripple_carry_out;
-	wire [5:0] out;
+	wire [6:0] out;
 
 	// Instantiate the Unit Under Test (UUT)
 	BinaryUpCounter uut (
@@ -55,17 +55,20 @@ module BinaryUpCounterTest;
 		manual_increment = 0;
 		manual_decrement = 0;
 		count = 1;
-		clk = 0;
+		clk = 1;
 
 		// Wait 100 ns for global reset to finish
-		#100;
         
 		// Add stimulus here
 
 	end
 	always begin
-		#1 clk = 1;
 		#1 clk = 0;
+		#1 clk = 1;
+	end
+	always begin
+		#1 count = 0;
+		#9 count = 1;
 	end
 endmodule
 

@@ -39,7 +39,7 @@ module BinaryUpCounter24(
 	 
 	 reg[6:0] state = ZERO;
 	 assign out = state;
-	 reg state_aux;
+	 reg [6:0] state_aux;
 	 
 	 always @ (posedge clk)
 	 begin
@@ -54,9 +54,13 @@ module BinaryUpCounter24(
 		else if (mode == SET) 
 		begin
 			if (manual_increment == INCREMENT) 
-				state = state + 1;
+				if (state == LIMIT)
+					state = ZERO;
+				else state = state + 1;
 			if (manual_decrement == DECREMENT)
-				state = state + 1;
+				if (state == ZERO)
+					state = LIMIT;
+				else state = state - 1;
 		end
 		else if (count == COUNT) 
 		begin

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    13:31:20 12/15/2018 
+// Create Date:    01:30:53 12/17/2018 
 // Design Name: 
-// Module Name:    BinaryUpCounter 
+// Module Name:    AlarmCounter24 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,14 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module BinaryUpCounter(
+module AlarmCounter24(
     input clear,
 	 input mode,
+	 input ampm,
     input manual_increment,
 	 input manual_decrement,
     input count,
-	 input clk,
-	 output ripple_carry_out,
+    input clk,
+	 output reg ripple_carry_out,
     output [6:0] out
     );
 	 parameter CLEAR = 1'b1;
@@ -33,54 +34,43 @@ module BinaryUpCounter(
 	 parameter COUNT = 1'b1;
 	 parameter INCREMENT = 1'b1;
 	 parameter DECREMENT = 1'b1;
-	 parameter LIMIT= 7'd59;
+	 parameter LIMIT= 7'd23;
 	 parameter ZERO = 7'd0;
+	 parameter UNSET = 7'b1111111;
 	 
-	 reg[6:0] state = ZERO;
+	 reg[6:0] state = UNSET;
 	 assign out = state;
-	 reg rco_reg=0; 
-	 assign ripple_carry_out = rco_reg;
 	 
-	 always @ (posedge clk)
+	 reg[6:0] state_aux;
+	 always @ (posedge clk or posedge clear)
 	 begin
-		rco_reg = 0;
-		if (clear == CLEAR) 
-			state = ZERO;		
+		if (clear == CLEAR) state = UNSET;
+		else if (ampm == SET)
+		begin
+			if (manual_increment == INCREMENT || manual_decrement == DECREMENT)
+				state_aux = state + 12;
+				if (state_aux > LIMIT) state = state_aux - 24;
+				else state = state_aux;
+		end
 		else if (mode == SET) 
 		begin
-			if (manual_increment == INCREMENT) 
-				if (state == LIMIT)
-					state = ZERO;
+			if (manual_increment == INCREMENT)
+				if (state == LIMIT || state == UNSET) state = ZERO;
 				else state = state + 1;
 			if (manual_decrement == DECREMENT)
-				if (state == ZERO)
+				if (state == UNSET || state == ZERO)
 					state = LIMIT;
 				else state = state - 1;
 		end
 		else if (count == COUNT) 
 		begin
-			if (state == LIMIT) 
-			begin 
-				state = ZERO;
-				rco_reg = 1;
+			ripple_carry_out = 0;
+			if (state == LIMIT) state = ZERO;
+			else
+			begin
+				if (state == LIMIT - 1) ripple_carry_out = 1;
+				state = state + 1;
 			end
-			else state = state + 1;
 		end
 	 end
-	 
-	 /*
-	 always @ (posedge clk)
-	 begin
-		case (rco_reg)
-			1'b1: next_rco_reg = 0;
-			1'b0: if (count == COUNT && state == LIMIT) next_rco_reg = 1;
-						else next_rco_reg = 0;
-		endcase
-	 end
-	 
-	 always @ (state)
-	 begin
-		rco_reg <= next_rco_reg;
-	 end
-	 */
 endmodule
