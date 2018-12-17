@@ -32,7 +32,7 @@ module DigitalClockImpl(
     output [6:0] display2,
     output [6:0] display1
     );
-	 wire display_mode;
+	 wire [1:0] display_mode;
     wire [2:0] flash;
     wire [20:0] out_time;
 	 

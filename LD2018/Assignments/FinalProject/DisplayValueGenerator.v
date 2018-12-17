@@ -92,7 +92,7 @@ module DisplayValueGenerator(
 			end
 			else if (display_mode == DISPLAY60)
 			begin
-				if (high < 7'd10) highResult <= OFF;
+				if (high_high < 4'd1) highResult <= OFF;
 				else highResult <= high_high;
 				lowResult <= high_low;
 			end
@@ -124,9 +124,9 @@ module DisplayValueGenerator(
 			end
 			else if (display_mode == DISPLAY60)
 			begin
-				if (high < 7'd10) highResult <= OFF;
-				else highResult <= high_high;
-				lowResult <= high_low;
+				if (mid_high < 4'd1) highResult <= OFF;
+				else highResult <= mid_high;
+				lowResult <= mid_low;
 			end
 		end
 		else if (target == RIGHT)
@@ -136,15 +136,15 @@ module DisplayValueGenerator(
 				highResult <= HYPHEN;
 				lowResult <= HYPHEN;
 			end
-			else if (display_mode == DISPLAY24)
-			begin
-				highResult <= low_high;
-				lowResult <= low_low;
-			end
 			else if (display_mode == DISPLAY12)
 			begin
 				highResult <= mid_high;
 				lowResult <= mid_low;
+			end
+			else 
+			begin
+				highResult <= low_high;
+				lowResult <= low_low;
 			end
 		end
 	 end
