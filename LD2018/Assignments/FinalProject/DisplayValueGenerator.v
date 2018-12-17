@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module DisplayValueGenerator(
 	 input clk,
-	 input display_mode,
+	 input [1:0] display_mode,
 	 input [20:0] out_time,
 	 input [1:0] target,
 	 output reg [3:0] highResult,
@@ -30,8 +30,9 @@ module DisplayValueGenerator(
 	 parameter MID = 2'd1;
 	 parameter RIGHT = 2'd0;
 	 
-	 parameter DISPLAY24 = 1'd0;
-	 parameter DISPLAY12 = 1'd1;
+	 parameter DISPLAY24 = 2'd0;
+	 parameter DISPLAY12 = 2'd1;
+	 parameter DISPLAY60 = 2'd2;
 	 
 	 parameter A = 4'd10;
 	 parameter P = 4'd11;
@@ -89,6 +90,12 @@ module DisplayValueGenerator(
 				else highResult <= A;
 				lowResult <= OFF;
 			end
+			else if (display_mode == DISPLAY60)
+			begin
+				if (high < 7'd10) highResult <= OFF;
+				else highResult <= high_high;
+				lowResult <= high_low;
+			end
 		end
 		else if (target == MID)
 		begin
@@ -114,6 +121,12 @@ module DisplayValueGenerator(
 					highResult <= high_high;
 					lowResult <= high_low;
 				end
+			end
+			else if (display_mode == DISPLAY60)
+			begin
+				if (high < 7'd10) highResult <= OFF;
+				else highResult <= high_high;
+				lowResult <= high_low;
 			end
 		end
 		else if (target == RIGHT)

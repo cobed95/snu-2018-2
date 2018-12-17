@@ -21,7 +21,7 @@
 module DisplayController(
 	 input clk,
     input [2:0] flash,
-    input display_mode,
+    input [1:0] display_mode,
     input [20:0] out_time,
     output [6:0] display6,
     output [6:0] display5,

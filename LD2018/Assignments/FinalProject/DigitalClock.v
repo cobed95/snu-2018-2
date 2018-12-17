@@ -25,7 +25,7 @@ module DigitalClock(
     input op1,
     input op2,
     input reset,
-	 output reg display,
+	 output reg [1:0] display,
     output reg [2:0] flash,
     output reg [20:0] out_time
 	 );
@@ -36,30 +36,39 @@ module DigitalClock(
 	 parameter CLOCK12 = 5'd2;
 	 parameter SETCLOCK24_0 = 5'd3;
 	 parameter SETCLOCK24_1 = 5'd4;
-	 parameter SETCLOCK24_2 = 5'd5;
-	 parameter SETCLOCK12_0 = 5'd6;
-	 parameter SETCLOCK12_1 = 5'd7;
-	 parameter SETCLOCK12_2 = 5'd8;
-	 parameter ALARM24 = 5'd9;
-	 parameter ALARM12 = 5'd10;
-	 parameter SETALARM24_0 = 5'd11;
-	 parameter SETALARM24_1 = 5'd12;
-	 parameter SETALARM24_2 = 5'd13;
-	 parameter SETALARM12_0 = 5'd14;
-	 parameter SETALARM12_1 = 5'd15;
-	 parameter SETALARM12_2 = 5'd16;
-	 parameter STOPWATCHSTOP = 5'd17;
-	 parameter STOPWATCHGO = 5'd18;
-	 parameter ALARMING24 = 5'd19;
-	 parameter ALARMING12 = 5'd20;
+	 parameter SETCLOCK12_0 = 5'd5;
+	 parameter SETCLOCK12_1 = 5'd6;
+	 parameter SETCLOCK12_2 = 5'd7;
+	 parameter ALARM24 = 5'd8;
+	 parameter ALARM12 = 5'd9;
+	 parameter SETALARM24_0 = 5'd10;
+	 parameter SETALARM24_1 = 5'd11;
+	 parameter SETALARM12_0 = 5'd12;
+	 parameter SETALARM12_1 = 5'd13;
+	 parameter SETALARM12_2 = 5'd14;
+	 parameter STOPWATCHSTOP = 5'd15;
+	 parameter STOPWATCHGO = 5'd16;
+	 parameter ALARMING24 = 5'd17;
+	 parameter ALARMING12 = 5'd18;
 	 
 	 // Values
 	 parameter HIGH = 1'b1;
 	 parameter LOW = 1'b0;
 	 
 	 // Display Modes
-	 parameter DISPLAY24 = 1'd0;
-	 parameter DISPLAY12 = 1'd1;
+	 parameter DISPLAY24 = 2'd0;
+	 parameter DISPLAY12 = 2'd1;
+	 parameter DISPLAY60 = 2'd2;
+	 
+	 // Stopwatch States
+	 parameter IDLE = 1'b0;
+	 parameter COUNTING = 1'b1;
+	 
+	 // Was Setting
+	 parameter AMPM = 3'b100;
+	 parameter HOURS = 3'b010;
+	 parameter MINUTES = 3'b001;
+	 parameter NOTHING = 3'b000;
 	 
 	 //Data
 	 reg [4:0] state = INIT; reg[4:0] next_state;
@@ -69,6 +78,11 @@ module DigitalClock(
 	 reg [20:0] stopwatch_time_data;
 	 reg [20:0] out_time_data;
 	 reg [20:0] alarm_time_data = 21'b111111111111111111111;
+	 reg [2:0] was_setting;
+	 reg [2:0] was_setting_alarm;
+	 reg [1:0] was_in_display_mode;
+	 reg [1:0] was_in_alarm_display_mode;
+	 reg stopwatch_was;
 	 
 	 //Control
 	 reg clear;
@@ -76,8 +90,8 @@ module DigitalClock(
 	 reg stopwatch_clear;
 	 reg alarm_clear;
 	 reg alarm_seconds_clear;
-	 reg[2:0] setting;
-	 reg[2:0] alarm_setting;
+	 reg [2:0] setting;
+	 reg [2:0] alarm_setting;
 	 reg count;
 	 reg stopwatch_count;
 
@@ -251,16 +265,10 @@ module DigitalClock(
 		.out(out_time_left)
 	 );
 	 
-	 wire rco_sec_alarm;
 	 wire [6:0] alarm_time_right;
-	 AlarmCounter alarm_seconds (
-		.clear(alarm_seconds_clear),
-		.mode(1'b0),
-		.manual_increment(1'b0),
-		.manual_decrement(1'b0),
-		.count(1'b0),
+	 AlarmSecondsRegister alarm_seconds (
 		.clk(clk),
-		.ripple_carry_out(rco_sec_alarm),
+		.clear(alarm_seconds_clear),
 		.out(alarm_time_right)
 	 );
 	 
@@ -268,7 +276,7 @@ module DigitalClock(
 	 wire [6:0] alarm_time_mid;
 	 AlarmCounter alarm_minutes ( // Go from here.
 		.clear(alarm_clear),
-		.mode(alarm_setting[1]),
+		.mode(alarm_setting[0]),
 		.manual_increment(op1Pulse),
 		.manual_decrement(op2Pulse),
 		.count(1'b0),
@@ -281,8 +289,8 @@ module DigitalClock(
 	 wire [6:0] alarm_time_left;
 	 AlarmCounter24 alarm_hours (
 		.clear(alarm_clear),
-		.mode(alarm_setting[2]),
-		.ampm(alarm_setting[3]),
+		.mode(alarm_setting[1]),
+		.ampm(alarm_setting[2]),
 		.manual_increment(op1Pulse),
 		.manual_decrement(op2Pulse),
 		.count(1'b0),
@@ -299,93 +307,249 @@ module DigitalClock(
 			INIT: 
 				next_state = CLOCK24;
 			CLOCK24:
+			begin
+				was_setting = NOTHING;
+				was_in_display_mode = DISPLAY24;
 				if (setPulse == HIGH) next_state = SETCLOCK24_0;
-				else if (modePulse == HIGH) next_state = ALARM24;
+				else if (modePulse == HIGH) 
+				begin
+					if (was_in_alarm_display_mode == DISPLAY24)
+					begin
+						if (was_setting_alarm == NOTHING) next_state = ALARM24;
+						else if (was_setting_alarm == AMPM || was_setting == HOURS) next_state = SETALARM24_0;
+						else if (was_setting_alarm == MINUTES) next_state = SETALARM24_1;
+					end
+					else if (was_in_alarm_display_mode == DISPLAY12)
+					begin
+						if (was_setting_alarm == NOTHING) next_state = ALARM24;
+						else if (was_setting_alarm == AMPM) next_state = SETALARM12_0;
+						else if (was_setting_alarm == HOURS) next_state = SETALARM12_1;
+						else if (was_setting_alarm == MINUTES) next_state = SETALARM12_2;
+					end
+				end
 				else if (op1Pulse == HIGH) next_state = CLOCK12;
 				else if (alarm_is_set == HIGH && out_time_data[20:7] == alarm_time_data[20:7]) 
 					next_state = ALARMING24;
 				else next_state = CLOCK24;
+			end
 			CLOCK12:
+			begin
+				was_setting = NOTHING;
+				was_in_display_mode = DISPLAY12;
 				if (setPulse == HIGH) next_state = SETCLOCK12_0;
-				else if (modePulse == HIGH) next_state = ALARM12;
+				else if (modePulse == HIGH) 
+				begin
+					if (was_in_alarm_display_mode == DISPLAY24)
+					begin
+						if (was_setting_alarm == NOTHING) next_state = ALARM12;
+						else if (was_setting_alarm == AMPM || was_setting == HOURS) next_state = SETALARM24_0;
+						else if (was_setting_alarm == MINUTES) next_state = SETALARM24_1;
+					end
+					else if (was_in_alarm_display_mode == DISPLAY12)
+					begin
+						if (was_setting_alarm == NOTHING) next_state = ALARM12;
+						else if (was_setting_alarm == AMPM) next_state = SETALARM12_0;
+						else if (was_setting_alarm == HOURS) next_state = SETALARM12_1;
+						else if (was_setting_alarm == MINUTES) next_state = SETALARM12_2;
+					end
+				end
 				else if (op1Pulse == HIGH) next_state = CLOCK24;
 				else if (alarm_is_set == HIGH && out_time_data[20:7] == alarm_time_data[20:7]) 
 					next_state = ALARMING12;
 				else next_state = CLOCK12;
+			end
 			SETCLOCK24_0:
+			begin
+				was_setting = HOURS;
+				was_in_display_mode = DISPLAY24;
 				if (setPulse == HIGH) next_state = SETCLOCK24_1;
-				else if (modePulse == HIGH) next_state = ALARM24;
+				else if (modePulse == HIGH) 
+				begin
+					was_setting = HOURS;
+					next_state = ALARM24;
+				end
 				else next_state = SETCLOCK24_0;
+			end
 			SETCLOCK24_1:
-				if (setPulse == HIGH) next_state = SETCLOCK24_2;
-				else if (modePulse == HIGH) next_state = ALARM24;
-				else next_state = SETCLOCK24_1;
-			SETCLOCK24_2:
+			begin
+				was_setting = MINUTES;				
+				was_in_display_mode = DISPLAY24;
 				if (setPulse == HIGH) next_state = CLOCK24;
-				else if (modePulse == HIGH) next_state = ALARM24;
-				else next_state = SETCLOCK24_2;
+				else if (modePulse == HIGH) 
+				begin
+					was_setting = MINUTES;
+					next_state = ALARM24;
+				end
+				else next_state = SETCLOCK24_1;
+			end
 			SETCLOCK12_0:
+			begin
+				was_setting = AMPM;
+				was_in_display_mode = DISPLAY12;
 				if (setPulse == HIGH) next_state = SETCLOCK12_1;
-				else if (modePulse == HIGH) next_state = ALARM12;
+				else if (modePulse == HIGH) 
+				begin
+					was_setting = AMPM;
+					next_state = ALARM12;
+				end
 				else next_state = SETCLOCK12_0;
+			end
 			SETCLOCK12_1:
+			begin
+				was_setting = HOURS;
+				was_in_display_mode = DISPLAY12;
 				if (setPulse == HIGH) next_state = SETCLOCK12_2;
-				else if (modePulse == HIGH) next_state = ALARM12;
+				else if (modePulse == HIGH) 
+				begin 
+					was_setting = HOURS;
+					next_state = ALARM12;
+				end
 				else next_state = SETCLOCK12_1;
+			end
 			SETCLOCK12_2:
+			begin
+				was_setting = MINUTES;
+				was_in_display_mode = DISPLAY12;
 				if (setPulse == HIGH) next_state = CLOCK12;
-				else if (modePulse == HIGH) next_state = ALARM12;
+				else if (modePulse == HIGH) 
+				begin 
+					was_setting = MINUTES;
+					next_state = ALARM12;
+				end
 				else next_state = SETCLOCK12_2;
+			end
 			ALARM24:
+			begin
+				was_setting_alarm = NOTHING;
 				if (setPulse == HIGH) next_state = SETALARM24_0;
-				else if (modePulse == HIGH) next_state = STOPWATCHSTOP;
+				else if (modePulse == HIGH) 
+				begin
+					if (stopwatch_was == IDLE) next_state = STOPWATCHSTOP;
+					else if (stopwatch_was == COUNTING) next_state = STOPWATCHGO;
+				end
 				else if (op1Pulse == HIGH) next_state = ALARM12;
 				else if (op2Pulse == HIGH) alarm_is_set = LOW;
 				else next_state = ALARM24;
+			end
 			ALARM12:
+			begin
+				was_setting_alarm = NOTHING;
 				if (setPulse == HIGH) next_state = SETALARM12_0;
-				else if (modePulse == HIGH) next_state = STOPWATCHSTOP;
+				else if (modePulse == HIGH) 
+				begin
+					if (stopwatch_was == IDLE) next_state = STOPWATCHSTOP;
+					else if (stopwatch_was == COUNTING) next_state = STOPWATCHGO;
+				end
 				else if (op1Pulse == HIGH) next_state = ALARM24;
 				else if (op2Pulse == HIGH) alarm_is_set = LOW;
 				else next_state = ALARM12;
+			end
 			SETALARM24_0:
+			begin
+				was_setting_alarm = HOURS;
+				was_in_alarm_display_mode = DISPLAY24;
 				if (setPulse == HIGH) next_state = SETALARM24_1;
-				else if (modePulse == HIGH) next_state = STOPWATCHSTOP;
+				else if (modePulse == HIGH) 
+				begin
+					if (stopwatch_was == IDLE) next_state = STOPWATCHSTOP;
+					else if (stopwatch_was == COUNTING) next_state = STOPWATCHGO;
+				end
 				else next_state = SETALARM24_0;
+			end
 			SETALARM24_1:
-				if (setPulse == HIGH) next_state = SETALARM24_2;
-				else if (modePulse == HIGH) next_state = STOPWATCHSTOP;
-				else next_state = SETALARM24_1;
-			SETALARM24_2:
+			begin
+				was_setting_alarm = MINUTES;
+				was_in_alarm_display_mode = DISPLAY24;
 				if (setPulse == HIGH) 
 				begin
 					alarm_is_set = HIGH;
 					next_state = ALARM24;
 				end
-				else if (modePulse == HIGH) next_state = STOPWATCHSTOP;
-				else next_state = SETALARM24_2;
+				else if (modePulse == HIGH) 
+				begin
+					if (stopwatch_was == IDLE) next_state = STOPWATCHSTOP;
+					else if (stopwatch_was == COUNTING) next_state = STOPWATCHGO;
+				end
+				else next_state = SETALARM24_1;
+			end
 			SETALARM12_0:
+			begin
+				was_setting_alarm = AMPM;
+				was_in_alarm_display_mode = DISPLAY12;
 				if (setPulse == HIGH) next_state = SETALARM12_1;
-				else if (modePulse == HIGH) next_state = STOPWATCHSTOP;
+				else if (modePulse == HIGH) 
+				begin
+					if (stopwatch_was == IDLE) next_state = STOPWATCHSTOP;
+					else if (stopwatch_was == COUNTING) next_state = STOPWATCHGO;
+				end
 				else next_state = SETALARM12_0;
+			end
 			SETALARM12_1:
+			begin
+				was_setting_alarm = HOURS;
+				was_in_alarm_display_mode = DISPLAY12;
 				if (setPulse == HIGH) next_state = SETALARM12_2;
-				else if (modePulse == HIGH) next_state = STOPWATCHSTOP;
+				else if (modePulse == HIGH) 
+				begin
+					if (stopwatch_was == IDLE) next_state = STOPWATCHSTOP;
+					else if (stopwatch_was == COUNTING) next_state = STOPWATCHGO;
+				end
 				else next_state = SETALARM12_1;
+			end
 			SETALARM12_2:
+			begin
+				was_setting_alarm = MINUTES;
+				was_in_alarm_display_mode = DISPLAY12;
 				if (setPulse == HIGH) 
 				begin
 					alarm_is_set = HIGH;
 					next_state = ALARM12;
 				end
-				else if (modePulse == HIGH) next_state = STOPWATCHSTOP;
+				else if (modePulse == HIGH) 
+				begin
+					if (stopwatch_was == IDLE) next_state = STOPWATCHSTOP;
+					else if (stopwatch_was == COUNTING) next_state = STOPWATCHGO;
+				end
 				else next_state = SETALARM12_2;
+			end
 			STOPWATCHSTOP:
-				if (modePulse == HIGH) next_state = CLOCK24;
+				if (modePulse == HIGH) 
+				begin
+					stopwatch_was = IDLE;
+					if (was_in_display_mode == DISPLAY24)
+					begin
+						if (was_setting == NOTHING) next_state = CLOCK24;
+						else if (was_setting == AMPM || was_setting == HOURS) next_state = SETCLOCK24_0;
+						else if (was_setting == MINUTES) next_state = SETCLOCK24_1;
+					end
+					else if (was_in_display_mode == DISPLAY12)
+					begin
+						if (was_setting == NOTHING) next_state = CLOCK12;
+						else if (was_setting == AMPM) next_state = SETCLOCK12_0;
+						else if (was_setting == HOURS) next_state = SETCLOCK12_1;
+						else if (was_setting == MINUTES) next_state = SETCLOCK12_2;
+					end
+				end
 				else if (setPulse == HIGH) next_state = STOPWATCHGO;
 				else next_state = STOPWATCHSTOP;
 			STOPWATCHGO:
-				if (modePulse == HIGH) next_state = CLOCK24;
+				if (modePulse == HIGH) 
+				begin
+					stopwatch_was = COUNTING;
+					if (was_in_display_mode == DISPLAY24)
+					begin
+						if (was_setting == NOTHING) next_state = CLOCK24;
+						else if (was_setting == AMPM || was_setting == HOURS) next_state = SETCLOCK24_0;
+						else if (was_setting == MINUTES) next_state = SETCLOCK24_1;
+					end
+					else if (was_in_display_mode == DISPLAY12)
+					begin
+						if (was_setting == NOTHING) next_state = CLOCK12;
+						else if (was_setting == AMPM) next_state = SETCLOCK12_0;
+						else if (was_setting == HOURS) next_state = SETCLOCK12_1;
+						else if (was_setting == MINUTES) next_state = SETCLOCK12_2;
+					end
+				end
 				else if (stopwatch_time_data == 21'b011101101110111100011)
 					next_state = STOPWATCHSTOP;
 				else if (setPulse == HIGH) next_state = STOPWATCHSTOP;
@@ -421,10 +585,12 @@ module DigitalClock(
 				flash = 3'b000;
 				out_time = 20'd0;
 				clear = HIGH;
+				seconds_clear = HIGH;
 				stopwatch_clear = HIGH;
 				alarm_clear = HIGH;
-				setting = 4'b0000;
-				alarm_setting = 4'b0000;
+				alarm_seconds_clear = HIGH;
+				setting = 3'b000;
+				alarm_setting = 3'b000;
 				count = LOW;
 				stopwatch_count = LOW;
 			end
@@ -432,10 +598,12 @@ module DigitalClock(
 				display = DISPLAY24;
 				flash = 3'b000;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b0000;
+				alarm_seconds_clear = LOW;
+				setting = 3'b000;
+				alarm_setting = 3'b000;
 				count = modulatedSecReg;
 				stopwatch_count = LOW;
 				out_time = out_time_data;
@@ -444,10 +612,12 @@ module DigitalClock(
 				display = DISPLAY12;
 				flash = 3'b000;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b0000;
+				alarm_seconds_clear = LOW;
+				setting = 3'b000;
+				alarm_setting = 3'b000;
 				count = modulatedSecReg;
 				stopwatch_count = LOW;
 				out_time = out_time_data;
@@ -456,10 +626,12 @@ module DigitalClock(
 				display = DISPLAY24;
 				flash = 3'b100;
 				clear = LOW;
+				seconds_clear = HIGH;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0100;
-				alarm_setting = 4'b0000;
+				alarm_seconds_clear = LOW;
+				setting = 3'b010;
+				alarm_setting = 3'b000;
 				count = LOW;
 				stopwatch_count = LOW;
 				out_time = out_time_data;
@@ -468,22 +640,12 @@ module DigitalClock(
 				display = DISPLAY24;
 				flash = 3'b010;
 				clear = LOW;
+				seconds_clear = HIGH;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0010;
-				alarm_setting = 4'b0000;
-				count = LOW;
-				stopwatch_count = LOW;
-				out_time = out_time_data;
-			end
-			SETCLOCK24_2: begin
-				display = DISPLAY24;
-				flash = 3'b001;
-				clear = LOW;
-				stopwatch_clear = LOW;
-				alarm_clear = LOW;
-				setting = 4'b0001;
-				alarm_setting = 4'b0000;
+				alarm_seconds_clear = LOW;
+				setting = 3'b001;
+				alarm_setting = 3'b000;
 				count = LOW;
 				stopwatch_count = LOW;
 				out_time = out_time_data;
@@ -492,10 +654,12 @@ module DigitalClock(
 				display = DISPLAY12;
 				flash = 3'b100;
 				clear = LOW;
+				seconds_clear = HIGH;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b1000;
-				alarm_setting = 4'b0000;
+				alarm_seconds_clear = LOW;
+				setting = 3'b100;
+				alarm_setting = 3'b000;
 				count = LOW;
 				stopwatch_count = LOW;
 				out_time = out_time_data;
@@ -504,10 +668,12 @@ module DigitalClock(
 				display = DISPLAY12;
 				flash = 3'b010;
 				clear = LOW;
+				seconds_clear = HIGH;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0100;
-				alarm_setting = 4'b0000;
+				alarm_seconds_clear = LOW;
+				setting = 3'b010;
+				alarm_setting = 3'b000;
 				count = LOW;
 				stopwatch_count = LOW;
 				out_time = out_time_data;
@@ -516,10 +682,12 @@ module DigitalClock(
 				display = DISPLAY12;
 				flash = 3'b001;
 				clear = LOW;
+				seconds_clear = HIGH;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0010;
-				alarm_setting = 4'b0000;
+				alarm_seconds_clear = LOW;
+				setting = 3'b001;
+				alarm_setting = 3'b000;
 				count = LOW;
 				stopwatch_count = LOW;
 				out_time = out_time_data;
@@ -528,11 +696,15 @@ module DigitalClock(
 				display = DISPLAY24;
 				flash = 3'b000;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = !alarm_is_set;
-				setting = 4'b0000;
-				alarm_setting = 4'b0000;
-				count = modulatedSecReg;
+				alarm_seconds_clear = !alarm_is_set;
+				setting = 3'b000;
+				alarm_setting = 3'b000;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = alarm_time_data;
 			end
@@ -540,11 +712,15 @@ module DigitalClock(
 				display = DISPLAY12;
 				flash = 3'b000;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = !alarm_is_set;
-				setting = 4'b0000;
-				alarm_setting = 4'b0000;
-				count = modulatedSecReg;
+				alarm_seconds_clear = !alarm_is_set;
+				setting = 3'b000;
+				alarm_setting = 3'b000;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = alarm_time_data;
 			end
@@ -552,11 +728,15 @@ module DigitalClock(
 				display = DISPLAY24;
 				flash = 3'b100;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b0100;
-				count = modulatedSecReg;
+				alarm_seconds_clear = HIGH;
+				setting = 3'b000;
+				alarm_setting = 3'b010;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = alarm_time_data;
 			end
@@ -564,23 +744,15 @@ module DigitalClock(
 				display = DISPLAY24;
 				flash = 3'b010;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b0010;
-				count = modulatedSecReg;
-				stopwatch_count = LOW;
-				out_time = alarm_time_data;
-			end
-			SETALARM24_2: begin
-				display = DISPLAY24;
-				flash = 3'b001;
-				clear = LOW;
-				stopwatch_clear = LOW;
-				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b0001;
-				count = modulatedSecReg;
+				alarm_seconds_clear = HIGH;
+				setting = 3'b000;
+				alarm_setting = 3'b001;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = alarm_time_data;
 			end
@@ -588,11 +760,15 @@ module DigitalClock(
 				display = DISPLAY12;
 				flash = 3'b100;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b1000;
-				count = modulatedSecReg;
+				alarm_seconds_clear = HIGH;
+				setting = 3'b000;
+				alarm_setting = 3'b100;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = alarm_time_data;
 			end
@@ -600,11 +776,15 @@ module DigitalClock(
 				display = DISPLAY12;
 				flash = 3'b010;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b0100;
-				count = modulatedSecReg;
+				alarm_seconds_clear = HIGH;
+				setting = 3'b000;
+				alarm_setting = 3'b010;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = alarm_time_data;
 			end
@@ -612,35 +792,47 @@ module DigitalClock(
 				display = DISPLAY12;
 				flash = 3'b001;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b0010;
-				count = modulatedSecReg;
+				alarm_seconds_clear = HIGH;
+				setting = 3'b000;
+				alarm_setting = 3'b001;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = alarm_time_data;
 			end
 			STOPWATCHSTOP: begin
-				display = DISPLAY24;
+				display = DISPLAY60;
 				flash = 3'b000;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = op1Pulse;
 				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b0000;
-				count = modulatedSecReg;
+				alarm_seconds_clear = LOW;
+				setting = 3'b000;
+				alarm_setting = 3'b000;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = stopwatch_time_data;
 			end
 			STOPWATCHGO: begin
-				display = DISPLAY24;
+				display = DISPLAY60;
 				flash = 3'b000;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = LOW;
-				setting = 4'b0000;
-				alarm_setting = 4'b0000;
-				count = modulatedSecReg;
+				alarm_seconds_clear = LOW;
+				setting = 3'b000;
+				alarm_setting = 3'b000;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = modulatedCentiSecReg;
 				out_time = stopwatch_time_data;
 			end
@@ -648,11 +840,15 @@ module DigitalClock(
 				display = DISPLAY24;
 				flash = 3'b111;
 				clear = LOW;
-				stopwatch_clear = LOW;
+				seconds_clear = LOW;
+				stopwatch_clear = LOW; 
 				alarm_clear = HIGH;
-				setting = 4'b0000;
-				alarm_setting = 4'b0000;
-				count = modulatedSecReg;
+				alarm_seconds_clear = HIGH;
+				setting = 3'b000;
+				alarm_setting = 3'b000;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = out_time_data;
 			end
@@ -660,11 +856,14 @@ module DigitalClock(
 				display = DISPLAY12;
 				flash = 3'b111;
 				clear = LOW;
+				seconds_clear = LOW;
 				stopwatch_clear = LOW;
 				alarm_clear = HIGH;
-				setting = 4'b0000;
-				alarm_setting = 4'b0000;
-				count = modulatedSecReg;
+				setting = 3'b000;
+				alarm_setting = 3'b000;
+				if (was_setting == NOTHING)
+					count = modulatedSecReg;
+				else count = LOW;
 				stopwatch_count = LOW;
 				out_time = out_time_data;
 			end
