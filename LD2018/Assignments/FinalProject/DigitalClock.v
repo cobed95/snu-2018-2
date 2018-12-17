@@ -72,10 +72,12 @@ module DigitalClock(
 	 
 	 //Control
 	 reg clear;
+	 reg seconds_clear;
 	 reg stopwatch_clear;
 	 reg alarm_clear;
-	 reg[3:0] setting;
-	 reg[3:0] alarm_setting;
+	 reg alarm_seconds_clear;
+	 reg[2:0] setting;
+	 reg[2:0] alarm_setting;
 	 reg count;
 	 reg stopwatch_count;
 
@@ -212,10 +214,10 @@ module DigitalClock(
 	 wire rco_sec;
 	 wire [6:0] out_time_right;
 	 BinaryUpCounter seconds (
-		.clear(clear),
-		.mode(setting[0]),
-		.manual_increment(op1Pulse),
-		.manual_decrement(op2Pulse),
+		.clear(seconds_clear),
+		.mode(1'b0),
+		.manual_increment(1'b0),
+		.manual_decrement(1'b0),
 		.count(count),
 		.clk(clk),
 		.ripple_carry_out(rco_sec),
@@ -226,7 +228,7 @@ module DigitalClock(
 	 wire [6:0] out_time_mid;
 	 BinaryUpCounter minutes (
 		.clear(clear),
-		.mode(setting[1]),
+		.mode(setting[0]),
 		.manual_increment(op1Pulse),
 		.manual_decrement(op2Pulse),
 		.count(rco_sec),
@@ -239,8 +241,8 @@ module DigitalClock(
 	 wire [6:0] out_time_left;
 	 BinaryUpCounter24 hours (
 		.clear(clear),
-		.mode(setting[2]),
-		.ampm(setting[3]),
+		.mode(setting[1]),
+		.ampm(setting[2]),
 		.manual_increment(op1Pulse),
 		.manual_decrement(op2Pulse),
 		.count(rco_min),
@@ -252,10 +254,10 @@ module DigitalClock(
 	 wire rco_sec_alarm;
 	 wire [6:0] alarm_time_right;
 	 AlarmCounter alarm_seconds (
-		.clear(alarm_clear),
-		.mode(alarm_setting[0]),
-		.manual_increment(op1Pulse),
-		.manual_decrement(op2Pulse),
+		.clear(alarm_seconds_clear),
+		.mode(1'b0),
+		.manual_increment(1'b0),
+		.manual_decrement(1'b0),
 		.count(1'b0),
 		.clk(clk),
 		.ripple_carry_out(rco_sec_alarm),
@@ -264,7 +266,7 @@ module DigitalClock(
 	 
 	 wire rco_min_alarm;
 	 wire [6:0] alarm_time_mid;
-	 AlarmCounter alarm_minutes (
+	 AlarmCounter alarm_minutes ( // Go from here.
 		.clear(alarm_clear),
 		.mode(alarm_setting[1]),
 		.manual_increment(op1Pulse),

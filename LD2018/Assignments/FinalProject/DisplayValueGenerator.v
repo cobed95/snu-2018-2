@@ -104,8 +104,16 @@ module DisplayValueGenerator(
 			end
 			else if (display_mode == DISPLAY12)
 			begin
-				highResult <= high_high;
-				lowResult <= high_low;
+				if (high_high == 7'd0 && high_low == 7'd0)
+				begin
+					highResult <= 4'd1;
+					lowResult <= 4'd2;
+				end
+				else
+				begin
+					highResult <= high_high;
+					lowResult <= high_low;
+				end
 			end
 		end
 		else if (target == RIGHT)
