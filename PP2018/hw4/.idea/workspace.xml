@@ -2,20 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6076552-176f-4a8a-85c0-5bd68c92f902" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$BasicLetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$BasicLetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Body_Doublespace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Body_Doublespace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Body_Newline.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Body_Newline.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Footer_Best.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Footer_Best.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Footer_Day.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Footer_Day.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Header_Dear.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Header_Dear.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Header_Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Header_Hello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem2$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$$anon$1$$anon$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$$anon$1$$anon$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$$anon$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$$anon$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$$anon$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$$anon$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$$anon$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$MyLetter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$MyLetter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$delayedInit$body.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.scala" afterDir="false" />
     </list>
@@ -30,13 +35,14 @@
     <session id="-720780094">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,23 +59,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="44453" />
+          <entry key="scala" value="59933" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="44453" />
+          <entry key="Scala" value="59933" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="209" column="55" selection-start-line="209" selection-start-column="55" selection-end-line="209" selection-end-column="55" />
+            <state relative-caret-position="2310">
+              <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
               <folding>
                 <element signature="e#21#47#0" expanded="true" />
               </folding>
@@ -80,17 +86,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Data.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="60">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
+            <state relative-caret-position="562">
+              <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
               <folding>
                 <element signature="e#25#51#0" expanded="true" />
               </folding>
@@ -115,8 +121,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.scala" />
         <option value="$PROJECT_DIR$/src/Test.scala" />
+        <option value="$PROJECT_DIR$/src/Main.scala" />
       </list>
     </option>
   </component>
@@ -137,9 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,12 +160,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543644431425" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544955897265" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -220,17 +226,20 @@
       <workItem from="1543583142330" duration="1653000" />
       <workItem from="1543589133534" duration="12448000" />
       <workItem from="1544702743034" duration="17440000" />
+      <workItem from="1544938342097" duration="10338000" />
+      <workItem from="1544954755102" duration="1196000" />
+      <workItem from="1544965117873" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36764000" />
+    <option name="totallyTimeSpent" value="48312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26416484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27520236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -270,29 +279,29 @@
     <entry file="file://$PROJECT_DIR$/compile.bat">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+          <folding>
+            <element signature="e#21#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Data.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
+        <state relative-caret-position="562">
+          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
           <folding>
             <element signature="e#25#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="209" column="55" selection-start-line="209" selection-start-column="55" selection-end-line="209" selection-end-column="55" />
-          <folding>
-            <element signature="e#21#47#0" expanded="true" />
           </folding>
         </state>
       </provider>

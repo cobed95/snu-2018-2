@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
 import scala.language.higherKinds
+import scala.annotation.tailrec
 
 object Main {
 
@@ -124,6 +125,16 @@ object Main {
 
   object Problem3 {
 
+    def reverse[A, B](list: List[(A, B)]): List[(A, B)] = {
+      var listAux: List[(A, B)] = list
+      var reversed: List[(A, B)] = Nil
+      while (listAux != Nil) {
+        reversed = listAux.head :: reversed
+        listAux = listAux.tail
+      }
+      reversed
+    }
+
     def countElements[D, A](l: List[A])(implicit dict: Dict[D, A, Int], iter: Iter[D, A]): List[(A, Int)] = {
 
       def countElementsIter(l: List[A], pairs: D): D = {
@@ -137,41 +148,80 @@ object Main {
         }
       }
 
-      def map(pairs: D): List[(A, Int)] =
-        iter.getValue(pairs) match {
-          case Some(key) =>
-            (key, dict.lookup(pairs, key).get) :: map(iter.getNext(pairs))
-          case None => Nil
+      def map(pairs: D): List[(A, Int)] = {
+        var list: List[(A, Int)] = Nil
+        var pairsAux = pairs
+        while (iter.getValue(pairsAux).isDefined) {
+          val key = iter.getValue(pairsAux).get
+          list = (key, dict.lookup(pairsAux, key).get) :: list
+          pairsAux = iter.getNext(pairsAux)
         }
+        reverse(list)
+      }
 
       val pairs = countElementsIter(l, dict.empty)
       map(pairs)
     }
 
+    class MergeList[K, V](first: (K, V)) {
+      def merge(tail: List[(K, V)]): List[(K, V)] = first :: tail
+    }
+
+    object MergeList {
+      def apply[K, V](first: (K, V)): MergeList[K, V] = new MergeList[K, V](first)
+    }
+
+    def reconstructList[K, V](list: List[(K, V)], merges: List[MergeList[K, V]]): List[(K, V)] =
+      merges match {
+        case head :: tail => reconstructList(head.merge(list), tail)
+        case Nil => list
+      }
+
     implicit def listDict[K, V](implicit ord: Ord[K]): Dict[List[(K, V)], K, V] = new Dict[List[(K, V)], K, V] {
 
       val empty: List[(K, V)] = Nil
 
-      def add(x: List[(K, V)], k: K, v: V): List[(K, V)] =
+      def add(x: List[(K, V)], k: K, v: V): List[(K, V)] = {
+        addIter(x, k, v, Nil)
+//        var left: List[(K, V)] = Nil
+//        var right = x
+//        while (right != Nil && ord.>(k, right.head._1)) {
+//          left = right.head :: left
+//          right = right.tail
+//        }
+//        if (right != Nil && ord.===(k, right.head._1))
+//          right = right.tail
+//        left = (k, v) :: left
+//        while (right != Nil) {
+//          left = right.head :: left
+//          right = right.tail
+//        }
+//        reverse(left)
+      }
+
+      @tailrec
+      def addIter(x: List[(K, V)], k: K, v: V, merges: List[MergeList[K, V]]): List[(K, V)] =
         x match {
-          case head :: tail if ord.>(k, head._1) =>
-            head :: add(tail, k, v)
-          case head :: tail if ord.<(k, head._1) =>
-            (k, v) :: head :: tail
-          case head :: tail =>
-            (k, v) :: tail
-          case Nil => List((k, v))
+          case (head @ (key, _)) :: tail if ord.>(k, key) =>
+            addIter(tail, k, v, MergeList(head) :: merges)
+          case (`k`, _) :: tail =>
+            reconstructList((k, v) :: tail, merges)
+          case (key, _) :: _ if ord.<(k, key) =>
+            reconstructList((k, v) :: x, merges)
+          case Nil =>
+            reconstructList((k, v) :: Nil, merges)
         }
 
+      @tailrec
       def lookup(x: List[(K, V)], k: K): Option[V] =
         x match {
-          case head :: tail if ord.>(k, head._1) =>
-            lookup(tail, k)
           case head :: _ if ord.<(k, head._1) =>
             None
           case head :: _ if ord.===(k, head._1) =>
             Some(head._2)
           case Nil => None
+          case _ :: tail =>
+            lookup(tail, k)
         }
     }
 
@@ -186,21 +236,52 @@ object Main {
       def getNext(i: List[(K, V)]): List[(K, V)] = i.tail
     }
 
+    sealed abstract class Merge[K, V] {
+      def key: K
+      def value: V
+      def merge(bst: BST[K, V]): BST[K, V]
+    }
+
+    case class MergeLeft[K, V](key: K, value: V, leftChild: BST[K, V]) extends Merge[K, V] {
+      def merge(rightChild: BST[K, V]): BST[K, V] =
+        Node(key, value, leftChild, rightChild)
+    }
+
+    case class MergeRight[K, V](key: K, value: V, rightChild: BST[K, V]) extends Merge[K, V] {
+      def merge(leftChild: BST[K, V]): BST[K, V] =
+        Node(key, value, leftChild, rightChild)
+    }
+
+    @tailrec
+    def reconstruct[K, V](node: BST[K, V], merges: List[Merge[K, V]]): BST[K, V] =
+      merges match {
+        case head :: tail =>
+          reconstruct(head.merge(node), tail)
+        case Nil => node
+      }
+
     implicit def BSTDict[K, V](implicit ord: Ord[K]): Dict[BST[K, V], K, V] = new Dict[BST[K, V], K, V] {
 
       val empty: BST[K, V] = Leaf()
 
       def add(x: BST[K, V], k: K, v: V): BST[K, V] =
-        x match {
-          case Node(key, value, left, right) if ord.>(k, key) =>
-            Node(key, value, left, add(right, k, v))
-          case Node(key, value, left, right) if ord.<(k, key) =>
-            Node(key, value, add(left, k, v), right)
-          case Node(_, _, left, right) =>
-            Node(k, v, left, right)
-          case Leaf() => Node(k, v, Leaf(), Leaf())
-        }
+        addIter(x, k, v, Nil)
 
+      @tailrec
+      def addIter(x: BST[K, V], k: K, v: V, merges: List[Merge[K, V]]): BST[K, V] = {
+        x match {
+          case Node(`k`, _, left, right) =>
+            reconstruct(Node(k, v, left, right), merges)
+          case Node(key, value, left, right) if ord.<(k, key) =>
+            addIter(left, k, v, MergeRight(key, value, right) :: merges)
+          case Node(key, value, left, right) if ord.>(k, key) =>
+            addIter(right, k, v, MergeLeft(key, value, left) :: merges)
+          case Leaf() =>
+            reconstruct(Node(k, v, Leaf(), Leaf()), merges)
+        }
+      }
+
+      @tailrec
       def lookup(x: BST[K, V], k: K): Option[V] =
         x match {
           case Node(key, _, _, right) if ord.>(k, key) =>
@@ -214,7 +295,6 @@ object Main {
     }
 
     implicit def BSTIter[K, V]: Iter[BST[K, V], K] = new Iter[BST[K, V], K] {
-
       def getValue(i: BST[K, V]): Option[K] =
         i match {
           case Node(keyI, _, left, _) =>
@@ -229,19 +309,15 @@ object Main {
         deleteMin(i)
 
       def deleteMin(i: BST[K, V]): BST[K, V] =
+        deleteMinIter(i, Nil)
+
+      @tailrec
+      def deleteMinIter(i: BST[K, V], merges: List[Merge[K, V]]): BST[K, V] =
         i match {
-          case Node(key, value, left, right) =>
-            left match {
-              case Node(_, _, leftLeft, leftRight) =>
-                leftLeft match {
-                  case Node(_, _, _, _) =>
-                    Node(key, value, deleteMin(left), right)
-                  case Leaf() =>
-                    Node(key, value, leftRight, right)
-                }
-              case Leaf() =>
-                right
-            }
+          case Node(key, value, left @ Node(_, _, _, _), right) =>
+            deleteMinIter(left, MergeRight(key, value, right) :: merges)
+          case Node(_, _, Leaf(), right) =>
+            reconstruct(right, merges)
           case Leaf() =>
             Leaf()
         }

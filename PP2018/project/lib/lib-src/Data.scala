@@ -83,8 +83,7 @@ object DataBundle {
         }
         case EMatch(e1, e2, hd, tl, e3) => {
           val hdtl = inparen(concat(List(hd, tl)))
-          val cons = inparen(concat(List(hdtl, expr_toString(e3))))
-          inparen(concat(List("match-list", expr_toString(e1), expr_toString(e2), cons)))
+          inparen(concat(List("match-list", expr_toString(e1), expr_toString(e2), hdtl, expr_toString(e3))))
         }
         case ERmk(bs) =>
           inparen(concat(List("rmk", binds_toString(bs))))
