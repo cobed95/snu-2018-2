@@ -11,7 +11,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/scala-parser-combinators.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/proj-lib.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -20,7 +20,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/proj-lib.jar!/" />
+          <root url="jar://$MODULE_DIR$/scala-parser-combinators.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

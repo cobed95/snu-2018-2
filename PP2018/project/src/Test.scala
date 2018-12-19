@@ -13,6 +13,20 @@ object Test extends App {
   def print_result(b:Boolean) : Unit =
     if (b) println("O") else println("X")
 
+//  def apply(code: String): List[Token] = {
+//    parse(tokens, code) match {
+//      case NoSuccess(msg, next) => throw new LexerException(msg)
+//      case Success(result, next) => result
+//    }
+//  }
+
+  def shit(code: String): List[Token] = {
+    ProjLexer.parse(ProjLexer.tokens, code) match {
+      case ProjLexer.NoSuccess(msg, next) => throw new LexerException(msg)
+      case ProjLexer.Success(result, next) => result
+    }
+  }
+
   def run_eval(eval: Expr => Val)(code: String): Val = {
     val tokens = ProjLexer(code)
     val e: Expr = if (myparser) MyParser(tokens) else Parser(tokens)
