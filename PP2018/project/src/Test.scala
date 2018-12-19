@@ -67,7 +67,7 @@ object Test extends App {
         print_result(res)
       }
 
-      { // 4
+      { // 4 TODO: Failed here.
         val code = "(let ((def f (x (by-name y)) (+ x y))) (app f 2 3))"
         val res = conv.toInt(run_myeval(code)) match {
           case Some(5) => true
@@ -170,7 +170,7 @@ object Test extends App {
         print_result(res)
       }
 
-      { // 2
+      { // 2 TODO: Failed here.
         val code = "(let ((lazy-val inflist (let ((def x () (rmk (val hd 1) (lazy-val tl (app x))))) (app x)))) (rfd inflist tl))"
         val res = conv.isRec(run_myeval(code)) match {
           case true => true

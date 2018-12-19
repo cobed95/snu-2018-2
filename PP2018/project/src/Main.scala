@@ -244,8 +244,8 @@ object Main {
         refs match {
           case head :: tail if head.name == ref.name =>
             ref :: tail
-          case head :: _ =>
-            head :: updateOneRef(refs, ref)
+          case head :: tail =>
+            head :: updateOneRef(tail, ref)
           case Nil => ref :: Nil
         }
 
