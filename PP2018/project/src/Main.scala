@@ -68,9 +68,22 @@ object Value {
 object Main {
   import Value._
 
+  sealed abstract class Binding {
+    val name: String
+  }
+
+  case class ValBinding(name: String, value: Val) extends Binding
+
+  case class
+
+  case class DefBinding(bind: BDef) extends Binding {
+    val name: String = bind.x
+  }
+
   class EvalException(val msg: String) extends Exception
 
   def myeval(e:Expr) : Val = {
+//    println(e.toString)
 
     sealed abstract class Ref {
       val name: String
@@ -111,8 +124,12 @@ object Main {
         case EFalse() => VFalse()
         case ENil() => VNil()
         case EName(s) =>
+//          println("name: " + s + " || refs: " + refs)
           searchRefExpr(refs, s) match {
-            case Some(expr) => myevalIter(expr, refs)
+            case Some(expr) =>
+//              println("Got some expr!")
+//              println("refs: " + refs)
+              myevalIter(expr, refs)
             case None => throw new EvalException("Undefined name: " + s)
           }
         case EIf(econd, et, ef) =>
@@ -135,6 +152,10 @@ object Main {
         case EApp(ef, eargs) =>
           call(ef, eargs, refs)
         case ELet(bs, eb) =>
+//          println("Current Refs: " + refs)
+//          println("Bind List: " + bs)
+//          println("Expression: " + eb)
+//          println("New Refs: " + updateRefs(refs, bs))
           myevalIter(eb, updateRefs(refs, bs))
         case EMatch(e1, e2, hd, tl, e3) =>
           myevalIter(e1, refs) match {
@@ -218,8 +239,11 @@ object Main {
               Some(head.expr)
             case RefDef(_) =>
               val refDef = head.asInstanceOf[RefDef]
-              Some(convValToExpr(VDef(refDef.name, refDef.params, refDef.expr)))
-            case _ => Some(head.expr)
+              refDef.params match {
+                case Nil => Some(refDef.expr)
+                case _ => throw new EvalException("Not enough arguments for " + refDef.name)
+              }
+            case RefVal(_) => Some(head.expr)
           }
         case _ :: tail => searchRefExpr(tail, name)
         case Nil => None
@@ -233,18 +257,24 @@ object Main {
       }
 
     def updateRefs(refs: List[Ref], bs: List[Bind]): List[Ref] = {
-      def updateRefsIter(oldRefs: List[Ref], newRefs: List[Ref]): List[Ref] =
+      def updateRefsIter(oldRefs: List[Ref], newRefs: List[Ref]): List[Ref] = {
+//        println("oldRefs: " + oldRefs)
+//        println("newRefs: " + newRefs)
         newRefs match {
           case head :: tail =>
-            updateRefsIter(updateOneRef(refs, head), tail)
+            updateRefsIter(updateOneRef(oldRefs, head), tail)
           case Nil => oldRefs
         }
+      }
 
       def updateOneRef(refs: List[Ref], ref: Ref): List[Ref] =
         refs match {
           case head :: tail if head.name == ref.name =>
+//            println("head.name: " + head.name)
+//            println("ref.name: " + ref.name)
             ref :: tail
           case head :: tail =>
+//            println("head: " + head + " || ref: " + ref)
             head :: updateOneRef(tail, ref)
           case Nil => ref :: Nil
         }
@@ -299,134 +329,6 @@ object Main {
           }
         case _ => throw new EvalException(ef.toString + " is not a function.")
       }
-
-//    def searchBind(list: List[Bind], target: String): Option[Bind] =
-//      list match {
-//        case head :: tail =>
-//          head match {
-//            case BDef(x, _, _) if x == target => Some(head)
-//            case BVal(x, _) if x == target => Some(head)
-//            case BLval(x, _) if x == target => Some(head)
-//            case BDef(_, _, _) | BVal(_, _) | BLval(_, _) =>
-//              searchBind(tail, target)
-//          }
-//        case Nil => None
-//      }
-
-//    def substitute(refs: List[Ref], expr: Expr): Expr =
-//      expr match {
-//        case EName(x) =>
-//          searchRefExpr(refs, x) match {
-//            case Some(v) => v
-//            case None => throw new EvalException("There is no expression related to name " + x)
-//          }
-//        case EIf(econd, et, ef) =>
-//          EIf(substitute(refs, econd), substitute(refs, et), substitute(refs, ef))
-//        case ECons(eh, et) =>
-//          ECons(substitute(refs, eh), substitute(refs, et))
-//        case EFst(el) =>
-//          EFst(substitute(refs, el))
-//        case ESnd(el) =>
-//          ESnd(substitute(refs, el))
-//        case EApp(ef, eargs) =>
-//          EApp(substitute(refs, ef), substituteList(refs, eargs))
-//        case ELet(bs, eb) =>
-//          ELet(bs, substitute(refs, eb))
-//        case EMatch(e1, e2, hd, tl, e3) =>
-//          EMatch(substitute(refs, e1), substitute(refs, e2), hd, tl, e3)
-//        case ERfd(rec, fd) => // TODO: Let is overriding local Record field names?
-//          ERfd(substitute(refs, rec), fd)
-//        case EPlus(e1, e2) =>
-//          EPlus(substitute(refs, e1), substitute(refs, e2))
-//        case EMinus(e1, e2) =>
-//          EMinus(substitute(refs, e1), substitute(refs, e2))
-//        case EMult(e1, e2) =>
-//          EMult(substitute(refs, e1), substitute(refs, e2))
-//        case EEq(e1, e2) =>
-//          EEq(substitute(refs, e1), substitute(refs, e2))
-//        case ELt(e1, e2) =>
-//          ELt(substitute(refs, e1), substitute(refs, e2))
-//        case EGt(e1, e2) =>
-//          EGt(substitute(refs, e1), substitute(refs, e2))
-//        case _ => expr
-//      }
-
-//    def substituteList(refs: List[Ref], exprs: List[Expr]): List[Expr] =
-//      exprs match {
-//        case head :: tail =>
-//          substitute(refs, head) :: substituteList(refs, tail)
-//        case Nil => Nil
-//      }
-
-//    def substitute(e: Expr, params: List[Arg], eargs: List[Expr]) : Expr =
-//      e match {
-//        case EName(x) =>
-//          getIdx(params, x, 0) match {
-//            case Some(i) =>
-//              get(eargs, i, 0) match {
-//                case Some(expr) => expr
-//                case None => throw new EvalException("function parameters could not be substituted. No such earg.")
-//              }
-//            case None => throw new EvalException("function parameters could not be substituted. No such parameter.")
-//          }
-//        case EIf(econd, et, ef) =>
-//          EIf(substitute(econd, params, eargs), substitute(et, params, eargs), substitute(ef, params, eargs))
-//        case ECons(eh, et) =>
-//          ECons(substitute(eh, params, eargs), substitute(et, params, eargs))
-//        case EFst(el) =>
-//          EFst(substitute(el, params, eargs))
-//        case ESnd(el) =>
-//          ESnd(substitute(el, params, eargs))
-//        case EApp(ef, subEargs) =>
-//          EApp(substitute(ef, params, eargs), subEargs)
-//        case ELet(bs: List[Bind], eb: Expr) =>
-//          ELet(bs: List[Bind], substitute(eb, params, eargs))
-//        case EMatch(e1, e2, hd, tl, e3) =>
-//          EMatch(substitute(e1, params, eargs),
-//            substitute(e2, params, eargs), hd, tl,
-//            substitute(e3, params, eargs))
-//        case ERfd(rec, fd) =>
-//          ERfd(substitute(rec, params, eargs), fd)
-//        case EPlus(e1, e2) =>
-//          EPlus(substitute(e1, params, eargs), substitute(e2, params, eargs))
-//        case EMinus(e1, e2) =>
-//          EMinus(substitute(e1, params, eargs), substitute(e2, params, eargs))
-//        case EMult(e1, e2) =>
-//          EMult(substitute(e1, params, eargs), substitute(e2, params, eargs))
-//        case EEq(e1, e2) =>
-//          EEq(substitute(e1, params, eargs), substitute(e2, params, eargs))
-//        case ELt(e1, e2) =>
-//          ELt(substitute(e1, params, eargs), substitute(e2, params, eargs))
-//        case EGt(e1, e2) =>
-//          EGt(substitute(e1, params, eargs), substitute(e2, params, eargs))
-//        case _ => e
-//      }
-
-//    def getIdx(params: List[Arg], x: String, i: Int): Option[Int] =
-//      params match {
-//        case head :: tail =>
-//          head match {
-//            case AVname(`x`) => Some(i)
-//            case ANname(`x`) => Some(i)
-//            case _ => getIdx(tail, x, i + 1)
-//          }
-//        case Nil => None
-//      }
-//
-//    def get(eargs: List[Expr], target: Int, curr: Int): Option[Expr] =
-//      if (eargs == Nil) None
-//      else if (target == curr) Some(eargs.head)
-//      else get(eargs.tail, target, curr + 1)
-//
-//    def evaluateBind(bind: Bind): Val =
-//      bind match {
-//        case BVal(_, expr) => myeval(expr)
-//        case BLval(x, expr) => evaluateBind(BVal(x, expr))
-//        case BDef(f, params, expr) => VDef(f, params, e)
-//      }
     myevalIter(e, Nil)
   }
-
-    //throw new EvalException("Not implemented yet")
-
 }
