@@ -3,57 +3,71 @@
   <component name="ChangeListManager">
     <list default="true" id="ae703f92-9373-4269-98fe-50db407bd636" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$Ref$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Main$Ref$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefDef$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefDef$4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefLval$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefLval$4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefVal$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefVal$4$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$EvalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$Ref$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefDef$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefDef$2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefLval$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefLval$2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefVal$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$RefVal$2$.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParser$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParser$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParserException.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParserException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$$anon$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$ConvertToScala.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$ConvertToScala.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VDef$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VDef$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VFalse$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VFalse$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VFalse.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VFalse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VInt$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VInt$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VNil$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VNil$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VNil.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VNil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VPair$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VPair$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VPair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VRec$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VRec$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VRec.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VRec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VTrue$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VTrue$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$VTrue.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$VTrue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value$Val.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value$Val.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/pp201802/projtest/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/projtest/Test$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/pp201802/projtest/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/projtest/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$EvalException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$EvalException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$Ref$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$Ref$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefDef$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefDef$4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefLval$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefLval$4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefVal$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefVal$4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/MyParser/MyParser$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/MyParser/MyParser$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/MyParser/MyParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/MyParser/MyParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/MyParser/MyParserException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/MyParser/MyParserException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$$anon$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$ConvertToScala.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$ConvertToScala.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VDef$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VDef$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VFalse$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VFalse$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VFalse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VFalse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VInt$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VInt$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VInt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VNil$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VNil$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VNil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VNil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VPair$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VPair$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VPair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VRec$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VRec$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VRec.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VRec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VTrue$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VTrue$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VTrue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VTrue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$Val.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$Val.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/projtest/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/projtest/Test$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/projtest/Test$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/projtest/Test$delayedInit$body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/projtest/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project/pp201802/projtest/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$EvalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$Ref$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/MyParser/MyParser$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/MyParser/MyParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/MyParser/MyParserException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$ConvertToScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VDef$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VDef.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VFalse$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VFalse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VInt$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VNil$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VNil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VPair$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VPair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VRec$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VRec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VTrue$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$VTrue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value$Val.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Value.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/projtest/Test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/projtest/Test$delayedInit$body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/projtest/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyParser.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.scala" afterDir="false" />
     </list>
@@ -64,13 +78,47 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-720626774">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="scala" value="17498" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="Scala" value="17498" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="scala" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="Scala" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="260">
+              <caret line="275" column="45" lean-forward="true" selection-start-line="275" selection-start-column="45" selection-end-line="275" selection-end-column="45" />
               <folding>
                 <element signature="e#22#53#0" expanded="true" />
               </folding>
@@ -81,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1815">
-              <caret line="121" column="8" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+            <state relative-caret-position="365">
+              <caret line="223" column="1" selection-start-line="223" selection-start-column="1" selection-end-line="223" selection-end-column="1" />
               <folding>
                 <element signature="e#26#53#0" expanded="true" />
               </folding>
@@ -91,19 +139,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/proj-lib.jar!/pp201802/proj/Parser/Parser.class">
+        <entry file="jar://$PROJECT_DIR$/lib/proj-lib.jar!/pp201802/proj/Parser/ParserException.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="15">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/proj-lib.jar!/pp201802/proj/Parser/ParserException.class">
+        <entry file="file://$PROJECT_DIR$/lib/lib-src/Data.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="-134">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -111,8 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyParser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            <state relative-caret-position="158">
+              <caret line="185" column="50" selection-start-line="185" selection-start-column="50" selection-end-line="185" selection-end-column="50" />
               <folding>
                 <element signature="e#31#69#0" expanded="true" />
               </folding>
@@ -121,49 +169,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/scala-parser-combinators.jar!/scala/util/parsing/combinator/RegexParsers.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/lib-src/Lexer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+            <state relative-caret-position="656">
+              <caret line="74" column="2" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
               <folding>
                 <element signature="e#28#55#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/scala-parser-combinators.jar!/scala/util/parsing/combinator/Parsers.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/scala-parser-combinators.jar!/scala/util/parsing/combinator/syntactical/StdTokenParsers.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/scala-parser-combinators.jar!/scala/util/parsing/combinator/syntactical/StandardTokenParsers.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -187,8 +199,15 @@
       <find>updateOne</find>
       <find>ELet</find>
       <find>call</find>
-      <find>println</find>
       <find>rfd</find>
+      <find>lazy</find>
+      <find>TNNAME</find>
+      <find>T</find>
+      <find>parsestar</find>
+      <find>println</find>
+      <find>boxval</find>
+      <find>str</find>
+      <find>.bind</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,10 +217,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lib/lib-src/Lexer.scala" />
-        <option value="$PROJECT_DIR$/src/Test.scala" />
         <option value="$PROJECT_DIR$/src/Main.scala" />
+        <option value="$PROJECT_DIR$/src/Test.scala" />
+        <option value="$PROJECT_DIR$/src/MyParser.scala" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -214,6 +240,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,20 +253,30 @@
             <path>
               <item name="Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="lib-src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Lexer&#9;FILE&#9;file:///Users/eundolee/snu-2018-2/PP2018/Project/lib/lib-src/Lexer.scala&#10;Token&#9;null&#9;null&#10;MyParser&#9;FILE&#9;file:///Users/eundolee/snu-2018-2/PP2018/Project/src/MyParser.scala&#10;Arg&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545281353112" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545327854351" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -301,11 +340,12 @@
       <workItem from="1545233574371" duration="2884000" />
       <workItem from="1545268986391" duration="6323000" />
       <workItem from="1545281814263" duration="7624000" />
+      <workItem from="1545305210940" duration="16297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50034000" />
+    <option name="totallyTimeSpent" value="66331000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -320,7 +360,7 @@
     <frame x="0" y="23" width="1401" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26416484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.267844" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -355,15 +395,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/Test.scala</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/collection/immutable/StringLike.scala" />
-    <entry file="file://$PROJECT_DIR$/lib/lib-src/Data.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/proj-lib.jar!/pp201802/proj/Parser/Parser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -371,38 +419,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/proj-lib.jar!/pp201802/proj/Parser/ParserException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/scala-parser-combinators.jar!/scala/util/parsing/combinator/RegexParsers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lib-src/Lexer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
-          <folding>
-            <element signature="e#28#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/scala-parser-combinators.jar!/scala/util/parsing/combinator/Parsers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/scala-parser-combinators.jar!/scala/util/parsing/combinator/syntactical/StdTokenParsers.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
@@ -416,20 +433,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/collection/LinearSeqOptimized.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="124" column="6" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/scala-parser-combinators.jar!/scala/util/parsing/combinator/RegexParsers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/proj-lib.jar!/pp201802/proj/Parser/ParserException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="121" column="8" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+        <state relative-caret-position="365">
+          <caret line="223" column="1" selection-start-line="223" selection-start-column="1" selection-end-line="223" selection-end-column="1" />
           <folding>
             <element signature="e#26#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lib-src/Data.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lib-src/Lexer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="74" column="2" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
+          <folding>
+            <element signature="e#28#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/scala-parser-combinators.jar!/scala/util/parsing/combinator/syntactical/StdTokenParsers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/proj-lib.jar!/pp201802/proj/Lexer/TVNAME.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MyParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        <state relative-caret-position="158">
+          <caret line="185" column="50" selection-start-line="185" selection-start-column="50" selection-end-line="185" selection-end-column="50" />
           <folding>
             <element signature="e#31#69#0" expanded="true" />
           </folding>
@@ -438,8 +507,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="260">
+          <caret line="275" column="45" lean-forward="true" selection-start-line="275" selection-start-column="45" selection-end-line="275" selection-end-column="45" />
           <folding>
             <element signature="e#22#53#0" expanded="true" />
           </folding>
