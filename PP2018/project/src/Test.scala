@@ -8,7 +8,7 @@ import pp201802.proj.Parser._
 import pp201802.proj.MyParser._
 
 object Test extends App {
-  val myparser = false // change this into *true* if you want to use MyParser
+  val myparser = true // change this into *true* if you want to use MyParser
 
   def print_result(b:Boolean) : Unit =
     if (b) println("O") else println("X")
@@ -16,7 +16,6 @@ object Test extends App {
   def run_eval(eval: Expr => Val)(code: String): Val = {
     val tokens = ProjLexer(code)
     val e: Expr = if (myparser) MyParser(tokens) else Parser(tokens)
-    println(e)
     eval(e)
   }
 
@@ -63,7 +62,7 @@ object Test extends App {
         print_result(res)
       }
 
-      { // 5 TODO : failed here.
+      { // 5
         val code = "(let ((def g () (+ 1 2))) (let ((val f g)) f))"
         val res = conv.isDef(run_myeval(code)) match {
           case true => true
@@ -72,7 +71,7 @@ object Test extends App {
         print_result(res)
       }
 
-      { // 6 TODO : failed here.
+      { // 6
         val code = "(let ((val a 10) (val b (+ a 1))) (* b 3))"
         val res = conv.toInt(run_myeval(code)) match {
           case Some(33) => true
@@ -81,7 +80,7 @@ object Test extends App {
         print_result(res)
       }
 
-      { // 7 TODO : failed here.
+      { // 7
         val code = "(let ((def f (x) (if (= x 0) 0 (+ x (app f (- x 1)))))) (let ((val g f)) (app g 5)))"
         val res = conv.toInt(run_myeval(code)) match {
           case Some(15) => true
@@ -90,16 +89,16 @@ object Test extends App {
         print_result(res)
       }
 
-//      { // 8
-//        val code = "(match-list (cons 1 2) (+ 4 5) (hdx tly) (+ hdx tly))"
-//        val res = conv.toInt(run_myeval(code)) match {
-//          case Some(3) => true
-//          case _ => false
-//        }
-//        print_result(res)
-//      }
+      { // 8
+        val code = "(match-list (cons 1 2) (+ 4 5) (hdx tly) (+ hdx tly))"
+        val res = conv.toInt(run_myeval(code)) match {
+          case Some(3) => true
+          case _ => false
+        }
+        print_result(res)
+      }
 
-      { // 9 TODO : failed here.
+      { // 9
         val code = "(let ((def x () b) (lazy-val a (app x)) (val b 5)) a)"
         val res = conv.toInt(run_myeval(code)) match {
           case Some(5) => true
@@ -108,17 +107,17 @@ object Test extends App {
         print_result(res)
       }
 
-//      { // 10
-//        val code = "(rfd (rmk (lazy-val abc (+ 3 4))) abc)"
-//        val res = conv.toInt(run_myeval(code)) match {
-//          case Some(7) => true
-//          case _ => false
-//        }
-//        print_result(res)
-//      }
+      { // 10
+        val code = "(rfd (rmk (lazy-val abc (+ 3 4))) abc)"
+        val res = conv.toInt(run_myeval(code)) match {
+          case Some(7) => true
+          case _ => false
+        }
+        print_result(res)
+      }
 
       // 11, 12 => hint for scope of "x"
-      { // 11 TODO failed here.
+      { // 11
         val code = "(let ((def x () (cons a b)) (val a 5) (val b 3)) (let ((val y x) (val a 4)) (app y)))" // (5, 3)
         val res = conv.toPair(run_myeval(code)) match {
           case Some((_, _)) => true // this only checks whether the result is a pair.
@@ -127,7 +126,7 @@ object Test extends App {
         print_result(res)
       }
 
-      { // 12 TODO : failed here.
+      { // 12
         val code = "(let ((def x () (cons a b)) (val a 5) (val b 3)) (let ((val a 4) (val y x)) (app y)))" // (5, 3)
         val res = conv.toPair(run_myeval(code)) match {
           case Some((_, _)) => true // this only checks whether the result is a pair.
@@ -157,7 +156,7 @@ object Test extends App {
         print_result(res)
       }
 
-      { // 2 TODO: Failed here.
+      { // 2
         val code = "(let ((lazy-val inflist (let ((def x () (rmk (val hd 1) (lazy-val tl (app x))))) (app x)))) (rfd inflist tl))"
         val res = conv.isRec(run_myeval(code)) match {
           case true => true

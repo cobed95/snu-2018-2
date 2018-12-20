@@ -184,11 +184,11 @@ object MyParser {
             case TTRYCATCH() =>
               val (e1, index1) = parse(index0)
               val (_, index2) = parseToken[TLPAREN](index1)
-              val (x, index3) = parse(index2)
+              val (TVNAME(name), index3) = parseToken[TVNAME](index2)
               val (_, index4) = parseToken[TRPAREN](index3)
               val (e2, index5) = parse(index4)
               val (_, index6) = parseToken[TRPAREN](index5)
-              (ETrycatch(e1, x.toString, e2), index6)
+              (ETrycatch(e1, name, e2), index6)
 
             case _ =>
               throw new MyParserException("Not a valid token.")
