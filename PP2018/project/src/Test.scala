@@ -38,7 +38,7 @@ object Test extends App {
       { // 2
         val code = "(let ((val p (cons 1 (cons true nil)))) (cons 0 p))"
         val res = conv.toPair(run_myeval(code)) match {
-          case Some(_) => true // this only checks whether the result is a pair.
+          case Some((VInt(0), VPair(VInt(1), VPair(VTrue(), VNil())))) => true // this only checks whether the result is a pair.
           case _ => false
         }
         print_result(res)
@@ -120,7 +120,7 @@ object Test extends App {
       { // 11
         val code = "(let ((def x () (cons a b)) (val a 5) (val b 3)) (let ((val y x) (val a 4)) (app y)))" // (5, 3)
         val res = conv.toPair(run_myeval(code)) match {
-          case Some((_, _)) => true // this only checks whether the result is a pair.
+          case Some((VInt(5), VInt(3))) => true // this only checks whether the result is a pair.
           case _ => false
         }
         print_result(res)
@@ -129,7 +129,7 @@ object Test extends App {
       { // 12
         val code = "(let ((def x () (cons a b)) (val a 5) (val b 3)) (let ((val a 4) (val y x)) (app y)))" // (5, 3)
         val res = conv.toPair(run_myeval(code)) match {
-          case Some((_, _)) => true // this only checks whether the result is a pair.
+          case Some((VInt(5), VInt(3))) => true // this only checks whether the result is a pair.
           case _ => false
         }
         print_result(res)
