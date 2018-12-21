@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae703f92-9373-4269-98fe-50db407bd636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BracketTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParserException.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParserException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/Value.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/Value.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/projtest/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/projtest/Test$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/projtest/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/projtest/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefDef$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefDef$2$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefLval$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefLval$2$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefVal$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project/pp201802/proj/Main$RefVal$2$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.scala" afterDir="false" />
-    </list>
+    <list default="true" id="ae703f92-9373-4269-98fe-50db407bd636" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+            <state relative-caret-position="-806">
+              <caret line="193" selection-start-line="193" selection-end-line="193" />
               <folding>
                 <element signature="e#23#54#0" expanded="true" />
               </folding>
@@ -42,23 +23,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="193" selection-start-line="193" selection-end-line="193" />
+            <state relative-caret-position="172">
+              <caret line="180" column="34" selection-start-line="180" selection-start-column="34" selection-end-line="180" selection-end-column="34" />
               <folding>
                 <element signature="e#26#53#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BracketTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="71" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -136,7 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Parser</find>
       <find>Bind</find>
       <find>vdef</find>
       <find>def</find>
@@ -156,7 +127,6 @@
       <find>TNNAME</find>
       <find>T</find>
       <find>parsestar</find>
-      <find>println</find>
       <find>boxval</find>
       <find>str</find>
       <find>.bind</find>
@@ -166,6 +136,8 @@
       <find>newEnv</find>
       <find>lazy val</find>
       <find>EName(s)</find>
+      <find>Println</find>
+      <find>println</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,8 +149,8 @@
         <option value="$PROJECT_DIR$/lib/lib-src/Lexer.scala" />
         <option value="$PROJECT_DIR$/src/MyParser.scala" />
         <option value="$PROJECT_DIR$/src/BracketTest.scala" />
-        <option value="$PROJECT_DIR$/src/Test.scala" />
         <option value="$PROJECT_DIR$/src/Main.scala" />
+        <option value="$PROJECT_DIR$/src/Test.scala" />
       </list>
     </option>
   </component>
@@ -219,7 +191,7 @@
     <property name="SearchEverywhereHistoryKey" value="Lexer&#9;FILE&#9;file:///Users/eundolee/snu-2018-2/PP2018/Project/lib/lib-src/Lexer.scala&#10;Token&#9;null&#9;null&#10;MyParser&#9;FILE&#9;file:///Users/eundolee/snu-2018-2/PP2018/Project/src/MyParser.scala&#10;Arg&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545372022236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545378822751" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -288,7 +260,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75824000" />
+    <option name="totallyTimeSpent" value="79103000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -301,9 +273,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-227" y="-1057" width="1920" height="980" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19382322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19382322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -319,7 +290,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2668919" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2668919" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32882884" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -437,22 +408,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.scala">
+    <entry file="file://$PROJECT_DIR$/src/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
+        <state relative-caret-position="-806">
           <caret line="193" selection-start-line="193" selection-end-line="193" />
           <folding>
-            <element signature="e#26#53#0" expanded="true" />
+            <element signature="e#23#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.scala">
+    <entry file="file://$PROJECT_DIR$/src/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+        <state relative-caret-position="172">
+          <caret line="180" column="34" selection-start-line="180" selection-start-column="34" selection-end-line="180" selection-end-column="34" />
           <folding>
-            <element signature="e#23#54#0" expanded="true" />
+            <element signature="e#26#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
