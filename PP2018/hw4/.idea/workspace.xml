@@ -2,27 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6076552-176f-4a8a-85c0-5bd68c92f902" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Dot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/bin/com/dmlab/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/bin/com/dmlab/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/FinalPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/FinalPrep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/interfaces/HuffmanNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/BSTNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/BinarySearchTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/CircularQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/DoubleLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/DoublyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanInternal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanLeaf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/KVpair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/LinkedStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/MaxHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/SimpleBinaryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/SinglyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/UnsortedDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/VarIntlNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/VarLeafNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$BasicLetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$BasicLetter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Body_Doublespace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Body_Doublespace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Body_Newline.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Body_Newline.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Footer_Best.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Footer_Best.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Footer_Day.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Footer_Day.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Header_Dear.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Header_Dear.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Header_Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem1$Header_Hello.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem2$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main$Problem3$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw4/pp201802/hw4test/Test$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,14 +80,24 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-563598737">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+            <state relative-caret-position="167">
+              <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
               <folding>
                 <element signature="e#21#47#0" expanded="true" />
               </folding>
@@ -92,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
+            <state relative-caret-position="1065">
               <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
               <folding>
                 <element signature="e#25#51#0" expanded="true" />
@@ -135,7 +157,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1401" />
-    <option name="height" value="824" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -143,7 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,14 +182,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544955897265" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -229,17 +252,19 @@
       <workItem from="1544938342097" duration="10338000" />
       <workItem from="1544954755102" duration="1196000" />
       <workItem from="1544965117873" duration="14000" />
+      <workItem from="1571384186807" duration="677000" />
+      <workItem from="1573293801927" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48312000" />
+    <option name="totallyTimeSpent" value="49003000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1401" height="824" extended-state="0" />
+    <frame x="0" y="23" width="1401" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27520236" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2825607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -281,8 +306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+        <state relative-caret-position="167">
+          <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
           <folding>
             <element signature="e#21#47#0" expanded="true" />
           </folding>
@@ -298,7 +323,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
+        <state relative-caret-position="1065">
           <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
           <folding>
             <element signature="e#25#51#0" expanded="true" />
