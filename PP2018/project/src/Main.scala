@@ -96,53 +96,54 @@ object Main {
 
   def myeval(e:Expr) : Val =
     try {
-      eval(e, Env.empty)
+      eval(e, Env.empty)._1
     } catch {
       case e: InterpreterException =>
         e.value
     }
 
-  def eval(e: Expr, env: Env): Val =
+  def eval(e: Expr, env: Env): (Val, Env) =
     e match {
-      case EInt(n) => VInt(n)
-      case ETrue() => VTrue()
-      case EFalse() => VFalse()
-      case ENil() => VNil()
+      case EInt(n) => (VInt(n), env)
+      case ETrue() => (VTrue(), env)
+      case EFalse() => (VFalse(), env)
+      case ENil() => (VNil(), env)
       case EName(s) =>
         env.lookup(s) match {
           case Some(boxLazyVal: BoxLazyVal) =>
             if (boxLazyVal.value ne null)
-              boxLazyVal.value
+              (boxLazyVal.value, env)
             else {
               val evaluated = eval(boxLazyVal.expr, boxLazyVal.env())
-              boxLazyVal.value = evaluated
+              boxLazyVal.value = evaluated._1
               evaluated
             }
           case Some(BoxVal(value)) =>
-            value
+            (value, env)
           case None =>
             throw new EvalException("Undefined name: " + s)
         }
       case EIf(econd, et, ef) =>
         eval(econd, env) match {
-          case VTrue() =>
+          case (VTrue(), _) =>
             eval(et, env)
-          case VFalse() =>
+          case (VFalse(), _) =>
             eval(ef, env)
           case _ =>
             throw new EvalException("Non-boolean condition: " + econd)
         }
       case EApp(ef, eargs) =>
-        eval(ef, env) match {
+        val evaluated = eval(ef, env)
+        evaluated._1 match {
           case VDef(envAux, params, expr) =>
             if (params.size != eargs.size)
-              throw new EvalException("")
+              throw new EvalException("Wrong number of arguments.")
             else {
               var newEnv = envAux()
               for ((arg, earg) <- params zip eargs) {
                 arg match {
                   case AVname(x) =>
-                    newEnv = newEnv.bind(x, BoxVal(eval(earg, env)))
+                    newEnv = newEnv.bind(x, BoxVal(eval(earg, env)._1))
                   case ANname(x) =>
                     newEnv = newEnv.bind(x, BoxLazyVal(() => env, earg))
                 }
@@ -157,7 +158,7 @@ object Main {
           bs.foldLeft(env) { (e, binding) =>
             binding match {
               case BVal(name, expr) =>
-                e.bind(name, BoxVal(eval(expr, e)))
+                e.bind(name, BoxVal(eval(expr, e)._1))
               case BLval(name, expr) =>
                 e.bind(name, BoxLazyVal(() => newEnv, expr))
               case BDef(name, params, expr) =>
@@ -167,23 +168,23 @@ object Main {
 
         eval(eb, newEnv)
       case ECons(eh, et) =>
-        VPair(eval(eh, env), eval(et, env))
+        (VPair(eval(eh, env)._1, eval(et, env)._1), env)
       case EFst(el) =>
         eval(el, env) match {
-          case VPair(a, _) => a
+          case (VPair(a, _), _) => (a, env)
           case _ =>
             throw new EvalException("Non-record object: " + el)
         }
       case ESnd(el) =>
         eval(el, env) match {
-          case VPair(_, b) => b
+          case (VPair(_, b), _) => (b, env)
           case _ =>
             throw new EvalException("Non-record object: " + el)
         }
       case EMatch(e1, e2, hd, tl, e3) =>
         eval(e1, env) match {
-          case VNil() => eval(e2, env)
-          case VPair(a, b) =>
+          case (VNil(), _) => eval(e2, env)
+          case (VPair(a, b), _) =>
             var newEnv = env
             newEnv = newEnv.bind(hd, BoxVal(a))
             newEnv = newEnv.bind(tl, BoxVal(b))
@@ -191,32 +192,33 @@ object Main {
           case _ =>
             throw new EvalException("Non-pair object: " + e1)
         }
-      case ERmk(bs) => VRec(bs)
+      case ERmk(bs) => (VRec(bs), env)
       case ERfd(rec, fd) =>
-        eval(rec, env) match {
+        val eval0 = eval(rec, env)
+        eval0._1 match {
           case VRec(bs) =>
             lazy val newEnv: Env =
-            bs.foldLeft(env) { (e, binding) =>
-              binding match {
-                case BVal(name, expr) =>
-                  e.bind(name, BoxVal(eval(expr, e)))
-                case BLval(name, expr) =>
-                  e.bind(name, BoxLazyVal(() => newEnv, expr))
-                case BDef(name, params, expr) =>
-                  e.bind(name, BoxVal(VDef(() => newEnv, params, expr)))
+              bs.foldLeft(eval0._2) { (e, binding) =>
+                binding match {
+                  case BVal(name, expr) =>
+                    e.bind(name, BoxVal(eval(expr, e)._1))
+                  case BLval(name, expr) =>
+                    e.bind(name, BoxLazyVal(() => newEnv, expr))
+                  case BDef(name, params, expr) =>
+                    e.bind(name, BoxVal(VDef(() => newEnv, params, expr)))
+                }
               }
-            }
             newEnv.lookup(fd) match {
               case Some(boxLazyVal: BoxLazyVal) =>
                 if (boxLazyVal.value ne null)
-                boxLazyVal.value
+                  (boxLazyVal.value, newEnv)
                 else {
                   val evaluated = eval(boxLazyVal.expr, boxLazyVal.env())
-                  boxLazyVal.value = evaluated
+                  boxLazyVal.value = evaluated._1
                   evaluated
                 }
               case Some(BoxVal(value)) =>
-                value
+                (value, newEnv)
               case None =>
                 throw new EvalException("Undefined field: " + fd)
             }
@@ -224,49 +226,49 @@ object Main {
             throw new EvalException("Non-record object: " + rec)
         }
       case EPlus(e1, e2) =>
-        (eval(e1, env), eval(e2, env)) match {
-          case (VInt(v1), VInt(v2)) => VInt(v1 + v2)
+        (eval(e1, env)._1, eval(e2, env)._1) match {
+          case (VInt(v1), VInt(v2)) => (VInt(v1 + v2), env)
           case _ =>
             throw new EvalException("Non-int objects on +.")
         }
       case EMinus(e1, e2) =>
-        (eval(e1, env), eval(e2, env)) match {
-          case (VInt(v1), VInt(v2)) => VInt(v1 - v2)
+        (eval(e1, env)._1, eval(e2, env)._1) match {
+          case (VInt(v1), VInt(v2)) => (VInt(v1 - v2), env)
           case _ =>
             throw new EvalException("Non-int objects on -.")
         }
       case EMult(e1, e2) =>
-        (eval(e1, env), eval(e2, env)) match {
-          case (VInt(v1), VInt(v2)) => VInt(v1 * v2)
+        (eval(e1, env)._1, eval(e2, env)._1) match {
+          case (VInt(v1), VInt(v2)) => (VInt(v1 * v2), env)
           case _ =>
             throw new EvalException("Non-int objects on *.")
         }
       case EEq(e1, e2) =>
-        (eval(e1, env), eval(e2, env)) match {
+        (eval(e1, env)._1, eval(e2, env)._1) match {
           case (VInt(v1), VInt(v2)) =>
-            if (v1 == v2) VTrue()
-            else VFalse()
+            if (v1 == v2) (VTrue(), env)
+            else (VFalse(), env)
           case _ =>
             throw new EvalException("Non-int objects on =.")
         }
       case ELt(e1, e2) =>
-        (eval(e1, env), eval(e2, env)) match {
+        (eval(e1, env)._1, eval(e2, env)._1) match {
           case (VInt(v1), VInt(v2)) =>
-            if (v1 < v2) VTrue()
-            else VFalse()
+            if (v1 < v2) (VTrue(), env)
+            else (VFalse(), env)
           case _ =>
             throw new EvalException("Non-int objects on <.")
         }
       case EGt(e1, e2) =>
-        (eval(e1, env), eval(e2, env)) match {
+        (eval(e1, env)._1, eval(e2, env)._1) match {
           case (VInt(v1), VInt(v2)) =>
-            if (v1 > v2) VTrue()
-            else VFalse()
+            if (v1 > v2) (VTrue(), env)
+            else (VFalse(), env)
           case _ =>
             throw new EvalException("Non-int objects on >.")
         }
       case EThrow(expr) =>
-        throw new InterpreterException(eval(expr, env))
+        throw new InterpreterException(eval(expr, env)._1)
       case ETrycatch(e1, x, e2) =>
         try {
           eval(e1, env)
