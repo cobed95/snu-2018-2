@@ -2,21 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1273c90-1fdc-4306-8495-505fb6265ce5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MidtermAttempt/.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermAttempt/.idea/modules/midtermattempt-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermAttempt/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermAttempt/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermAttempt/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermAttempt/src/main/scala/midterm5/Data.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermAttempt/src/main/scala/midterm5/Main.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MidtermAttempt/src/main/scala/midterm5/Test.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Dot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/bin/com/dmlab/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/bin/com/dmlab/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/FinalPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/FinalPrep/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanInternal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanInternal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanLeaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanLeaf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/util/HuffmanTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../99ScalaProblems/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../99ScalaProblems/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/interfaces/HuffmanNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/BSTNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/BinarySearchTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/CircularQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/DoubleLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/DoublyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanInternal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanLeaf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/KVpair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/LinkedStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/MaxHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/SimpleBinaryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/SinglyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/UnsortedDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/VarIntlNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/VarLeafNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,14 +79,34 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-170571729">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="scala" value="178" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Scala" value="178" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Data.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="60">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -76,8 +114,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="226">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <folding>
+                <element signature="e#21#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,8 +126,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="165">
+              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding>
+                <element signature="e#25#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +159,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/BubbleSort.scala" />
-        <option value="$PROJECT_DIR$/src/Main.scala" />
         <option value="$PROJECT_DIR$/src/Test.scala" />
+        <option value="$PROJECT_DIR$/src/Main.scala" />
       </list>
     </option>
   </component>
@@ -129,7 +173,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1393" />
-    <option name="height" value="824" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -137,8 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,13 +197,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539740715550" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -235,17 +280,19 @@
       <workItem from="1539736978811" duration="2446000" />
       <workItem from="1539849830270" duration="803000" />
       <workItem from="1540573802160" duration="12000" />
+      <workItem from="1571223832936" duration="71000" />
+      <workItem from="1593240253038" duration="857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26444000" />
+    <option name="totallyTimeSpent" value="27372000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1393" height="824" extended-state="0" />
+    <frame x="0" y="23" width="1393" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27683198" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2842339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -292,24 +339,30 @@
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data.scala">
+    <entry file="file://$PROJECT_DIR$/src/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="165">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="e#25#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.scala">
+    <entry file="file://$PROJECT_DIR$/src/Data.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="226">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#21#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

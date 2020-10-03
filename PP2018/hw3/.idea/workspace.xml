@@ -2,22 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3fab473-a9f7-4363-bf14-17138a44ecfc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hw4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem1$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem3$$anon$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem3$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4/Main$Problem3$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$$anon$1$$anon$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$$anon$1$$anon$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$$anon$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$$anon$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$$anon$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$$anon$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$$anon$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$MyLetter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$MyLetter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/out/production/hw4/pp201802/hw4test/Test$delayedInit$body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/src/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/src/Test.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Dot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/bin/com/dmlab/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/bin/com/dmlab/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/FinalPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/FinalPrep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/interfaces/HuffmanNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/BSTNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/BinarySearchTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/CircularQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/DoubleLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/DoublyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanInternal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanLeaf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/KVpair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/LinkedStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/MaxHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/SimpleBinaryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/SinglyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/UnsortedDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/VarIntlNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/VarLeafNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,6 +76,25 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-367085233">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="scala" value="128" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Scala" value="128" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -76,8 +110,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="221" selection-start-line="221" selection-end-line="221" />
+            <state relative-caret-position="-1937">
+              <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -114,7 +148,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1401" />
-    <option name="height" value="824" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -122,6 +156,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,8 +178,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -151,6 +185,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542451671421" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -241,6 +276,7 @@
       <workItem from="1542433138147" duration="1118000" />
       <workItem from="1542451129881" duration="559000" />
       <workItem from="1544767913406" duration="4687000" />
+      <workItem from="1571384091300" duration="81000" />
     </task>
     <servers />
   </component>
@@ -250,7 +286,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53483000" />
+    <option name="totallyTimeSpent" value="53564000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -262,9 +298,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1401" height="824" extended-state="0" />
+    <frame x="0" y="23" width="1401" height="816" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3038999" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30831495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -280,7 +317,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329235" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329235" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.329235" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.17127071" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.329235" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -338,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="221" selection-start-line="221" selection-end-line="221" />
+        <state relative-caret-position="-1937">
+          <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
         </state>
       </provider>
     </entry>

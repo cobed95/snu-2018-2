@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d2f0840-fcdc-463f-8d79-b7505f37b889" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LectureNotes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/LectureNotes.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Dot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/bin/com/dmlab/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/bin/com/dmlab/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/BookSearch/src/com/dmlab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/FinalPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/FinalPrep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/interfaces/HuffmanNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/BSTNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/BinarySearchTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/CircularQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/DoubleLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/DoublyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanInternal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanLeaf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/HuffmanTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/KVpair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/LinkedStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/MaxHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/SimpleBinaryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/SinglyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/UnsortedDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/VarIntlNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/out/production/MidtermPrep/com/MidtermPrep/util/VarLeafNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DS2018/Assignment/MidtermPrep/src/com/MidtermPrep/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,6 +88,35 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1435560412">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="scala" value="57" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Scala" value="57" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="sc" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Scala" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -92,20 +150,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/LectureNotes.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="531" column="34" selection-start-line="531" selection-start-column="34" selection-end-line="531" selection-end-column="34" />
+            <state relative-caret-position="455">
+              <caret line="518" column="19" selection-start-line="518" selection-start-column="19" selection-end-line="518" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/MapReduce.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/MapReduce.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Practice.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -137,12 +204,12 @@
         <option value="$PROJECT_DIR$/src/main/scala/TailRecursiveSum.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/HighOrderSum.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/NewtonSqrt.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/MapReduce.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Practice.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/MidtermPrep.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/AbstractDataTypes.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LectureNotes.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/MapReduce.scala" />
       </list>
     </option>
   </component>
@@ -155,7 +222,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1401" />
-    <option name="height" value="824" />
+    <option name="height" value="823" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -165,6 +232,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,15 +263,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542592526399" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -349,17 +417,17 @@
       <workItem from="1542155304304" duration="3066000" />
       <workItem from="1542586857568" duration="5698000" />
       <workItem from="1543364732265" duration="1737000" />
+      <workItem from="1559368632647" duration="1206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58857000" />
+    <option name="totallyTimeSpent" value="60063000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1401" height="824" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1401" height="823" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33995584" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3451067" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -402,13 +470,6 @@
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Practice.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/TailRecursiveSum.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -447,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/MapReduce.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/AbstractDataTypes.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -463,8 +517,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/LectureNotes.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="531" column="34" selection-start-line="531" selection-start-column="34" selection-end-line="531" selection-end-column="34" />
+        <state relative-caret-position="455">
+          <caret line="518" column="19" selection-start-line="518" selection-start-column="19" selection-end-line="518" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Practice.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/MapReduce.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae703f92-9373-4269-98fe-50db407bd636" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParser$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/proj/MyParser/MyParser$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/pp201802/projtest/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/pp201802/projtest/Test$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyParser.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,6 +15,7 @@
     <session id="-720626774">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -216,7 +213,7 @@
     <property name="SearchEverywhereHistoryKey" value="Lexer&#9;FILE&#9;file:///Users/eundolee/snu-2018-2/PP2018/Project/lib/lib-src/Lexer.scala&#10;Token&#9;null&#9;null&#10;MyParser&#9;FILE&#9;file:///Users/eundolee/snu-2018-2/PP2018/Project/src/MyParser.scala&#10;Arg&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545329931177" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545330312068" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -280,12 +277,12 @@
       <workItem from="1545233574371" duration="2884000" />
       <workItem from="1545268986391" duration="6323000" />
       <workItem from="1545281814263" duration="7624000" />
-      <workItem from="1545305210940" duration="18431000" />
+      <workItem from="1545305210940" duration="18633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68465000" />
+    <option name="totallyTimeSpent" value="68667000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -298,7 +295,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="815" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.267844" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

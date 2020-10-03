@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 import com.dmlab.bst.BookSearch;
 import com.dmlab.bst.TreePrinter;
+import java.util.*;
 
 public class Main {
 	private static final int ADD = 0;
@@ -24,7 +25,7 @@ public class Main {
 		TreePrinter<String, String> tp = new TreePrinter<String, String>();
 
 		String prefix = "PA2_Grade_and_Testcases/1_example/";
-		
+
 		FileInputStream fis = new FileInputStream(prefix + "sample_input.txt");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
 
@@ -90,7 +91,7 @@ public class Main {
 				break;
 			case PRINT:
 					System.out.println("PRINT:\t");
-					tp.printNode(bookSearch.getRoot());	
+					tp.printNode(bookSearch.getRoot());
 					break;
 			case ERROR:
 				break;
